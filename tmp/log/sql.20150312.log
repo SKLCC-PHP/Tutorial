@@ -1,0 +1,10 @@
+20150312 21:13:13: 
+  SELECT * FROM `oa_company` ORDER BY `id`  LIMIT 1 
+  SELECT * FROM `oa_config` WHERE owner IN ('system','') ORDER BY `id` 
+
+20150312 21:13:13: user-login-L29hL3d3dy8=
+  SELECT * FROM `oa_config` WHERE owner IN ('system','') ORDER BY `id` 
+
+20150312 21:13:13: user-captcha
+  SELECT * FROM `oa_config` WHERE owner IN ('system','') ORDER BY `id` 
+

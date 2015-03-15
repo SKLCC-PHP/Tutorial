@@ -1,0 +1,13 @@
+
+14:54:38 Undefined property: config::$debug in module\common\view\header.lite.html.php on line 19 when visiting /zentaopms/www/install.php?m=install&f=step2
+
+14:55:39 Maximum execution time of 30 seconds exceeded in lib\snoopy\snoopy.class.php on line 849 when visiting /zentaopms/www/install.php
+
+14:55:41 Undefined property: config::$debug in module\common\view\header.lite.html.php on line 19 when visiting /zentaopms/www/install.php?m=install&f=step3
+
+14:56:42 Maximum execution time of 30 seconds exceeded in lib\snoopy\snoopy.class.php on line 849 when visiting /zentaopms/www/install.php?m=install&f=index
+
+14:56:43 ERROR: 您访问的域名 localhost 没有对应的公司。 in module\common\model.php on line 58, last called by module\common\control.php on line 25 through function setCompany.
+ in framework\router.class.php on line 1577 when visiting 
+
+15:00:48 Creating default object from empty value in module\install\model.php on line 440 when visiting /zentaopms/www/install.php?m=install&f=step4

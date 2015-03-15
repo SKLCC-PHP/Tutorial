@@ -1,0 +1,186 @@
+
+14:46:37 Creating default object from empty value in module\common\lang\menuOrder.php on line 39 when visiting 
+
+14:46:37 Creating default object from empty value in module\common\lang\menuOrder.php on line 39 when visiting 
+
+14:46:37 Missing argument 3 for common::setMenuVars(), called in module\company\model.php on line 25 and defined in module\common\control.php on line 103 when visiting user-login-L29hL3d3dy8=
+
+14:46:37 Undefined variable: params in module\common\control.php on line 105 when visiting user-login-L29hL3d3dy8=
+
+14:46:37 Undefined variable: params in module\common\control.php on line 123 when visiting user-login-L29hL3d3dy8=
+
+14:46:37 Undefined property: stdClass::$title in module\personalinfo\config.php on line 20 when visiting user-login-L29hL3d3dy8=
+
+14:46:37 Undefined property: stdClass::$id in module\personalinfo\config.php on line 21 when visiting user-login-L29hL3d3dy8=
+
+14:46:37 Undefined property: stdClass::$keywords in module\personalinfo\config.php on line 22 when visiting user-login-L29hL3d3dy8=
+
+14:46:37 Undefined property: stdClass::$product in module\personalinfo\config.php on line 23 when visiting user-login-L29hL3d3dy8=
+
+14:46:37 Undefined property: stdClass::$project in module\personalinfo\config.php on line 24 when visiting user-login-L29hL3d3dy8=
+
+14:46:37 Undefined property: stdClass::$type in module\personalinfo\config.php on line 25 when visiting user-login-L29hL3d3dy8=
+
+14:46:37 Undefined property: stdClass::$module in module\personalinfo\config.php on line 26 when visiting user-login-L29hL3d3dy8=
+
+14:46:37 Undefined property: stdClass::$lib in module\personalinfo\config.php on line 27 when visiting user-login-L29hL3d3dy8=
+
+14:46:37 Undefined property: stdClass::$digest in module\personalinfo\config.php on line 28 when visiting user-login-L29hL3d3dy8=
+
+14:46:37 Undefined property: stdClass::$content in module\personalinfo\config.php on line 29 when visiting user-login-L29hL3d3dy8=
+
+14:46:37 Undefined property: stdClass::$url in module\personalinfo\config.php on line 30 when visiting user-login-L29hL3d3dy8=
+
+14:46:37 Undefined property: stdClass::$addedBy in module\personalinfo\config.php on line 31 when visiting user-login-L29hL3d3dy8=
+
+14:46:37 Undefined property: stdClass::$addedDate in module\personalinfo\config.php on line 32 when visiting user-login-L29hL3d3dy8=
+
+14:46:37 Undefined property: stdClass::$editedBy in module\personalinfo\config.php on line 33 when visiting user-login-L29hL3d3dy8=
+
+14:46:37 Undefined property: stdClass::$editedDate in module\personalinfo\config.php on line 34 when visiting user-login-L29hL3d3dy8=
+
+14:46:37 Undefined property: stdClass::$types in module\personalinfo\config.php on line 41 when visiting user-login-L29hL3d3dy8=
+
+14:46:37 Creating default object from empty value in module\common\lang\menuOrder.php on line 39 when visiting 
+
+14:46:37 Missing argument 3 for common::setMenuVars(), called in module\company\model.php on line 25 and defined in module\common\control.php on line 103 when visiting user-captcha
+
+14:46:37 Undefined variable: params in module\common\control.php on line 105 when visiting user-captcha
+
+14:46:37 Undefined variable: params in module\common\control.php on line 123 when visiting user-captcha
+
+14:46:37 Undefined property: stdClass::$title in module\personalinfo\config.php on line 20 when visiting user-captcha
+
+14:46:37 Undefined property: stdClass::$id in module\personalinfo\config.php on line 21 when visiting user-captcha
+
+14:46:37 Undefined property: stdClass::$keywords in module\personalinfo\config.php on line 22 when visiting user-captcha
+
+14:46:37 Undefined property: stdClass::$product in module\personalinfo\config.php on line 23 when visiting user-captcha
+
+14:46:37 Undefined property: stdClass::$project in module\personalinfo\config.php on line 24 when visiting user-captcha
+
+14:46:37 Undefined property: stdClass::$type in module\personalinfo\config.php on line 25 when visiting user-captcha
+
+14:46:37 Undefined property: stdClass::$module in module\personalinfo\config.php on line 26 when visiting user-captcha
+
+14:46:37 Undefined property: stdClass::$lib in module\personalinfo\config.php on line 27 when visiting user-captcha
+
+14:46:37 Undefined property: stdClass::$digest in module\personalinfo\config.php on line 28 when visiting user-captcha
+
+14:46:37 Undefined property: stdClass::$content in module\personalinfo\config.php on line 29 when visiting user-captcha
+
+14:46:37 Undefined property: stdClass::$url in module\personalinfo\config.php on line 30 when visiting user-captcha
+
+14:46:37 Undefined property: stdClass::$addedBy in module\personalinfo\config.php on line 31 when visiting user-captcha
+
+14:46:37 Undefined property: stdClass::$addedDate in module\personalinfo\config.php on line 32 when visiting user-captcha
+
+14:46:37 Undefined property: stdClass::$editedBy in module\personalinfo\config.php on line 33 when visiting user-captcha
+
+14:46:37 Undefined property: stdClass::$editedDate in module\personalinfo\config.php on line 34 when visiting user-captcha
+
+14:46:37 Undefined property: stdClass::$types in module\personalinfo\config.php on line 41 when visiting user-captcha
+
+14:47:38 Creating default object from empty value in module\common\lang\menuOrder.php on line 39 when visiting 
+
+14:49:57 Creating default object from empty value in module\common\lang\menuOrder.php on line 39 when visiting 
+
+14:49:57 Missing argument 3 for common::setMenuVars(), called in module\company\model.php on line 25 and defined in module\common\control.php on line 103 when visiting user-login-L29hL3d3dy8=
+
+14:49:57 Undefined variable: params in module\common\control.php on line 105 when visiting user-login-L29hL3d3dy8=
+
+14:49:57 Undefined variable: params in module\common\control.php on line 123 when visiting user-login-L29hL3d3dy8=
+
+14:49:57 Undefined property: stdClass::$title in module\personalinfo\config.php on line 20 when visiting user-login-L29hL3d3dy8=
+
+14:49:57 Undefined property: stdClass::$id in module\personalinfo\config.php on line 21 when visiting user-login-L29hL3d3dy8=
+
+14:49:57 Undefined property: stdClass::$keywords in module\personalinfo\config.php on line 22 when visiting user-login-L29hL3d3dy8=
+
+14:49:57 Undefined property: stdClass::$product in module\personalinfo\config.php on line 23 when visiting user-login-L29hL3d3dy8=
+
+14:49:57 Undefined property: stdClass::$project in module\personalinfo\config.php on line 24 when visiting user-login-L29hL3d3dy8=
+
+14:49:57 Undefined property: stdClass::$type in module\personalinfo\config.php on line 25 when visiting user-login-L29hL3d3dy8=
+
+14:49:57 Undefined property: stdClass::$module in module\personalinfo\config.php on line 26 when visiting user-login-L29hL3d3dy8=
+
+14:49:57 Undefined property: stdClass::$lib in module\personalinfo\config.php on line 27 when visiting user-login-L29hL3d3dy8=
+
+14:49:57 Undefined property: stdClass::$digest in module\personalinfo\config.php on line 28 when visiting user-login-L29hL3d3dy8=
+
+14:49:57 Undefined property: stdClass::$content in module\personalinfo\config.php on line 29 when visiting user-login-L29hL3d3dy8=
+
+14:49:57 Undefined property: stdClass::$url in module\personalinfo\config.php on line 30 when visiting user-login-L29hL3d3dy8=
+
+14:49:57 Undefined property: stdClass::$addedBy in module\personalinfo\config.php on line 31 when visiting user-login-L29hL3d3dy8=
+
+14:49:57 Undefined property: stdClass::$addedDate in module\personalinfo\config.php on line 32 when visiting user-login-L29hL3d3dy8=
+
+14:49:57 Undefined property: stdClass::$editedBy in module\personalinfo\config.php on line 33 when visiting user-login-L29hL3d3dy8=
+
+14:49:57 Undefined property: stdClass::$editedDate in module\personalinfo\config.php on line 34 when visiting user-login-L29hL3d3dy8=
+
+14:49:57 Undefined property: stdClass::$types in module\personalinfo\config.php on line 41 when visiting user-login-L29hL3d3dy8=
+
+14:49:57 Undefined index: account in lib\dao\dao.class.php on line 615 when visiting user-login-L29hL3d3dy8=
+
+14:49:57 Use of undefined constant t1 - assumed 't1' in module\user\model.php on line 754 when visiting user-login-L29hL3d3dy8=
+
+14:49:57 Use of undefined constant t2 - assumed 't2' in module\user\model.php on line 756 when visiting user-login-L29hL3d3dy8=
+
+14:49:57 Use of undefined constant t3 - assumed 't3' in module\user\model.php on line 758 when visiting user-login-L29hL3d3dy8=
+
+14:49:57 Creating default object from empty value in module\action\lang\zh-cn.php on line 12 when visiting user-login-L29hL3d3dy8=
+
+14:49:57 Creating default object from empty value in module\common\lang\menuOrder.php on line 39 when visiting 
+
+14:49:57 Creating default object from empty value in module\common\lang\menuOrder.php on line 39 when visiting 
+
+14:49:57 Undefined property: stdClass::$role in module\my\model.php on line 27 when visiting my
+
+14:49:57 Declaration of taskModel::delete() should be compatible with model::delete($table, $id) in module\task\model.php on line 948 when visiting my
+
+14:49:57 Declaration of problemModel::delete() should be compatible with model::delete($table, $id) in module\problem\model.php on line 476 when visiting my
+
+14:49:57 Declaration of noticeModel::delete() should be compatible with model::delete($table, $id) in module\notice\model.php on line 314 when visiting my
+
+14:49:57 Creating default object from empty value in module\notice\config.php on line 4 when visiting my
+
+14:49:57 Use of undefined constant t1 - assumed 't1' in module\task\model.php on line 443 when visiting my
+
+14:49:57 Use of undefined constant t2 - assumed 't2' in module\task\model.php on line 444 when visiting my
+
+14:49:57 Creating default object from empty value in module\statistics\config.php on line 4 when visiting my
+
+14:49:57 Creating default object from empty value in module\statistics\config.php on line 5 when visiting my
+
+14:49:57 Creating default object from empty value in module\statistics\config.php on line 6 when visiting my
+
+14:49:57 Creating default object from empty value in module\statistics\config.php on line 7 when visiting my
+
+14:49:57 Creating default object from empty value in module\statistics\config.php on line 8 when visiting my
+
+14:49:57 Creating default object from empty value in module\statistics\config.php on line 9 when visiting my
+
+14:49:57 Creating default object from empty value in module\statistics\config.php on line 10 when visiting my
+
+14:49:57 Use of undefined constant t1 - assumed 't1' in module\problem\model.php on line 41 when visiting my
+
+14:49:57 Use of undefined constant t2 - assumed 't2' in module\problem\model.php on line 42 when visiting my
+
+14:49:57 Use of undefined constant t1 - assumed 't1' in module\notice\model.php on line 168 when visiting my
+
+14:49:57 Use of undefined constant t2 - assumed 't2' in module\notice\model.php on line 169 when visiting my
+
+14:49:57 Undefined property: language::$chooseUsersToMail in module\common\view\chosen.html.php on line 11 when visiting my
+
+14:49:57 Attempt to modify property of non-object in module\common\model.php on line 367 when visiting my
+
+14:49:57 Undefined property: stdClass::$acpID in module\my\view\blockproblems.html.php on line 22 when visiting my
+
+14:49:57 Undefined property: stdClass::$solvetime in module\my\view\blockproblems.html.php on line 24 when visiting my
+
+14:49:57 Undefined property: stdClass::$acpID in module\my\view\blockproblems.html.php on line 22 when visiting my
+
+14:49:57 Undefined property: stdClass::$solvetime in module\my\view\blockproblems.html.php on line 24 when visiting my

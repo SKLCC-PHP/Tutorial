@@ -1,0 +1,44 @@
+
+04:38:59 PDO::__construct() [pdo.--construct]: [2002] 由于目标计算机积极拒绝，无法连接。
+ (trying to connect via tcp://127.0.0.1:3306) in framework\router.class.php on line 1516 when visiting 
+
+04:38:59 ERROR: SQLSTATE[HY000] [2002] 由于目标计算机积极拒绝，无法连接。
+ in framework\router.class.php on line 1533, last called by framework\router.class.php on line 1495 through function connectByPDO.
+ in framework\router.class.php on line 1577 when visiting 
+
+04:39:07 PDO::__construct() [pdo.--construct]: [2002] 由于目标计算机积极拒绝，无法连接。
+ (trying to connect via tcp://127.0.0.1:3306) in framework\router.class.php on line 1516 when visiting 
+
+04:39:07 ERROR: SQLSTATE[HY000] [2002] 由于目标计算机积极拒绝，无法连接。
+ in framework\router.class.php on line 1533, last called by framework\router.class.php on line 1495 through function connectByPDO.
+ in framework\router.class.php on line 1577 when visiting 
+
+04:39:24 PDO::__construct() [pdo.--construct]: [2002] 由于目标计算机积极拒绝，无法连接。
+ (trying to connect via tcp://127.0.0.1:3306) in framework\router.class.php on line 1516 when visiting 
+
+04:39:24 ERROR: SQLSTATE[HY000] [2002] 由于目标计算机积极拒绝，无法连接。
+ in framework\router.class.php on line 1533, last called by framework\router.class.php on line 1495 through function connectByPDO.
+ in framework\router.class.php on line 1577 when visiting 
+
+16:19:03 Creating default object from empty value in module\common\ext\lang\zh-cn\abc.php on line 5 when visiting 
+
+16:19:03 Creating default object from empty value in module\common\ext\lang\zh-cn\abc.php on line 5 when visiting 
+
+16:19:08 Creating default object from empty value in module\common\ext\lang\zh-cn\abc.php on line 5 when visiting 
+
+16:19:08 Creating default object from empty value in module\common\ext\lang\zh-cn\abc.php on line 5 when visiting 
+
+16:19:09 Creating default object from empty value in module\common\ext\lang\zh-cn\abc.php on line 5 when visiting 
+
+16:19:09 ERROR: the control file module\repo\control.php not found. in framework\router.class.php on line 971, last called by framework\router.class.php on line 1061 through function setControlFile.
+ in framework\router.class.php on line 1577 when visiting repo-browse
+
+16:19:11 Creating default object from empty value in module\common\ext\lang\zh-cn\abc.php on line 5 when visiting 
+
+16:19:11 ERROR: the control file module\repo\control.php not found. in framework\router.class.php on line 971, last called by framework\router.class.php on line 1061 through function setControlFile.
+ in framework\router.class.php on line 1577 when visiting repo-browse
+
+16:19:13 Creating default object from empty value in module\common\ext\lang\zh-cn\abc.php on line 5 when visiting 
+
+16:19:13 ERROR: the control file module\repo\control.php not found. in framework\router.class.php on line 971, last called by framework\router.class.php on line 1061 through function setControlFile.
+ in framework\router.class.php on line 1577 when visiting repo-browse

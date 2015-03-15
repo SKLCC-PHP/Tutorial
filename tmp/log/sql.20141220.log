@@ -1,0 +1,252 @@
+20141220 22:39:26: 
+  SELECT * FROM `oa_company` ORDER BY `id`  LIMIT 1 
+  SELECT * FROM `oa_config` WHERE owner IN ('system','') ORDER BY `id` 
+
+20141220 22:39:26: user-login-L29hL3d3dy8=
+  SELECT * FROM `oa_config` WHERE owner IN ('system','') ORDER BY `id` 
+
+20141220 22:39:42: user-login-L29hL3d3dy8=
+  SELECT * FROM `oa_config` WHERE owner IN ('system','') ORDER BY `id` 
+
+20141220 22:39:48: user-login-L29hL3d3dy8=
+  SELECT * FROM `oa_config` WHERE owner IN ('system','') ORDER BY `id` 
+
+20141220 22:39:49: user-login-L29hL3d3dy8=
+  SELECT * FROM `oa_config` WHERE owner IN ('system','') ORDER BY `id` 
+
+20141220 22:39:49: user-login-L29hL3d3dy8=
+  SELECT * FROM `oa_config` WHERE owner IN ('system','') ORDER BY `id` 
+
+20141220 22:40:50: misc-ping
+  SELECT * FROM `oa_config` WHERE owner IN ('system','') ORDER BY `id` 
+
+20141220 22:41:51: user-login-L29hL3d3dy8=
+  SELECT * FROM `oa_config` WHERE owner IN ('system','') ORDER BY `id` 
+
+20141220 22:41:52: user-login-L29hL3d3dy8=
+  SELECT * FROM `oa_config` WHERE owner IN ('system','') ORDER BY `id` 
+
+20141220 22:41:53: user-login-L29hL3d3dy8=
+  SELECT * FROM `oa_config` WHERE owner IN ('system','') ORDER BY `id` 
+
+20141220 22:41:53: user-login-L29hL3d3dy8=
+  SELECT * FROM `oa_config` WHERE owner IN ('system','') ORDER BY `id` 
+
+20141220 22:42:54: misc-ping
+  SELECT * FROM `oa_config` WHERE owner IN ('system','') ORDER BY `id` 
+
+20141220 22:43:43: user-login-L29hL3d3dy8=
+  SELECT * FROM `oa_config` WHERE owner IN ('system','') ORDER BY `id` 
+
+20141220 22:43:44: user-login-L29hL3d3dy8=
+  SELECT * FROM `oa_config` WHERE owner IN ('system','') ORDER BY `id` 
+
+20141220 22:44:44: misc-ping
+  SELECT * FROM `oa_config` WHERE owner IN ('system','') ORDER BY `id` 
+
+20141220 22:45:05: user-login-L29hL3d3dy8=
+  SELECT * FROM `oa_config` WHERE owner IN ('system','') ORDER BY `id` 
+
+20141220 22:45:06: user-login-L29hL3d3dy8=
+  SELECT * FROM `oa_config` WHERE owner IN ('system','') ORDER BY `id` 
+
+20141220 22:45:06: user-login-L29hL3d3dy8=
+  SELECT * FROM `oa_config` WHERE owner IN ('system','') ORDER BY `id` 
+
+20141220 22:45:07: user-login-L29hL3d3dy8=
+  SELECT * FROM `oa_config` WHERE owner IN ('system','') ORDER BY `id` 
+
+20141220 22:45:07: user-login-L29hL3d3dy8=
+  SELECT * FROM `oa_config` WHERE owner IN ('system','') ORDER BY `id` 
+
+20141220 22:45:09: user-login-L29hL3d3dy8=
+  SELECT * FROM `oa_config` WHERE owner IN ('system','') ORDER BY `id` 
+
+20141220 22:45:10: user-login-L29hL3d3dy8=
+  SELECT * FROM `oa_config` WHERE owner IN ('system','') ORDER BY `id` 
+
+20141220 22:47:47: 
+  SELECT * FROM `oa_config` WHERE owner IN ('system','') ORDER BY `id` 
+
+20141220 22:47:47: user-login-L29hL3d3dy8=
+  SELECT * FROM `oa_config` WHERE owner IN ('system','') ORDER BY `id` 
+
+20141220 22:47:51: user-login-L29hL3d3dy8=
+  SELECT * FROM `oa_config` WHERE owner IN ('system','') ORDER BY `id` 
+
+20141220 22:48:07: user-login-L29hL3d3dy8=
+  SELECT * FROM `oa_config` WHERE owner IN ('system','') ORDER BY `id` 
+
+20141220 22:48:35: user-login-L29hL3d3dy8=
+  SELECT * FROM `oa_config` WHERE owner IN ('system','') ORDER BY `id` 
+
+20141220 22:48:47: misc-ping
+  SELECT * FROM `oa_config` WHERE owner IN ('system','') ORDER BY `id` 
+
+20141220 22:54:26: user-login-L29hL3d3dy8=
+  SELECT * FROM `oa_config` WHERE owner IN ('system','') ORDER BY `id` 
+
+20141220 22:54:30: user-login-L29hL3d3dy8=
+  SELECT * FROM `oa_config` WHERE owner IN ('system','') ORDER BY `id` 
+
+20141220 22:54:38: user-login-L29hL3d3dy8=
+  SELECT * FROM `oa_config` WHERE owner IN ('system','') ORDER BY `id` 
+
+20141220 22:55:27: misc-ping
+  SELECT * FROM `oa_config` WHERE owner IN ('system','') ORDER BY `id` 
+  SELECT * FROM `oa_config` WHERE 1 = 1  AND owner IN ('system') AND module IN ('common') AND section IN ('global') AND `key` IN ('sn')
+
+20141220 22:59:47: user-login-L29hL3d3dy8=
+  SELECT * FROM `oa_config` WHERE owner IN ('system','') ORDER BY `id` 
+
+20141220 22:59:50: user-login-L29hL3d3dy8=
+  SELECT * FROM `oa_config` WHERE owner IN ('system','') ORDER BY `id` 
+
+20141220 23:00:48: misc-ping
+  SELECT * FROM `oa_config` WHERE owner IN ('system','') ORDER BY `id` 
+
+20141220 23:06:22: user-login-L29hL3d3dy8=
+  SELECT * FROM `oa_config` WHERE owner IN ('system','') ORDER BY `id` 
+
+20141220 23:13:12: user-login-L29hL3d3dy8=
+  SELECT * FROM `oa_config` WHERE owner IN ('system','') ORDER BY `id` 
+
+20141220 23:13:12: user-login-L29hL3d3dy8=
+  SELECT * FROM `oa_config` WHERE owner IN ('system','') ORDER BY `id` 
+
+20141220 23:13:13: user-login-L29hL3d3dy8=
+  SELECT * FROM `oa_config` WHERE owner IN ('system','') ORDER BY `id` 
+
+20141220 23:13:23: user-login-L29hL3d3dy8=
+  SELECT * FROM `oa_config` WHERE owner IN ('system','') ORDER BY `id` 
+
+20141220 23:13:24: user-login-L29hL3d3dy8=
+  SELECT * FROM `oa_config` WHERE owner IN ('system','') ORDER BY `id` 
+
+20141220 23:13:24: user-login-L29hL3d3dy8=
+  SELECT * FROM `oa_config` WHERE owner IN ('system','') ORDER BY `id` 
+
+20141220 23:13:25: user-login-L29hL3d3dy8=
+  SELECT * FROM `oa_config` WHERE owner IN ('system','') ORDER BY `id` 
+
+20141220 23:14:25: misc-ping
+  SELECT * FROM `oa_config` WHERE owner IN ('system','') ORDER BY `id` 
+  SELECT * FROM `oa_config` WHERE 1 = 1  AND owner IN ('system') AND module IN ('common') AND section IN ('global') AND `key` IN ('sn')
+
+20141220 23:17:49: 
+  SELECT * FROM `oa_config` WHERE owner IN ('system','') ORDER BY `id` 
+
+20141220 23:17:49: user-login-L29hL3d3dy8=
+  SELECT * FROM `oa_config` WHERE owner IN ('system','') ORDER BY `id` 
+
+20141220 23:18:51: misc-ping
+  SELECT * FROM `oa_config` WHERE owner IN ('system','') ORDER BY `id` 
+  SELECT * FROM `oa_config` WHERE 1 = 1  AND owner IN ('system') AND module IN ('common') AND section IN ('global') AND `key` IN ('sn')
+
+20141220 23:26:47: 
+  SELECT * FROM `oa_config` WHERE owner IN ('system','') ORDER BY `id` 
+
+20141220 23:26:47: user-login-L29hL3d3dy8=
+  SELECT * FROM `oa_config` WHERE owner IN ('system','') ORDER BY `id` 
+
+20141220 23:27:47: misc-ping
+  SELECT * FROM `oa_config` WHERE owner IN ('system','') ORDER BY `id` 
+  SELECT * FROM `oa_config` WHERE 1 = 1  AND owner IN ('system') AND module IN ('common') AND section IN ('global') AND `key` IN ('sn')
+
+20141220 23:28:16: user-login-L29hL3d3dy8=
+  SELECT * FROM `oa_config` WHERE owner IN ('system','') ORDER BY `id` 
+
+20141220 23:28:24: user-login-L29hL3d3dy8=
+  SELECT * FROM `oa_config` WHERE owner IN ('system','') ORDER BY `id` 
+
+20141220 23:29:24: misc-ping
+  SELECT * FROM `oa_config` WHERE owner IN ('system','') ORDER BY `id` 
+  SELECT * FROM `oa_config` WHERE 1 = 1  AND owner IN ('system') AND module IN ('common') AND section IN ('global') AND `key` IN ('sn')
+
+20141220 23:39:42: user-login-L29hL3d3dy8=
+  SELECT * FROM `oa_config` WHERE owner IN ('system','') ORDER BY `id` 
+
+20141220 23:40:49: user-login-L29hL3d3dy8=
+  SELECT * FROM `oa_company` ORDER BY `id`  LIMIT 1 
+  SELECT * FROM `oa_config` WHERE owner IN ('system','') ORDER BY `id` 
+
+20141220 23:41:49: misc-ping
+  SELECT * FROM `oa_config` WHERE owner IN ('system','') ORDER BY `id` 
+  SELECT * FROM `oa_config` WHERE 1 = 1  AND owner IN ('system') AND module IN ('common') AND section IN ('global') AND `key` IN ('sn')
+
+20141220 23:42:17: 
+  SELECT * FROM `oa_config` WHERE owner IN ('system','') ORDER BY `id` 
+
+20141220 23:42:18: user-login-L29hL3d3dy8=
+  SELECT * FROM `oa_config` WHERE owner IN ('system','') ORDER BY `id` 
+
+20141220 23:42:47: user-login-L29hL3d3dy8=
+  SELECT * FROM `oa_company` ORDER BY `id`  LIMIT 1 
+  SELECT * FROM `oa_config` WHERE owner IN ('system','') ORDER BY `id` 
+
+20141220 23:43:00: user-login-L29hL3d3dy8=
+  SELECT * FROM `oa_config` WHERE owner IN ('system','') ORDER BY `id` 
+
+20141220 23:43:01: user-login-L29hL3d3dy8=
+  SELECT * FROM `oa_config` WHERE owner IN ('system','') ORDER BY `id` 
+
+20141220 23:43:02: user-login-L29hL3d3dy8=
+  SELECT * FROM `oa_config` WHERE owner IN ('system','') ORDER BY `id` 
+
+20141220 23:43:14: user-login-L29hL3d3dy8=
+  SELECT * FROM `oa_config` WHERE owner IN ('system','') ORDER BY `id` 
+
+20141220 23:43:18: misc-ping
+  SELECT * FROM `oa_config` WHERE owner IN ('system','') ORDER BY `id` 
+
+20141220 23:43:19: user-login-L29hL3d3dy8=
+  SELECT * FROM `oa_config` WHERE owner IN ('system','') ORDER BY `id` 
+
+20141220 23:43:25: user-login-L29hL3d3dy8=
+  SELECT * FROM `oa_config` WHERE owner IN ('system','') ORDER BY `id` 
+
+20141220 23:43:33: user-login-L29hL3d3dy8=
+  SELECT * FROM `oa_config` WHERE owner IN ('system','') ORDER BY `id` 
+
+20141220 23:43:48: user-login-L29hL3d3dy8=
+  SELECT * FROM `oa_config` WHERE owner IN ('system','') ORDER BY `id` 
+
+20141220 23:43:55: user-login-L29hL3d3dy8=
+  SELECT * FROM `oa_config` WHERE owner IN ('system','') ORDER BY `id` 
+
+20141220 23:44:05: user-login-L29hL3d3dy8=
+  SELECT * FROM `oa_config` WHERE owner IN ('system','') ORDER BY `id` 
+
+20141220 23:44:24: user-login-L29hL3d3dy8=
+  SELECT * FROM `oa_config` WHERE owner IN ('system','') ORDER BY `id` 
+
+20141220 23:44:24: user-login-L29hL3d3dy8=
+  SELECT * FROM `oa_config` WHERE owner IN ('system','') ORDER BY `id` 
+
+20141220 23:44:25: user-login-L29hL3d3dy8=
+  SELECT * FROM `oa_config` WHERE owner IN ('system','') ORDER BY `id` 
+
+20141220 23:44:26: user-login-L29hL3d3dy8=
+  SELECT * FROM `oa_config` WHERE owner IN ('system','') ORDER BY `id` 
+
+20141220 23:44:26: user-login-L29hL3d3dy8=
+  SELECT * FROM `oa_config` WHERE owner IN ('system','') ORDER BY `id` 
+
+20141220 23:44:27: user-login-L29hL3d3dy8=
+  SELECT * FROM `oa_config` WHERE owner IN ('system','') ORDER BY `id` 
+
+20141220 23:44:27: user-login-L29hL3d3dy8=
+  SELECT * FROM `oa_config` WHERE owner IN ('system','') ORDER BY `id` 
+
+20141220 23:44:27: user-login-L29hL3d3dy8=
+  SELECT * FROM `oa_config` WHERE owner IN ('system','') ORDER BY `id` 
+
+20141220 23:44:28: user-login-L29hL3d3dy8=
+  SELECT * FROM `oa_config` WHERE owner IN ('system','') ORDER BY `id` 
+
+20141220 23:44:29: user-login-L29hL3d3dy8=
+  SELECT * FROM `oa_config` WHERE owner IN ('system','') ORDER BY `id` 
+
+20141220 23:44:29: user-login-L29hL3d3dy8=
+  SELECT * FROM `oa_config` WHERE owner IN ('system','') ORDER BY `id` 
+

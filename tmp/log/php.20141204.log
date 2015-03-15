@@ -1,0 +1,84 @@
+
+19:27:52 Creating default object from empty value in module\common\lang\menuOrder.php on line 39 when visiting 
+
+19:27:52 Creating default object from empty value in module\common\lang\menuOrder.php on line 39 when visiting 
+
+19:27:53 Missing argument 3 for common::setMenuVars(), called in module\company\model.php on line 25 and defined in module\common\control.php on line 103 when visiting user-login-L29hL3d3dy8=
+
+19:27:53 Undefined variable: params in module\common\control.php on line 105 when visiting user-login-L29hL3d3dy8=
+
+19:27:53 Undefined variable: params in module\common\control.php on line 123 when visiting user-login-L29hL3d3dy8=
+
+19:27:53 Undefined property: stdClass::$title in module\personalinfo\config.php on line 20 when visiting user-login-L29hL3d3dy8=
+
+19:27:53 Undefined property: stdClass::$id in module\personalinfo\config.php on line 21 when visiting user-login-L29hL3d3dy8=
+
+19:27:53 Undefined property: stdClass::$keywords in module\personalinfo\config.php on line 22 when visiting user-login-L29hL3d3dy8=
+
+19:27:53 Undefined property: stdClass::$product in module\personalinfo\config.php on line 23 when visiting user-login-L29hL3d3dy8=
+
+19:27:53 Undefined property: stdClass::$project in module\personalinfo\config.php on line 24 when visiting user-login-L29hL3d3dy8=
+
+19:27:53 Undefined property: stdClass::$type in module\personalinfo\config.php on line 25 when visiting user-login-L29hL3d3dy8=
+
+19:27:53 Undefined property: stdClass::$module in module\personalinfo\config.php on line 26 when visiting user-login-L29hL3d3dy8=
+
+19:27:53 Undefined property: stdClass::$lib in module\personalinfo\config.php on line 27 when visiting user-login-L29hL3d3dy8=
+
+19:27:53 Undefined property: stdClass::$digest in module\personalinfo\config.php on line 28 when visiting user-login-L29hL3d3dy8=
+
+19:27:53 Undefined property: stdClass::$content in module\personalinfo\config.php on line 29 when visiting user-login-L29hL3d3dy8=
+
+19:27:53 Undefined property: stdClass::$url in module\personalinfo\config.php on line 30 when visiting user-login-L29hL3d3dy8=
+
+19:27:53 Undefined property: stdClass::$addedBy in module\personalinfo\config.php on line 31 when visiting user-login-L29hL3d3dy8=
+
+19:27:53 Undefined property: stdClass::$addedDate in module\personalinfo\config.php on line 32 when visiting user-login-L29hL3d3dy8=
+
+19:27:53 Undefined property: stdClass::$editedBy in module\personalinfo\config.php on line 33 when visiting user-login-L29hL3d3dy8=
+
+19:27:53 Undefined property: stdClass::$editedDate in module\personalinfo\config.php on line 34 when visiting user-login-L29hL3d3dy8=
+
+19:27:53 Undefined property: stdClass::$types in module\personalinfo\config.php on line 41 when visiting user-login-L29hL3d3dy8=
+
+23:01:27 Creating default object from empty value in module\common\lang\menuOrder.php on line 39 when visiting 
+
+23:01:27 Creating default object from empty value in module\common\lang\menuOrder.php on line 39 when visiting 
+
+23:01:27 Missing argument 3 for common::setMenuVars(), called in module\company\model.php on line 25 and defined in module\common\control.php on line 103 when visiting user-login-L29hL3d3dy8=
+
+23:01:27 Undefined variable: params in module\common\control.php on line 105 when visiting user-login-L29hL3d3dy8=
+
+23:01:27 Undefined variable: params in module\common\control.php on line 123 when visiting user-login-L29hL3d3dy8=
+
+23:01:27 Undefined property: stdClass::$title in module\personalinfo\config.php on line 20 when visiting user-login-L29hL3d3dy8=
+
+23:01:27 Undefined property: stdClass::$id in module\personalinfo\config.php on line 21 when visiting user-login-L29hL3d3dy8=
+
+23:01:27 Undefined property: stdClass::$keywords in module\personalinfo\config.php on line 22 when visiting user-login-L29hL3d3dy8=
+
+23:01:27 Undefined property: stdClass::$product in module\personalinfo\config.php on line 23 when visiting user-login-L29hL3d3dy8=
+
+23:01:27 Undefined property: stdClass::$project in module\personalinfo\config.php on line 24 when visiting user-login-L29hL3d3dy8=
+
+23:01:27 Undefined property: stdClass::$type in module\personalinfo\config.php on line 25 when visiting user-login-L29hL3d3dy8=
+
+23:01:27 Undefined property: stdClass::$module in module\personalinfo\config.php on line 26 when visiting user-login-L29hL3d3dy8=
+
+23:01:27 Undefined property: stdClass::$lib in module\personalinfo\config.php on line 27 when visiting user-login-L29hL3d3dy8=
+
+23:01:27 Undefined property: stdClass::$digest in module\personalinfo\config.php on line 28 when visiting user-login-L29hL3d3dy8=
+
+23:01:27 Undefined property: stdClass::$content in module\personalinfo\config.php on line 29 when visiting user-login-L29hL3d3dy8=
+
+23:01:27 Undefined property: stdClass::$url in module\personalinfo\config.php on line 30 when visiting user-login-L29hL3d3dy8=
+
+23:01:27 Undefined property: stdClass::$addedBy in module\personalinfo\config.php on line 31 when visiting user-login-L29hL3d3dy8=
+
+23:01:27 Undefined property: stdClass::$addedDate in module\personalinfo\config.php on line 32 when visiting user-login-L29hL3d3dy8=
+
+23:01:27 Undefined property: stdClass::$editedBy in module\personalinfo\config.php on line 33 when visiting user-login-L29hL3d3dy8=
+
+23:01:27 Undefined property: stdClass::$editedDate in module\personalinfo\config.php on line 34 when visiting user-login-L29hL3d3dy8=
+
+23:01:27 Undefined property: stdClass::$types in module\personalinfo\config.php on line 41 when visiting user-login-L29hL3d3dy8=

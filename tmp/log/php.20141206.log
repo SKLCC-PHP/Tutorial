@@ -1,0 +1,1587 @@
+
+09:48:34 Creating default object from empty value in module\common\lang\menuOrder.php on line 39 when visiting 
+
+09:48:34 Creating default object from empty value in module\common\lang\menuOrder.php on line 39 when visiting 
+
+09:48:34 Missing argument 3 for common::setMenuVars(), called in module\company\model.php on line 25 and defined in module\common\control.php on line 103 when visiting user-login-L29hL3d3dy8=
+
+09:48:34 Undefined variable: params in module\common\control.php on line 105 when visiting user-login-L29hL3d3dy8=
+
+09:48:34 Undefined variable: params in module\common\control.php on line 123 when visiting user-login-L29hL3d3dy8=
+
+09:48:34 Undefined property: stdClass::$title in module\personalinfo\config.php on line 20 when visiting user-login-L29hL3d3dy8=
+
+09:48:34 Undefined property: stdClass::$id in module\personalinfo\config.php on line 21 when visiting user-login-L29hL3d3dy8=
+
+09:48:34 Undefined property: stdClass::$keywords in module\personalinfo\config.php on line 22 when visiting user-login-L29hL3d3dy8=
+
+09:48:34 Undefined property: stdClass::$product in module\personalinfo\config.php on line 23 when visiting user-login-L29hL3d3dy8=
+
+09:48:34 Undefined property: stdClass::$project in module\personalinfo\config.php on line 24 when visiting user-login-L29hL3d3dy8=
+
+09:48:34 Undefined property: stdClass::$type in module\personalinfo\config.php on line 25 when visiting user-login-L29hL3d3dy8=
+
+09:48:34 Undefined property: stdClass::$module in module\personalinfo\config.php on line 26 when visiting user-login-L29hL3d3dy8=
+
+09:48:34 Undefined property: stdClass::$lib in module\personalinfo\config.php on line 27 when visiting user-login-L29hL3d3dy8=
+
+09:48:34 Undefined property: stdClass::$digest in module\personalinfo\config.php on line 28 when visiting user-login-L29hL3d3dy8=
+
+09:48:34 Undefined property: stdClass::$content in module\personalinfo\config.php on line 29 when visiting user-login-L29hL3d3dy8=
+
+09:48:34 Undefined property: stdClass::$url in module\personalinfo\config.php on line 30 when visiting user-login-L29hL3d3dy8=
+
+09:48:34 Undefined property: stdClass::$addedBy in module\personalinfo\config.php on line 31 when visiting user-login-L29hL3d3dy8=
+
+09:48:34 Undefined property: stdClass::$addedDate in module\personalinfo\config.php on line 32 when visiting user-login-L29hL3d3dy8=
+
+09:48:34 Undefined property: stdClass::$editedBy in module\personalinfo\config.php on line 33 when visiting user-login-L29hL3d3dy8=
+
+09:48:34 Undefined property: stdClass::$editedDate in module\personalinfo\config.php on line 34 when visiting user-login-L29hL3d3dy8=
+
+09:48:34 Undefined property: stdClass::$types in module\personalinfo\config.php on line 41 when visiting user-login-L29hL3d3dy8=
+
+09:49:35 Creating default object from empty value in module\common\lang\menuOrder.php on line 39 when visiting 
+
+09:50:25 Creating default object from empty value in module\common\lang\menuOrder.php on line 39 when visiting 
+
+09:50:25 Missing argument 3 for common::setMenuVars(), called in module\company\model.php on line 25 and defined in module\common\control.php on line 103 when visiting user-login-L29hL3d3dy8=
+
+09:50:25 Undefined variable: params in module\common\control.php on line 105 when visiting user-login-L29hL3d3dy8=
+
+09:50:25 Undefined variable: params in module\common\control.php on line 123 when visiting user-login-L29hL3d3dy8=
+
+09:50:25 Undefined property: stdClass::$title in module\personalinfo\config.php on line 20 when visiting user-login-L29hL3d3dy8=
+
+09:50:25 Undefined property: stdClass::$id in module\personalinfo\config.php on line 21 when visiting user-login-L29hL3d3dy8=
+
+09:50:25 Undefined property: stdClass::$keywords in module\personalinfo\config.php on line 22 when visiting user-login-L29hL3d3dy8=
+
+09:50:25 Undefined property: stdClass::$product in module\personalinfo\config.php on line 23 when visiting user-login-L29hL3d3dy8=
+
+09:50:25 Undefined property: stdClass::$project in module\personalinfo\config.php on line 24 when visiting user-login-L29hL3d3dy8=
+
+09:50:25 Undefined property: stdClass::$type in module\personalinfo\config.php on line 25 when visiting user-login-L29hL3d3dy8=
+
+09:50:25 Undefined property: stdClass::$module in module\personalinfo\config.php on line 26 when visiting user-login-L29hL3d3dy8=
+
+09:50:25 Undefined property: stdClass::$lib in module\personalinfo\config.php on line 27 when visiting user-login-L29hL3d3dy8=
+
+09:50:25 Undefined property: stdClass::$digest in module\personalinfo\config.php on line 28 when visiting user-login-L29hL3d3dy8=
+
+09:50:25 Undefined property: stdClass::$content in module\personalinfo\config.php on line 29 when visiting user-login-L29hL3d3dy8=
+
+09:50:25 Undefined property: stdClass::$url in module\personalinfo\config.php on line 30 when visiting user-login-L29hL3d3dy8=
+
+09:50:25 Undefined property: stdClass::$addedBy in module\personalinfo\config.php on line 31 when visiting user-login-L29hL3d3dy8=
+
+09:50:25 Undefined property: stdClass::$addedDate in module\personalinfo\config.php on line 32 when visiting user-login-L29hL3d3dy8=
+
+09:50:25 Undefined property: stdClass::$editedBy in module\personalinfo\config.php on line 33 when visiting user-login-L29hL3d3dy8=
+
+09:50:25 Undefined property: stdClass::$editedDate in module\personalinfo\config.php on line 34 when visiting user-login-L29hL3d3dy8=
+
+09:50:25 Undefined property: stdClass::$types in module\personalinfo\config.php on line 41 when visiting user-login-L29hL3d3dy8=
+
+09:50:25 Undefined index: account in lib\dao\dao.class.php on line 615 when visiting user-login-L29hL3d3dy8=
+
+09:50:25 Use of undefined constant t1 - assumed 't1' in module\user\model.php on line 754 when visiting user-login-L29hL3d3dy8=
+
+09:50:25 Use of undefined constant t2 - assumed 't2' in module\user\model.php on line 756 when visiting user-login-L29hL3d3dy8=
+
+09:50:25 Use of undefined constant t3 - assumed 't3' in module\user\model.php on line 758 when visiting user-login-L29hL3d3dy8=
+
+09:50:25 Creating default object from empty value in module\action\lang\zh-cn.php on line 12 when visiting user-login-L29hL3d3dy8=
+
+09:50:25 Creating default object from empty value in module\common\lang\menuOrder.php on line 39 when visiting 
+
+09:50:25 Creating default object from empty value in module\common\lang\menuOrder.php on line 39 when visiting 
+
+09:50:25 Undefined property: stdClass::$role in module\my\model.php on line 27 when visiting my
+
+09:50:25 Declaration of taskModel::delete() should be compatible with model::delete($table, $id) in module\task\model.php on line 948 when visiting my
+
+09:50:25 Declaration of problemModel::delete() should be compatible with model::delete($table, $id) in module\problem\model.php on line 430 when visiting my
+
+09:50:25 Declaration of noticeModel::delete() should be compatible with model::delete($table, $id) in module\notice\model.php on line 314 when visiting my
+
+09:50:25 Creating default object from empty value in module\notice\config.php on line 4 when visiting my
+
+09:50:25 Use of undefined constant t1 - assumed 't1' in module\task\model.php on line 443 when visiting my
+
+09:50:25 Use of undefined constant t2 - assumed 't2' in module\task\model.php on line 444 when visiting my
+
+09:50:25 Creating default object from empty value in module\statistics\config.php on line 4 when visiting my
+
+09:50:25 Creating default object from empty value in module\statistics\config.php on line 5 when visiting my
+
+09:50:25 Creating default object from empty value in module\statistics\config.php on line 6 when visiting my
+
+09:50:25 Creating default object from empty value in module\statistics\config.php on line 7 when visiting my
+
+09:50:25 Creating default object from empty value in module\statistics\config.php on line 8 when visiting my
+
+09:50:25 Creating default object from empty value in module\statistics\config.php on line 9 when visiting my
+
+09:50:25 Creating default object from empty value in module\statistics\config.php on line 10 when visiting my
+
+09:50:25 Use of undefined constant t1 - assumed 't1' in module\problem\model.php on line 41 when visiting my
+
+09:50:25 Use of undefined constant t2 - assumed 't2' in module\problem\model.php on line 42 when visiting my
+
+09:50:25 Use of undefined constant t1 - assumed 't1' in module\notice\model.php on line 168 when visiting my
+
+09:50:25 Use of undefined constant t2 - assumed 't2' in module\notice\model.php on line 169 when visiting my
+
+09:50:25 Undefined property: language::$chooseUsersToMail in module\common\view\chosen.html.php on line 11 when visiting my
+
+09:50:25 Attempt to modify property of non-object in module\common\model.php on line 367 when visiting my
+
+09:50:28 Creating default object from empty value in module\common\lang\menuOrder.php on line 39 when visiting 
+
+09:50:28 Declaration of taskModel::delete() should be compatible with model::delete($table, $id) in module\task\model.php on line 948 when visiting workspace
+
+09:50:28 Declaration of projectModel::delete() should be compatible with model::delete($table, $id) in module\project\model.php on line 425 when visiting workspace
+
+09:50:28 Use of undefined constant G - assumed 'G' in module\tutorial\lang\zh-cn.php on line 39 when visiting workspace
+
+09:50:28 Use of undefined constant T - assumed 'T' in module\tutorial\lang\zh-cn.php on line 40 when visiting workspace
+
+09:50:28 Use of undefined constant R - assumed 'R' in module\tutorial\lang\zh-cn.php on line 41 when visiting workspace
+
+09:50:28 Use of undefined constant P - assumed 'P' in module\tutorial\lang\zh-cn.php on line 42 when visiting workspace
+
+09:50:28 Use of undefined constant G - assumed 'G' in module\tutorial\lang\zh-cn.php on line 44 when visiting workspace
+
+09:50:28 Use of undefined constant T - assumed 'T' in module\tutorial\lang\zh-cn.php on line 45 when visiting workspace
+
+09:50:28 Use of undefined constant R - assumed 'R' in module\tutorial\lang\zh-cn.php on line 46 when visiting workspace
+
+09:50:28 Use of undefined constant P - assumed 'P' in module\tutorial\lang\zh-cn.php on line 47 when visiting workspace
+
+09:50:28 Use of undefined constant G - assumed 'G' in module\tutorial\lang\zh-cn.php on line 49 when visiting workspace
+
+09:50:28 Use of undefined constant T - assumed 'T' in module\tutorial\lang\zh-cn.php on line 50 when visiting workspace
+
+09:50:28 Use of undefined constant R - assumed 'R' in module\tutorial\lang\zh-cn.php on line 51 when visiting workspace
+
+09:50:28 Use of undefined constant P - assumed 'P' in module\tutorial\lang\zh-cn.php on line 52 when visiting workspace
+
+09:50:28 Undefined variable: lang in module\tutorial\config.php on line 8 when visiting workspace
+
+09:50:28 Trying to get property of non-object in module\tutorial\config.php on line 8 when visiting workspace
+
+09:50:28 Trying to get property of non-object in module\tutorial\config.php on line 8 when visiting workspace
+
+09:50:28 Undefined variable: lang in module\tutorial\config.php on line 9 when visiting workspace
+
+09:50:28 Trying to get property of non-object in module\tutorial\config.php on line 9 when visiting workspace
+
+09:50:28 Trying to get property of non-object in module\tutorial\config.php on line 9 when visiting workspace
+
+09:50:28 Creating default object from empty value in module\common\lang\menuOrder.php on line 39 when visiting 
+
+09:50:28 Declaration of taskModel::delete() should be compatible with model::delete($table, $id) in module\task\model.php on line 948 when visiting workspace-task
+
+09:50:28 Declaration of projectModel::delete() should be compatible with model::delete($table, $id) in module\project\model.php on line 425 when visiting workspace-task
+
+09:50:28 Use of undefined constant G - assumed 'G' in module\tutorial\lang\zh-cn.php on line 39 when visiting workspace-task
+
+09:50:28 Use of undefined constant T - assumed 'T' in module\tutorial\lang\zh-cn.php on line 40 when visiting workspace-task
+
+09:50:28 Use of undefined constant R - assumed 'R' in module\tutorial\lang\zh-cn.php on line 41 when visiting workspace-task
+
+09:50:28 Use of undefined constant P - assumed 'P' in module\tutorial\lang\zh-cn.php on line 42 when visiting workspace-task
+
+09:50:28 Use of undefined constant G - assumed 'G' in module\tutorial\lang\zh-cn.php on line 44 when visiting workspace-task
+
+09:50:28 Use of undefined constant T - assumed 'T' in module\tutorial\lang\zh-cn.php on line 45 when visiting workspace-task
+
+09:50:28 Use of undefined constant R - assumed 'R' in module\tutorial\lang\zh-cn.php on line 46 when visiting workspace-task
+
+09:50:28 Use of undefined constant P - assumed 'P' in module\tutorial\lang\zh-cn.php on line 47 when visiting workspace-task
+
+09:50:28 Use of undefined constant G - assumed 'G' in module\tutorial\lang\zh-cn.php on line 49 when visiting workspace-task
+
+09:50:28 Use of undefined constant T - assumed 'T' in module\tutorial\lang\zh-cn.php on line 50 when visiting workspace-task
+
+09:50:28 Use of undefined constant R - assumed 'R' in module\tutorial\lang\zh-cn.php on line 51 when visiting workspace-task
+
+09:50:28 Use of undefined constant P - assumed 'P' in module\tutorial\lang\zh-cn.php on line 52 when visiting workspace-task
+
+09:50:28 Undefined variable: lang in module\tutorial\config.php on line 8 when visiting workspace-task
+
+09:50:28 Trying to get property of non-object in module\tutorial\config.php on line 8 when visiting workspace-task
+
+09:50:28 Trying to get property of non-object in module\tutorial\config.php on line 8 when visiting workspace-task
+
+09:50:28 Undefined variable: lang in module\tutorial\config.php on line 9 when visiting workspace-task
+
+09:50:28 Trying to get property of non-object in module\tutorial\config.php on line 9 when visiting workspace-task
+
+09:50:28 Trying to get property of non-object in module\tutorial\config.php on line 9 when visiting workspace-task
+
+09:50:28 Creating default object from empty value in module\common\lang\menuOrder.php on line 39 when visiting 
+
+09:50:28 Declaration of taskModel::delete() should be compatible with model::delete($table, $id) in module\task\model.php on line 948 when visiting task-viewTask
+
+09:50:28 Creating default object from empty value in module\action\lang\zh-cn.php on line 12 when visiting task-viewTask
+
+09:50:28 Use of undefined constant G - assumed 'G' in module\tutorial\lang\zh-cn.php on line 39 when visiting task-viewTask
+
+09:50:28 Use of undefined constant T - assumed 'T' in module\tutorial\lang\zh-cn.php on line 40 when visiting task-viewTask
+
+09:50:28 Use of undefined constant R - assumed 'R' in module\tutorial\lang\zh-cn.php on line 41 when visiting task-viewTask
+
+09:50:28 Use of undefined constant P - assumed 'P' in module\tutorial\lang\zh-cn.php on line 42 when visiting task-viewTask
+
+09:50:28 Use of undefined constant G - assumed 'G' in module\tutorial\lang\zh-cn.php on line 44 when visiting task-viewTask
+
+09:50:28 Use of undefined constant T - assumed 'T' in module\tutorial\lang\zh-cn.php on line 45 when visiting task-viewTask
+
+09:50:28 Use of undefined constant R - assumed 'R' in module\tutorial\lang\zh-cn.php on line 46 when visiting task-viewTask
+
+09:50:28 Use of undefined constant P - assumed 'P' in module\tutorial\lang\zh-cn.php on line 47 when visiting task-viewTask
+
+09:50:28 Use of undefined constant G - assumed 'G' in module\tutorial\lang\zh-cn.php on line 49 when visiting task-viewTask
+
+09:50:28 Use of undefined constant T - assumed 'T' in module\tutorial\lang\zh-cn.php on line 50 when visiting task-viewTask
+
+09:50:28 Use of undefined constant R - assumed 'R' in module\tutorial\lang\zh-cn.php on line 51 when visiting task-viewTask
+
+09:50:28 Use of undefined constant P - assumed 'P' in module\tutorial\lang\zh-cn.php on line 52 when visiting task-viewTask
+
+09:50:28 Undefined variable: lang in module\tutorial\config.php on line 8 when visiting task-viewTask
+
+09:50:28 Trying to get property of non-object in module\tutorial\config.php on line 8 when visiting task-viewTask
+
+09:50:28 Trying to get property of non-object in module\tutorial\config.php on line 8 when visiting task-viewTask
+
+09:50:28 Undefined variable: lang in module\tutorial\config.php on line 9 when visiting task-viewTask
+
+09:50:28 Trying to get property of non-object in module\tutorial\config.php on line 9 when visiting task-viewTask
+
+09:50:28 Trying to get property of non-object in module\tutorial\config.php on line 9 when visiting task-viewTask
+
+09:50:28 Use of undefined constant t1 - assumed 't1' in module\task\model.php on line 443 when visiting task-viewTask
+
+09:50:28 Use of undefined constant t2 - assumed 't2' in module\task\model.php on line 444 when visiting task-viewTask
+
+09:50:28 Creating default object from empty value in module\statistics\config.php on line 4 when visiting task-viewTask
+
+09:50:28 Creating default object from empty value in module\statistics\config.php on line 5 when visiting task-viewTask
+
+09:50:28 Creating default object from empty value in module\statistics\config.php on line 6 when visiting task-viewTask
+
+09:50:28 Creating default object from empty value in module\statistics\config.php on line 7 when visiting task-viewTask
+
+09:50:28 Creating default object from empty value in module\statistics\config.php on line 8 when visiting task-viewTask
+
+09:50:28 Creating default object from empty value in module\statistics\config.php on line 9 when visiting task-viewTask
+
+09:50:28 Creating default object from empty value in module\statistics\config.php on line 10 when visiting task-viewTask
+
+09:50:28 Undefined variable: curRole in module\task\control.php on line 39 when visiting task-viewTask
+
+09:50:28 Undefined property: language::$chooseUsersToMail in module\common\view\chosen.html.php on line 11 when visiting task-viewTask
+
+09:50:28 Attempt to modify property of non-object in module\common\model.php on line 367 when visiting task-viewTask
+
+09:51:28 Creating default object from empty value in module\common\lang\menuOrder.php on line 39 when visiting 
+
+10:05:18 Creating default object from empty value in module\common\lang\menuOrder.php on line 39 when visiting 
+
+10:05:18 Declaration of taskModel::delete() should be compatible with model::delete($table, $id) in module\task\model.php on line 948 when visiting workspace-viewProblem
+
+10:05:18 Declaration of projectModel::delete() should be compatible with model::delete($table, $id) in module\project\model.php on line 425 when visiting workspace-viewProblem
+
+10:05:18 Use of undefined constant G - assumed 'G' in module\tutorial\lang\zh-cn.php on line 39 when visiting workspace-viewProblem
+
+10:05:18 Use of undefined constant T - assumed 'T' in module\tutorial\lang\zh-cn.php on line 40 when visiting workspace-viewProblem
+
+10:05:18 Use of undefined constant R - assumed 'R' in module\tutorial\lang\zh-cn.php on line 41 when visiting workspace-viewProblem
+
+10:05:18 Use of undefined constant P - assumed 'P' in module\tutorial\lang\zh-cn.php on line 42 when visiting workspace-viewProblem
+
+10:05:18 Use of undefined constant G - assumed 'G' in module\tutorial\lang\zh-cn.php on line 44 when visiting workspace-viewProblem
+
+10:05:18 Use of undefined constant T - assumed 'T' in module\tutorial\lang\zh-cn.php on line 45 when visiting workspace-viewProblem
+
+10:05:18 Use of undefined constant R - assumed 'R' in module\tutorial\lang\zh-cn.php on line 46 when visiting workspace-viewProblem
+
+10:05:18 Use of undefined constant P - assumed 'P' in module\tutorial\lang\zh-cn.php on line 47 when visiting workspace-viewProblem
+
+10:05:18 Use of undefined constant G - assumed 'G' in module\tutorial\lang\zh-cn.php on line 49 when visiting workspace-viewProblem
+
+10:05:18 Use of undefined constant T - assumed 'T' in module\tutorial\lang\zh-cn.php on line 50 when visiting workspace-viewProblem
+
+10:05:18 Use of undefined constant R - assumed 'R' in module\tutorial\lang\zh-cn.php on line 51 when visiting workspace-viewProblem
+
+10:05:18 Use of undefined constant P - assumed 'P' in module\tutorial\lang\zh-cn.php on line 52 when visiting workspace-viewProblem
+
+10:05:18 Undefined variable: lang in module\tutorial\config.php on line 8 when visiting workspace-viewProblem
+
+10:05:18 Trying to get property of non-object in module\tutorial\config.php on line 8 when visiting workspace-viewProblem
+
+10:05:18 Trying to get property of non-object in module\tutorial\config.php on line 8 when visiting workspace-viewProblem
+
+10:05:18 Undefined variable: lang in module\tutorial\config.php on line 9 when visiting workspace-viewProblem
+
+10:05:18 Trying to get property of non-object in module\tutorial\config.php on line 9 when visiting workspace-viewProblem
+
+10:05:18 Trying to get property of non-object in module\tutorial\config.php on line 9 when visiting workspace-viewProblem
+
+10:05:18 Creating default object from empty value in module\common\lang\menuOrder.php on line 39 when visiting 
+
+10:05:18 Declaration of problemModel::delete() should be compatible with model::delete($table, $id) in module\problem\model.php on line 430 when visiting problem-viewProblem-all
+
+10:05:18 Declaration of taskModel::delete() should be compatible with model::delete($table, $id) in module\task\model.php on line 948 when visiting problem-viewProblem-all
+
+10:05:18 Creating default object from empty value in module\action\lang\zh-cn.php on line 12 when visiting problem-viewProblem-all
+
+10:05:18 Use of undefined constant G - assumed 'G' in module\tutorial\lang\zh-cn.php on line 39 when visiting problem-viewProblem-all
+
+10:05:18 Use of undefined constant T - assumed 'T' in module\tutorial\lang\zh-cn.php on line 40 when visiting problem-viewProblem-all
+
+10:05:18 Use of undefined constant R - assumed 'R' in module\tutorial\lang\zh-cn.php on line 41 when visiting problem-viewProblem-all
+
+10:05:18 Use of undefined constant P - assumed 'P' in module\tutorial\lang\zh-cn.php on line 42 when visiting problem-viewProblem-all
+
+10:05:18 Use of undefined constant G - assumed 'G' in module\tutorial\lang\zh-cn.php on line 44 when visiting problem-viewProblem-all
+
+10:05:18 Use of undefined constant T - assumed 'T' in module\tutorial\lang\zh-cn.php on line 45 when visiting problem-viewProblem-all
+
+10:05:18 Use of undefined constant R - assumed 'R' in module\tutorial\lang\zh-cn.php on line 46 when visiting problem-viewProblem-all
+
+10:05:18 Use of undefined constant P - assumed 'P' in module\tutorial\lang\zh-cn.php on line 47 when visiting problem-viewProblem-all
+
+10:05:18 Use of undefined constant G - assumed 'G' in module\tutorial\lang\zh-cn.php on line 49 when visiting problem-viewProblem-all
+
+10:05:18 Use of undefined constant T - assumed 'T' in module\tutorial\lang\zh-cn.php on line 50 when visiting problem-viewProblem-all
+
+10:05:18 Use of undefined constant R - assumed 'R' in module\tutorial\lang\zh-cn.php on line 51 when visiting problem-viewProblem-all
+
+10:05:18 Use of undefined constant P - assumed 'P' in module\tutorial\lang\zh-cn.php on line 52 when visiting problem-viewProblem-all
+
+10:05:18 Undefined variable: lang in module\tutorial\config.php on line 8 when visiting problem-viewProblem-all
+
+10:05:18 Trying to get property of non-object in module\tutorial\config.php on line 8 when visiting problem-viewProblem-all
+
+10:05:18 Trying to get property of non-object in module\tutorial\config.php on line 8 when visiting problem-viewProblem-all
+
+10:05:18 Undefined variable: lang in module\tutorial\config.php on line 9 when visiting problem-viewProblem-all
+
+10:05:18 Trying to get property of non-object in module\tutorial\config.php on line 9 when visiting problem-viewProblem-all
+
+10:05:18 Trying to get property of non-object in module\tutorial\config.php on line 9 when visiting problem-viewProblem-all
+
+10:05:18 Use of undefined constant t1 - assumed 't1' in module\problem\model.php on line 41 when visiting problem-viewProblem-all
+
+10:05:18 Use of undefined constant t2 - assumed 't2' in module\problem\model.php on line 42 when visiting problem-viewProblem-all
+
+10:05:18 Undefined property: language::$chooseUsersToMail in module\common\view\chosen.html.php on line 11 when visiting problem-viewProblem-all
+
+10:05:18 Attempt to modify property of non-object in module\common\model.php on line 367 when visiting problem-viewProblem-all
+
+10:05:22 Creating default object from empty value in module\common\lang\menuOrder.php on line 39 when visiting 
+
+10:05:22 Declaration of taskModel::delete() should be compatible with model::delete($table, $id) in module\task\model.php on line 948 when visiting workspace-viewAchievement
+
+10:05:22 Declaration of projectModel::delete() should be compatible with model::delete($table, $id) in module\project\model.php on line 425 when visiting workspace-viewAchievement
+
+10:05:22 Use of undefined constant G - assumed 'G' in module\tutorial\lang\zh-cn.php on line 39 when visiting workspace-viewAchievement
+
+10:05:22 Use of undefined constant T - assumed 'T' in module\tutorial\lang\zh-cn.php on line 40 when visiting workspace-viewAchievement
+
+10:05:22 Use of undefined constant R - assumed 'R' in module\tutorial\lang\zh-cn.php on line 41 when visiting workspace-viewAchievement
+
+10:05:22 Use of undefined constant P - assumed 'P' in module\tutorial\lang\zh-cn.php on line 42 when visiting workspace-viewAchievement
+
+10:05:22 Use of undefined constant G - assumed 'G' in module\tutorial\lang\zh-cn.php on line 44 when visiting workspace-viewAchievement
+
+10:05:22 Use of undefined constant T - assumed 'T' in module\tutorial\lang\zh-cn.php on line 45 when visiting workspace-viewAchievement
+
+10:05:22 Use of undefined constant R - assumed 'R' in module\tutorial\lang\zh-cn.php on line 46 when visiting workspace-viewAchievement
+
+10:05:22 Use of undefined constant P - assumed 'P' in module\tutorial\lang\zh-cn.php on line 47 when visiting workspace-viewAchievement
+
+10:05:22 Use of undefined constant G - assumed 'G' in module\tutorial\lang\zh-cn.php on line 49 when visiting workspace-viewAchievement
+
+10:05:22 Use of undefined constant T - assumed 'T' in module\tutorial\lang\zh-cn.php on line 50 when visiting workspace-viewAchievement
+
+10:05:22 Use of undefined constant R - assumed 'R' in module\tutorial\lang\zh-cn.php on line 51 when visiting workspace-viewAchievement
+
+10:05:22 Use of undefined constant P - assumed 'P' in module\tutorial\lang\zh-cn.php on line 52 when visiting workspace-viewAchievement
+
+10:05:22 Undefined variable: lang in module\tutorial\config.php on line 8 when visiting workspace-viewAchievement
+
+10:05:22 Trying to get property of non-object in module\tutorial\config.php on line 8 when visiting workspace-viewAchievement
+
+10:05:22 Trying to get property of non-object in module\tutorial\config.php on line 8 when visiting workspace-viewAchievement
+
+10:05:22 Undefined variable: lang in module\tutorial\config.php on line 9 when visiting workspace-viewAchievement
+
+10:05:22 Trying to get property of non-object in module\tutorial\config.php on line 9 when visiting workspace-viewAchievement
+
+10:05:22 Trying to get property of non-object in module\tutorial\config.php on line 9 when visiting workspace-viewAchievement
+
+10:05:22 Creating default object from empty value in module\common\lang\menuOrder.php on line 39 when visiting 
+
+10:05:22 Declaration of achievementModel::delete() should be compatible with model::delete($table, $id) in module\achievement\model.php on line 289 when visiting achievement-viewAchievement
+
+10:05:22 Declaration of taskModel::delete() should be compatible with model::delete($table, $id) in module\task\model.php on line 948 when visiting achievement-viewAchievement
+
+10:05:22 Creating default object from empty value in module\action\lang\zh-cn.php on line 12 when visiting achievement-viewAchievement
+
+10:05:22 Use of undefined constant G - assumed 'G' in module\tutorial\lang\zh-cn.php on line 39 when visiting achievement-viewAchievement
+
+10:05:22 Use of undefined constant T - assumed 'T' in module\tutorial\lang\zh-cn.php on line 40 when visiting achievement-viewAchievement
+
+10:05:22 Use of undefined constant R - assumed 'R' in module\tutorial\lang\zh-cn.php on line 41 when visiting achievement-viewAchievement
+
+10:05:22 Use of undefined constant P - assumed 'P' in module\tutorial\lang\zh-cn.php on line 42 when visiting achievement-viewAchievement
+
+10:05:22 Use of undefined constant G - assumed 'G' in module\tutorial\lang\zh-cn.php on line 44 when visiting achievement-viewAchievement
+
+10:05:22 Use of undefined constant T - assumed 'T' in module\tutorial\lang\zh-cn.php on line 45 when visiting achievement-viewAchievement
+
+10:05:22 Use of undefined constant R - assumed 'R' in module\tutorial\lang\zh-cn.php on line 46 when visiting achievement-viewAchievement
+
+10:05:22 Use of undefined constant P - assumed 'P' in module\tutorial\lang\zh-cn.php on line 47 when visiting achievement-viewAchievement
+
+10:05:22 Use of undefined constant G - assumed 'G' in module\tutorial\lang\zh-cn.php on line 49 when visiting achievement-viewAchievement
+
+10:05:22 Use of undefined constant T - assumed 'T' in module\tutorial\lang\zh-cn.php on line 50 when visiting achievement-viewAchievement
+
+10:05:22 Use of undefined constant R - assumed 'R' in module\tutorial\lang\zh-cn.php on line 51 when visiting achievement-viewAchievement
+
+10:05:22 Use of undefined constant P - assumed 'P' in module\tutorial\lang\zh-cn.php on line 52 when visiting achievement-viewAchievement
+
+10:05:22 Undefined variable: lang in module\tutorial\config.php on line 8 when visiting achievement-viewAchievement
+
+10:05:22 Trying to get property of non-object in module\tutorial\config.php on line 8 when visiting achievement-viewAchievement
+
+10:05:22 Trying to get property of non-object in module\tutorial\config.php on line 8 when visiting achievement-viewAchievement
+
+10:05:22 Undefined variable: lang in module\tutorial\config.php on line 9 when visiting achievement-viewAchievement
+
+10:05:22 Trying to get property of non-object in module\tutorial\config.php on line 9 when visiting achievement-viewAchievement
+
+10:05:22 Trying to get property of non-object in module\tutorial\config.php on line 9 when visiting achievement-viewAchievement
+
+10:05:23 Use of undefined constant t1 - assumed 't1' in module\achievement\model.php on line 178 when visiting achievement-viewAchievement
+
+10:05:23 Use of undefined constant t2 - assumed 't2' in module\achievement\model.php on line 179 when visiting achievement-viewAchievement
+
+10:05:23 Creating default object from empty value in module\achievement\control.php on line 47 when visiting achievement-viewAchievement
+
+10:05:23 Undefined property: language::$chooseUsersToMail in module\common\view\chosen.html.php on line 11 when visiting achievement-viewAchievement
+
+10:05:23 Attempt to modify property of non-object in module\common\model.php on line 367 when visiting achievement-viewAchievement
+
+10:05:23 Undefined variable: searchstu in module\achievement\view\viewachievement.html.php on line 26 when visiting achievement-viewAchievement
+
+10:05:24 Creating default object from empty value in module\common\lang\menuOrder.php on line 39 when visiting 
+
+10:05:24 Declaration of taskModel::delete() should be compatible with model::delete($table, $id) in module\task\model.php on line 948 when visiting workspace-viewProject
+
+10:05:24 Declaration of projectModel::delete() should be compatible with model::delete($table, $id) in module\project\model.php on line 425 when visiting workspace-viewProject
+
+10:05:24 Use of undefined constant G - assumed 'G' in module\tutorial\lang\zh-cn.php on line 39 when visiting workspace-viewProject
+
+10:05:24 Use of undefined constant T - assumed 'T' in module\tutorial\lang\zh-cn.php on line 40 when visiting workspace-viewProject
+
+10:05:24 Use of undefined constant R - assumed 'R' in module\tutorial\lang\zh-cn.php on line 41 when visiting workspace-viewProject
+
+10:05:24 Use of undefined constant P - assumed 'P' in module\tutorial\lang\zh-cn.php on line 42 when visiting workspace-viewProject
+
+10:05:24 Use of undefined constant G - assumed 'G' in module\tutorial\lang\zh-cn.php on line 44 when visiting workspace-viewProject
+
+10:05:24 Use of undefined constant T - assumed 'T' in module\tutorial\lang\zh-cn.php on line 45 when visiting workspace-viewProject
+
+10:05:24 Use of undefined constant R - assumed 'R' in module\tutorial\lang\zh-cn.php on line 46 when visiting workspace-viewProject
+
+10:05:24 Use of undefined constant P - assumed 'P' in module\tutorial\lang\zh-cn.php on line 47 when visiting workspace-viewProject
+
+10:05:24 Use of undefined constant G - assumed 'G' in module\tutorial\lang\zh-cn.php on line 49 when visiting workspace-viewProject
+
+10:05:24 Use of undefined constant T - assumed 'T' in module\tutorial\lang\zh-cn.php on line 50 when visiting workspace-viewProject
+
+10:05:24 Use of undefined constant R - assumed 'R' in module\tutorial\lang\zh-cn.php on line 51 when visiting workspace-viewProject
+
+10:05:24 Use of undefined constant P - assumed 'P' in module\tutorial\lang\zh-cn.php on line 52 when visiting workspace-viewProject
+
+10:05:24 Undefined variable: lang in module\tutorial\config.php on line 8 when visiting workspace-viewProject
+
+10:05:24 Trying to get property of non-object in module\tutorial\config.php on line 8 when visiting workspace-viewProject
+
+10:05:24 Trying to get property of non-object in module\tutorial\config.php on line 8 when visiting workspace-viewProject
+
+10:05:24 Undefined variable: lang in module\tutorial\config.php on line 9 when visiting workspace-viewProject
+
+10:05:24 Trying to get property of non-object in module\tutorial\config.php on line 9 when visiting workspace-viewProject
+
+10:05:24 Trying to get property of non-object in module\tutorial\config.php on line 9 when visiting workspace-viewProject
+
+10:05:24 Creating default object from empty value in module\common\lang\menuOrder.php on line 39 when visiting 
+
+10:05:24 Declaration of projectModel::delete() should be compatible with model::delete($table, $id) in module\project\model.php on line 425 when visiting project-viewProject
+
+10:05:24 Declaration of taskModel::delete() should be compatible with model::delete($table, $id) in module\task\model.php on line 948 when visiting project-viewProject
+
+10:05:24 Creating default object from empty value in module\action\lang\zh-cn.php on line 12 when visiting project-viewProject
+
+10:05:24 Use of undefined constant G - assumed 'G' in module\tutorial\lang\zh-cn.php on line 39 when visiting project-viewProject
+
+10:05:24 Use of undefined constant T - assumed 'T' in module\tutorial\lang\zh-cn.php on line 40 when visiting project-viewProject
+
+10:05:24 Use of undefined constant R - assumed 'R' in module\tutorial\lang\zh-cn.php on line 41 when visiting project-viewProject
+
+10:05:24 Use of undefined constant P - assumed 'P' in module\tutorial\lang\zh-cn.php on line 42 when visiting project-viewProject
+
+10:05:24 Use of undefined constant G - assumed 'G' in module\tutorial\lang\zh-cn.php on line 44 when visiting project-viewProject
+
+10:05:24 Use of undefined constant T - assumed 'T' in module\tutorial\lang\zh-cn.php on line 45 when visiting project-viewProject
+
+10:05:24 Use of undefined constant R - assumed 'R' in module\tutorial\lang\zh-cn.php on line 46 when visiting project-viewProject
+
+10:05:24 Use of undefined constant P - assumed 'P' in module\tutorial\lang\zh-cn.php on line 47 when visiting project-viewProject
+
+10:05:24 Use of undefined constant G - assumed 'G' in module\tutorial\lang\zh-cn.php on line 49 when visiting project-viewProject
+
+10:05:24 Use of undefined constant T - assumed 'T' in module\tutorial\lang\zh-cn.php on line 50 when visiting project-viewProject
+
+10:05:24 Use of undefined constant R - assumed 'R' in module\tutorial\lang\zh-cn.php on line 51 when visiting project-viewProject
+
+10:05:24 Use of undefined constant P - assumed 'P' in module\tutorial\lang\zh-cn.php on line 52 when visiting project-viewProject
+
+10:05:24 Undefined variable: lang in module\tutorial\config.php on line 8 when visiting project-viewProject
+
+10:05:24 Trying to get property of non-object in module\tutorial\config.php on line 8 when visiting project-viewProject
+
+10:05:24 Trying to get property of non-object in module\tutorial\config.php on line 8 when visiting project-viewProject
+
+10:05:24 Undefined variable: lang in module\tutorial\config.php on line 9 when visiting project-viewProject
+
+10:05:24 Trying to get property of non-object in module\tutorial\config.php on line 9 when visiting project-viewProject
+
+10:05:24 Trying to get property of non-object in module\tutorial\config.php on line 9 when visiting project-viewProject
+
+10:05:24 Use of undefined constant t1 - assumed 't1' in module\project\model.php on line 97 when visiting project-viewProject
+
+10:05:24 Use of undefined constant t2 - assumed 't2' in module\project\model.php on line 98 when visiting project-viewProject
+
+10:05:24 Undefined property: language::$chooseUsersToMail in module\common\view\chosen.html.php on line 11 when visiting project-viewProject
+
+10:05:24 Attempt to modify property of non-object in module\common\model.php on line 367 when visiting project-viewProject
+
+10:05:25 Creating default object from empty value in module\common\lang\menuOrder.php on line 39 when visiting 
+
+10:05:25 Declaration of taskModel::delete() should be compatible with model::delete($table, $id) in module\task\model.php on line 948 when visiting workspace-viewTutorialSystem
+
+10:05:25 Declaration of projectModel::delete() should be compatible with model::delete($table, $id) in module\project\model.php on line 425 when visiting workspace-viewTutorialSystem
+
+10:05:25 Use of undefined constant G - assumed 'G' in module\tutorial\lang\zh-cn.php on line 39 when visiting workspace-viewTutorialSystem
+
+10:05:25 Use of undefined constant T - assumed 'T' in module\tutorial\lang\zh-cn.php on line 40 when visiting workspace-viewTutorialSystem
+
+10:05:25 Use of undefined constant R - assumed 'R' in module\tutorial\lang\zh-cn.php on line 41 when visiting workspace-viewTutorialSystem
+
+10:05:25 Use of undefined constant P - assumed 'P' in module\tutorial\lang\zh-cn.php on line 42 when visiting workspace-viewTutorialSystem
+
+10:05:25 Use of undefined constant G - assumed 'G' in module\tutorial\lang\zh-cn.php on line 44 when visiting workspace-viewTutorialSystem
+
+10:05:25 Use of undefined constant T - assumed 'T' in module\tutorial\lang\zh-cn.php on line 45 when visiting workspace-viewTutorialSystem
+
+10:05:25 Use of undefined constant R - assumed 'R' in module\tutorial\lang\zh-cn.php on line 46 when visiting workspace-viewTutorialSystem
+
+10:05:25 Use of undefined constant P - assumed 'P' in module\tutorial\lang\zh-cn.php on line 47 when visiting workspace-viewTutorialSystem
+
+10:05:25 Use of undefined constant G - assumed 'G' in module\tutorial\lang\zh-cn.php on line 49 when visiting workspace-viewTutorialSystem
+
+10:05:25 Use of undefined constant T - assumed 'T' in module\tutorial\lang\zh-cn.php on line 50 when visiting workspace-viewTutorialSystem
+
+10:05:25 Use of undefined constant R - assumed 'R' in module\tutorial\lang\zh-cn.php on line 51 when visiting workspace-viewTutorialSystem
+
+10:05:25 Use of undefined constant P - assumed 'P' in module\tutorial\lang\zh-cn.php on line 52 when visiting workspace-viewTutorialSystem
+
+10:05:25 Undefined variable: lang in module\tutorial\config.php on line 8 when visiting workspace-viewTutorialSystem
+
+10:05:25 Trying to get property of non-object in module\tutorial\config.php on line 8 when visiting workspace-viewTutorialSystem
+
+10:05:25 Trying to get property of non-object in module\tutorial\config.php on line 8 when visiting workspace-viewTutorialSystem
+
+10:05:25 Undefined variable: lang in module\tutorial\config.php on line 9 when visiting workspace-viewTutorialSystem
+
+10:05:25 Trying to get property of non-object in module\tutorial\config.php on line 9 when visiting workspace-viewTutorialSystem
+
+10:05:25 Trying to get property of non-object in module\tutorial\config.php on line 9 when visiting workspace-viewTutorialSystem
+
+10:05:25 Creating default object from empty value in module\common\lang\menuOrder.php on line 39 when visiting 
+
+10:05:25 Use of undefined constant G - assumed 'G' in module\tutorial\lang\zh-cn.php on line 39 when visiting tutorial-viewTutorialSystem
+
+10:05:25 Use of undefined constant T - assumed 'T' in module\tutorial\lang\zh-cn.php on line 40 when visiting tutorial-viewTutorialSystem
+
+10:05:25 Use of undefined constant R - assumed 'R' in module\tutorial\lang\zh-cn.php on line 41 when visiting tutorial-viewTutorialSystem
+
+10:05:25 Use of undefined constant P - assumed 'P' in module\tutorial\lang\zh-cn.php on line 42 when visiting tutorial-viewTutorialSystem
+
+10:05:25 Use of undefined constant G - assumed 'G' in module\tutorial\lang\zh-cn.php on line 44 when visiting tutorial-viewTutorialSystem
+
+10:05:25 Use of undefined constant T - assumed 'T' in module\tutorial\lang\zh-cn.php on line 45 when visiting tutorial-viewTutorialSystem
+
+10:05:25 Use of undefined constant R - assumed 'R' in module\tutorial\lang\zh-cn.php on line 46 when visiting tutorial-viewTutorialSystem
+
+10:05:25 Use of undefined constant P - assumed 'P' in module\tutorial\lang\zh-cn.php on line 47 when visiting tutorial-viewTutorialSystem
+
+10:05:25 Use of undefined constant G - assumed 'G' in module\tutorial\lang\zh-cn.php on line 49 when visiting tutorial-viewTutorialSystem
+
+10:05:25 Use of undefined constant T - assumed 'T' in module\tutorial\lang\zh-cn.php on line 50 when visiting tutorial-viewTutorialSystem
+
+10:05:25 Use of undefined constant R - assumed 'R' in module\tutorial\lang\zh-cn.php on line 51 when visiting tutorial-viewTutorialSystem
+
+10:05:25 Use of undefined constant P - assumed 'P' in module\tutorial\lang\zh-cn.php on line 52 when visiting tutorial-viewTutorialSystem
+
+10:05:25 Undefined variable: lang in module\tutorial\config.php on line 8 when visiting tutorial-viewTutorialSystem
+
+10:05:25 Trying to get property of non-object in module\tutorial\config.php on line 8 when visiting tutorial-viewTutorialSystem
+
+10:05:25 Trying to get property of non-object in module\tutorial\config.php on line 8 when visiting tutorial-viewTutorialSystem
+
+10:05:25 Undefined variable: lang in module\tutorial\config.php on line 9 when visiting tutorial-viewTutorialSystem
+
+10:05:25 Trying to get property of non-object in module\tutorial\config.php on line 9 when visiting tutorial-viewTutorialSystem
+
+10:05:25 Trying to get property of non-object in module\tutorial\config.php on line 9 when visiting tutorial-viewTutorialSystem
+
+10:05:25 Undefined property: stdClass::$title in module\personalinfo\config.php on line 20 when visiting tutorial-viewTutorialSystem
+
+10:05:25 Undefined property: stdClass::$id in module\personalinfo\config.php on line 21 when visiting tutorial-viewTutorialSystem
+
+10:05:25 Undefined property: stdClass::$keywords in module\personalinfo\config.php on line 22 when visiting tutorial-viewTutorialSystem
+
+10:05:25 Undefined property: stdClass::$product in module\personalinfo\config.php on line 23 when visiting tutorial-viewTutorialSystem
+
+10:05:25 Undefined property: stdClass::$project in module\personalinfo\config.php on line 24 when visiting tutorial-viewTutorialSystem
+
+10:05:25 Undefined property: stdClass::$type in module\personalinfo\config.php on line 25 when visiting tutorial-viewTutorialSystem
+
+10:05:25 Undefined property: stdClass::$module in module\personalinfo\config.php on line 26 when visiting tutorial-viewTutorialSystem
+
+10:05:25 Undefined property: stdClass::$lib in module\personalinfo\config.php on line 27 when visiting tutorial-viewTutorialSystem
+
+10:05:25 Undefined property: stdClass::$digest in module\personalinfo\config.php on line 28 when visiting tutorial-viewTutorialSystem
+
+10:05:25 Undefined property: stdClass::$content in module\personalinfo\config.php on line 29 when visiting tutorial-viewTutorialSystem
+
+10:05:25 Undefined property: stdClass::$url in module\personalinfo\config.php on line 30 when visiting tutorial-viewTutorialSystem
+
+10:05:25 Undefined property: stdClass::$addedBy in module\personalinfo\config.php on line 31 when visiting tutorial-viewTutorialSystem
+
+10:05:25 Undefined property: stdClass::$addedDate in module\personalinfo\config.php on line 32 when visiting tutorial-viewTutorialSystem
+
+10:05:25 Undefined property: stdClass::$editedBy in module\personalinfo\config.php on line 33 when visiting tutorial-viewTutorialSystem
+
+10:05:25 Undefined property: stdClass::$editedDate in module\personalinfo\config.php on line 34 when visiting tutorial-viewTutorialSystem
+
+10:05:25 Undefined property: stdClass::$types in module\personalinfo\config.php on line 41 when visiting tutorial-viewTutorialSystem
+
+10:05:25 Creating default object from empty value in module\action\lang\zh-cn.php on line 12 when visiting tutorial-viewTutorialSystem
+
+10:05:25 Creating default object from empty value in module\statistics\config.php on line 4 when visiting tutorial-viewTutorialSystem
+
+10:05:25 Creating default object from empty value in module\statistics\config.php on line 5 when visiting tutorial-viewTutorialSystem
+
+10:05:25 Creating default object from empty value in module\statistics\config.php on line 6 when visiting tutorial-viewTutorialSystem
+
+10:05:25 Creating default object from empty value in module\statistics\config.php on line 7 when visiting tutorial-viewTutorialSystem
+
+10:05:25 Creating default object from empty value in module\statistics\config.php on line 8 when visiting tutorial-viewTutorialSystem
+
+10:05:25 Creating default object from empty value in module\statistics\config.php on line 9 when visiting tutorial-viewTutorialSystem
+
+10:05:25 Creating default object from empty value in module\statistics\config.php on line 10 when visiting tutorial-viewTutorialSystem
+
+10:05:25 Use of undefined constant t1 - assumed 't1' in module\student\model.php on line 17 when visiting tutorial-viewTutorialSystem
+
+10:05:25 Use of undefined constant t2 - assumed 't2' in module\student\model.php on line 18 when visiting tutorial-viewTutorialSystem
+
+10:05:25 Use of undefined constant t3 - assumed 't3' in module\student\model.php on line 20 when visiting tutorial-viewTutorialSystem
+
+10:05:25 Creating default object from empty value in module\tutorial\control.php on line 44 when visiting tutorial-viewTutorialSystem
+
+10:05:25 Creating default object from empty value in module\tutorial\control.php on line 44 when visiting tutorial-viewTutorialSystem
+
+10:05:25 Creating default object from empty value in module\tutorial\control.php on line 44 when visiting tutorial-viewTutorialSystem
+
+10:05:25 Creating default object from empty value in module\tutorial\control.php on line 44 when visiting tutorial-viewTutorialSystem
+
+10:05:25 Creating default object from empty value in module\tutorial\control.php on line 44 when visiting tutorial-viewTutorialSystem
+
+10:05:25 Creating default object from empty value in module\tutorial\control.php on line 44 when visiting tutorial-viewTutorialSystem
+
+10:05:25 Creating default object from empty value in module\tutorial\control.php on line 44 when visiting tutorial-viewTutorialSystem
+
+10:05:25 Creating default object from empty value in module\tutorial\control.php on line 44 when visiting tutorial-viewTutorialSystem
+
+10:05:25 Creating default object from empty value in module\tutorial\control.php on line 44 when visiting tutorial-viewTutorialSystem
+
+10:05:25 Creating default object from empty value in module\tutorial\control.php on line 44 when visiting tutorial-viewTutorialSystem
+
+10:05:25 Creating default object from empty value in module\tutorial\control.php on line 44 when visiting tutorial-viewTutorialSystem
+
+10:05:25 Creating default object from empty value in module\tutorial\control.php on line 44 when visiting tutorial-viewTutorialSystem
+
+10:05:25 Creating default object from empty value in module\tutorial\control.php on line 44 when visiting tutorial-viewTutorialSystem
+
+10:05:25 Creating default object from empty value in module\tutorial\control.php on line 44 when visiting tutorial-viewTutorialSystem
+
+10:05:25 Creating default object from empty value in module\tutorial\control.php on line 44 when visiting tutorial-viewTutorialSystem
+
+10:05:25 Creating default object from empty value in module\tutorial\control.php on line 44 when visiting tutorial-viewTutorialSystem
+
+10:05:25 Creating default object from empty value in module\tutorial\control.php on line 44 when visiting tutorial-viewTutorialSystem
+
+10:05:25 Creating default object from empty value in module\tutorial\control.php on line 44 when visiting tutorial-viewTutorialSystem
+
+10:05:25 Creating default object from empty value in module\tutorial\control.php on line 44 when visiting tutorial-viewTutorialSystem
+
+10:05:25 Creating default object from empty value in module\tutorial\control.php on line 44 when visiting tutorial-viewTutorialSystem
+
+10:05:25 Creating default object from empty value in module\tutorial\control.php on line 44 when visiting tutorial-viewTutorialSystem
+
+10:05:25 Creating default object from empty value in module\tutorial\control.php on line 44 when visiting tutorial-viewTutorialSystem
+
+10:05:25 Creating default object from empty value in module\tutorial\control.php on line 44 when visiting tutorial-viewTutorialSystem
+
+10:05:25 Creating default object from empty value in module\tutorial\control.php on line 44 when visiting tutorial-viewTutorialSystem
+
+10:05:25 Creating default object from empty value in module\tutorial\control.php on line 44 when visiting tutorial-viewTutorialSystem
+
+10:05:25 Use of undefined constant t1 - assumed 't1' in module\student\model.php on line 17 when visiting tutorial-viewTutorialSystem
+
+10:05:25 Use of undefined constant t2 - assumed 't2' in module\student\model.php on line 18 when visiting tutorial-viewTutorialSystem
+
+10:05:25 Use of undefined constant t3 - assumed 't3' in module\student\model.php on line 20 when visiting tutorial-viewTutorialSystem
+
+10:05:25 Use of undefined constant t1 - assumed 't1' in module\student\model.php on line 17 when visiting tutorial-viewTutorialSystem
+
+10:05:25 Use of undefined constant t2 - assumed 't2' in module\student\model.php on line 18 when visiting tutorial-viewTutorialSystem
+
+10:05:25 Use of undefined constant t3 - assumed 't3' in module\student\model.php on line 20 when visiting tutorial-viewTutorialSystem
+
+10:05:25 Use of undefined constant t1 - assumed 't1' in module\student\model.php on line 17 when visiting tutorial-viewTutorialSystem
+
+10:05:25 Use of undefined constant t2 - assumed 't2' in module\student\model.php on line 18 when visiting tutorial-viewTutorialSystem
+
+10:05:25 Use of undefined constant t3 - assumed 't3' in module\student\model.php on line 20 when visiting tutorial-viewTutorialSystem
+
+10:05:25 Use of undefined constant t1 - assumed 't1' in module\student\model.php on line 17 when visiting tutorial-viewTutorialSystem
+
+10:05:25 Use of undefined constant t2 - assumed 't2' in module\student\model.php on line 18 when visiting tutorial-viewTutorialSystem
+
+10:05:25 Use of undefined constant t3 - assumed 't3' in module\student\model.php on line 20 when visiting tutorial-viewTutorialSystem
+
+10:05:25 Use of undefined constant t1 - assumed 't1' in module\student\model.php on line 17 when visiting tutorial-viewTutorialSystem
+
+10:05:25 Use of undefined constant t2 - assumed 't2' in module\student\model.php on line 18 when visiting tutorial-viewTutorialSystem
+
+10:05:25 Use of undefined constant t3 - assumed 't3' in module\student\model.php on line 20 when visiting tutorial-viewTutorialSystem
+
+10:05:25 Use of undefined constant t1 - assumed 't1' in module\student\model.php on line 17 when visiting tutorial-viewTutorialSystem
+
+10:05:25 Use of undefined constant t2 - assumed 't2' in module\student\model.php on line 18 when visiting tutorial-viewTutorialSystem
+
+10:05:25 Use of undefined constant t3 - assumed 't3' in module\student\model.php on line 20 when visiting tutorial-viewTutorialSystem
+
+10:05:25 Use of undefined constant t1 - assumed 't1' in module\student\model.php on line 17 when visiting tutorial-viewTutorialSystem
+
+10:05:25 Use of undefined constant t2 - assumed 't2' in module\student\model.php on line 18 when visiting tutorial-viewTutorialSystem
+
+10:05:25 Use of undefined constant t3 - assumed 't3' in module\student\model.php on line 20 when visiting tutorial-viewTutorialSystem
+
+10:05:25 Use of undefined constant t1 - assumed 't1' in module\student\model.php on line 17 when visiting tutorial-viewTutorialSystem
+
+10:05:25 Use of undefined constant t2 - assumed 't2' in module\student\model.php on line 18 when visiting tutorial-viewTutorialSystem
+
+10:05:25 Use of undefined constant t3 - assumed 't3' in module\student\model.php on line 20 when visiting tutorial-viewTutorialSystem
+
+10:05:25 Use of undefined constant t1 - assumed 't1' in module\student\model.php on line 17 when visiting tutorial-viewTutorialSystem
+
+10:05:25 Use of undefined constant t2 - assumed 't2' in module\student\model.php on line 18 when visiting tutorial-viewTutorialSystem
+
+10:05:25 Use of undefined constant t3 - assumed 't3' in module\student\model.php on line 20 when visiting tutorial-viewTutorialSystem
+
+10:05:25 Use of undefined constant t1 - assumed 't1' in module\student\model.php on line 17 when visiting tutorial-viewTutorialSystem
+
+10:05:25 Use of undefined constant t2 - assumed 't2' in module\student\model.php on line 18 when visiting tutorial-viewTutorialSystem
+
+10:05:25 Use of undefined constant t3 - assumed 't3' in module\student\model.php on line 20 when visiting tutorial-viewTutorialSystem
+
+10:05:25 Use of undefined constant t1 - assumed 't1' in module\student\model.php on line 17 when visiting tutorial-viewTutorialSystem
+
+10:05:25 Use of undefined constant t2 - assumed 't2' in module\student\model.php on line 18 when visiting tutorial-viewTutorialSystem
+
+10:05:25 Use of undefined constant t3 - assumed 't3' in module\student\model.php on line 20 when visiting tutorial-viewTutorialSystem
+
+10:05:25 Use of undefined constant t1 - assumed 't1' in module\student\model.php on line 17 when visiting tutorial-viewTutorialSystem
+
+10:05:25 Use of undefined constant t2 - assumed 't2' in module\student\model.php on line 18 when visiting tutorial-viewTutorialSystem
+
+10:05:25 Use of undefined constant t3 - assumed 't3' in module\student\model.php on line 20 when visiting tutorial-viewTutorialSystem
+
+10:05:25 Use of undefined constant t1 - assumed 't1' in module\student\model.php on line 17 when visiting tutorial-viewTutorialSystem
+
+10:05:25 Use of undefined constant t2 - assumed 't2' in module\student\model.php on line 18 when visiting tutorial-viewTutorialSystem
+
+10:05:25 Use of undefined constant t3 - assumed 't3' in module\student\model.php on line 20 when visiting tutorial-viewTutorialSystem
+
+10:05:25 Use of undefined constant t1 - assumed 't1' in module\student\model.php on line 17 when visiting tutorial-viewTutorialSystem
+
+10:05:25 Use of undefined constant t2 - assumed 't2' in module\student\model.php on line 18 when visiting tutorial-viewTutorialSystem
+
+10:05:25 Use of undefined constant t3 - assumed 't3' in module\student\model.php on line 20 when visiting tutorial-viewTutorialSystem
+
+10:05:25 Undefined property: language::$chooseUsersToMail in module\common\view\chosen.html.php on line 11 when visiting tutorial-viewTutorialSystem
+
+10:05:25 Attempt to modify property of non-object in module\common\model.php on line 367 when visiting tutorial-viewTutorialSystem
+
+10:05:28 Creating default object from empty value in module\common\lang\menuOrder.php on line 39 when visiting 
+
+10:05:28 Declaration of taskModel::delete() should be compatible with model::delete($table, $id) in module\task\model.php on line 948 when visiting workspace-viewNotice
+
+10:05:28 Declaration of projectModel::delete() should be compatible with model::delete($table, $id) in module\project\model.php on line 425 when visiting workspace-viewNotice
+
+10:05:28 Use of undefined constant G - assumed 'G' in module\tutorial\lang\zh-cn.php on line 39 when visiting workspace-viewNotice
+
+10:05:28 Use of undefined constant T - assumed 'T' in module\tutorial\lang\zh-cn.php on line 40 when visiting workspace-viewNotice
+
+10:05:28 Use of undefined constant R - assumed 'R' in module\tutorial\lang\zh-cn.php on line 41 when visiting workspace-viewNotice
+
+10:05:28 Use of undefined constant P - assumed 'P' in module\tutorial\lang\zh-cn.php on line 42 when visiting workspace-viewNotice
+
+10:05:28 Use of undefined constant G - assumed 'G' in module\tutorial\lang\zh-cn.php on line 44 when visiting workspace-viewNotice
+
+10:05:28 Use of undefined constant T - assumed 'T' in module\tutorial\lang\zh-cn.php on line 45 when visiting workspace-viewNotice
+
+10:05:28 Use of undefined constant R - assumed 'R' in module\tutorial\lang\zh-cn.php on line 46 when visiting workspace-viewNotice
+
+10:05:28 Use of undefined constant P - assumed 'P' in module\tutorial\lang\zh-cn.php on line 47 when visiting workspace-viewNotice
+
+10:05:28 Use of undefined constant G - assumed 'G' in module\tutorial\lang\zh-cn.php on line 49 when visiting workspace-viewNotice
+
+10:05:28 Use of undefined constant T - assumed 'T' in module\tutorial\lang\zh-cn.php on line 50 when visiting workspace-viewNotice
+
+10:05:28 Use of undefined constant R - assumed 'R' in module\tutorial\lang\zh-cn.php on line 51 when visiting workspace-viewNotice
+
+10:05:28 Use of undefined constant P - assumed 'P' in module\tutorial\lang\zh-cn.php on line 52 when visiting workspace-viewNotice
+
+10:05:28 Undefined variable: lang in module\tutorial\config.php on line 8 when visiting workspace-viewNotice
+
+10:05:28 Trying to get property of non-object in module\tutorial\config.php on line 8 when visiting workspace-viewNotice
+
+10:05:28 Trying to get property of non-object in module\tutorial\config.php on line 8 when visiting workspace-viewNotice
+
+10:05:28 Undefined variable: lang in module\tutorial\config.php on line 9 when visiting workspace-viewNotice
+
+10:05:28 Trying to get property of non-object in module\tutorial\config.php on line 9 when visiting workspace-viewNotice
+
+10:05:28 Trying to get property of non-object in module\tutorial\config.php on line 9 when visiting workspace-viewNotice
+
+10:05:28 Creating default object from empty value in module\common\lang\menuOrder.php on line 39 when visiting 
+
+10:05:28 Declaration of noticeModel::delete() should be compatible with model::delete($table, $id) in module\notice\model.php on line 314 when visiting notice-viewNotice
+
+10:05:28 Creating default object from empty value in module\notice\config.php on line 4 when visiting notice-viewNotice
+
+10:05:28 Creating default object from empty value in module\action\lang\zh-cn.php on line 12 when visiting notice-viewNotice
+
+10:05:28 Use of undefined constant t1 - assumed 't1' in module\notice\model.php on line 168 when visiting notice-viewNotice
+
+10:05:28 Use of undefined constant t2 - assumed 't2' in module\notice\model.php on line 169 when visiting notice-viewNotice
+
+10:05:28 Undefined property: language::$chooseUsersToMail in module\common\view\chosen.html.php on line 11 when visiting notice-viewNotice
+
+10:05:28 Attempt to modify property of non-object in module\common\model.php on line 367 when visiting notice-viewNotice
+
+10:05:28 Undefined variable: viewtype in module\notice\view\viewnotice.html.php on line 28 when visiting notice-viewNotice
+
+10:05:31 Creating default object from empty value in module\common\lang\menuOrder.php on line 39 when visiting 
+
+10:05:31 Creating default object from empty value in module\statistics\config.php on line 4 when visiting statistics
+
+10:05:31 Creating default object from empty value in module\statistics\config.php on line 5 when visiting statistics
+
+10:05:31 Creating default object from empty value in module\statistics\config.php on line 6 when visiting statistics
+
+10:05:31 Creating default object from empty value in module\statistics\config.php on line 7 when visiting statistics
+
+10:05:31 Creating default object from empty value in module\statistics\config.php on line 8 when visiting statistics
+
+10:05:31 Creating default object from empty value in module\statistics\config.php on line 9 when visiting statistics
+
+10:05:31 Creating default object from empty value in module\statistics\config.php on line 10 when visiting statistics
+
+10:05:31 Declaration of achievementModel::delete() should be compatible with model::delete($table, $id) in module\achievement\model.php on line 289 when visiting statistics
+
+10:05:31 Creating default object from empty value in module\action\lang\zh-cn.php on line 12 when visiting statistics
+
+10:05:31 Undefined property: language::$chooseUsersToMail in module\common\view\chosen.html.php on line 11 when visiting statistics
+
+10:05:31 Attempt to modify property of non-object in module\common\model.php on line 367 when visiting statistics
+
+10:05:31 Undefined variable: summary in module\statistics\view\index.html.php on line 79 when visiting statistics
+
+10:05:33 Creating default object from empty value in module\common\lang\menuOrder.php on line 39 when visiting 
+
+10:05:33 Creating default object from empty value in module\statistics\config.php on line 4 when visiting statistics-index-student
+
+10:05:33 Creating default object from empty value in module\statistics\config.php on line 5 when visiting statistics-index-student
+
+10:05:33 Creating default object from empty value in module\statistics\config.php on line 6 when visiting statistics-index-student
+
+10:05:33 Creating default object from empty value in module\statistics\config.php on line 7 when visiting statistics-index-student
+
+10:05:33 Creating default object from empty value in module\statistics\config.php on line 8 when visiting statistics-index-student
+
+10:05:33 Creating default object from empty value in module\statistics\config.php on line 9 when visiting statistics-index-student
+
+10:05:33 Creating default object from empty value in module\statistics\config.php on line 10 when visiting statistics-index-student
+
+10:05:33 Declaration of achievementModel::delete() should be compatible with model::delete($table, $id) in module\achievement\model.php on line 289 when visiting statistics-index-student
+
+10:05:33 Creating default object from empty value in module\action\lang\zh-cn.php on line 12 when visiting statistics-index-student
+
+10:05:33 Undefined property: language::$chooseUsersToMail in module\common\view\chosen.html.php on line 11 when visiting statistics-index-student
+
+10:05:33 Attempt to modify property of non-object in module\common\model.php on line 367 when visiting statistics-index-student
+
+10:05:33 Undefined variable: summary in module\statistics\view\index.html.php on line 79 when visiting statistics-index-student
+
+10:05:35 Creating default object from empty value in module\common\lang\menuOrder.php on line 39 when visiting 
+
+10:05:35 Creating default object from empty value in module\statistics\config.php on line 4 when visiting statistics-index-student-account_desc-347-15-1
+
+10:05:35 Creating default object from empty value in module\statistics\config.php on line 5 when visiting statistics-index-student-account_desc-347-15-1
+
+10:05:35 Creating default object from empty value in module\statistics\config.php on line 6 when visiting statistics-index-student-account_desc-347-15-1
+
+10:05:35 Creating default object from empty value in module\statistics\config.php on line 7 when visiting statistics-index-student-account_desc-347-15-1
+
+10:05:35 Creating default object from empty value in module\statistics\config.php on line 8 when visiting statistics-index-student-account_desc-347-15-1
+
+10:05:35 Creating default object from empty value in module\statistics\config.php on line 9 when visiting statistics-index-student-account_desc-347-15-1
+
+10:05:35 Creating default object from empty value in module\statistics\config.php on line 10 when visiting statistics-index-student-account_desc-347-15-1
+
+10:05:35 Declaration of achievementModel::delete() should be compatible with model::delete($table, $id) in module\achievement\model.php on line 289 when visiting statistics-index-student-account_desc-347-15-1
+
+10:05:35 Creating default object from empty value in module\action\lang\zh-cn.php on line 12 when visiting statistics-index-student-account_desc-347-15-1
+
+10:05:36 Undefined property: language::$chooseUsersToMail in module\common\view\chosen.html.php on line 11 when visiting statistics-index-student-account_desc-347-15-1
+
+10:05:36 Attempt to modify property of non-object in module\common\model.php on line 367 when visiting statistics-index-student-account_desc-347-15-1
+
+10:05:36 Undefined variable: summary in module\statistics\view\index.html.php on line 79 when visiting statistics-index-student-account_desc-347-15-1
+
+10:05:36 Creating default object from empty value in module\common\lang\menuOrder.php on line 39 when visiting 
+
+10:05:36 Creating default object from empty value in module\statistics\config.php on line 4 when visiting statistics-index-student-account_asc-347-15-1
+
+10:05:36 Creating default object from empty value in module\statistics\config.php on line 5 when visiting statistics-index-student-account_asc-347-15-1
+
+10:05:36 Creating default object from empty value in module\statistics\config.php on line 6 when visiting statistics-index-student-account_asc-347-15-1
+
+10:05:36 Creating default object from empty value in module\statistics\config.php on line 7 when visiting statistics-index-student-account_asc-347-15-1
+
+10:05:36 Creating default object from empty value in module\statistics\config.php on line 8 when visiting statistics-index-student-account_asc-347-15-1
+
+10:05:36 Creating default object from empty value in module\statistics\config.php on line 9 when visiting statistics-index-student-account_asc-347-15-1
+
+10:05:36 Creating default object from empty value in module\statistics\config.php on line 10 when visiting statistics-index-student-account_asc-347-15-1
+
+10:05:36 Declaration of achievementModel::delete() should be compatible with model::delete($table, $id) in module\achievement\model.php on line 289 when visiting statistics-index-student-account_asc-347-15-1
+
+10:05:36 Creating default object from empty value in module\action\lang\zh-cn.php on line 12 when visiting statistics-index-student-account_asc-347-15-1
+
+10:05:36 Undefined property: language::$chooseUsersToMail in module\common\view\chosen.html.php on line 11 when visiting statistics-index-student-account_asc-347-15-1
+
+10:05:36 Attempt to modify property of non-object in module\common\model.php on line 367 when visiting statistics-index-student-account_asc-347-15-1
+
+10:05:36 Undefined variable: summary in module\statistics\view\index.html.php on line 79 when visiting statistics-index-student-account_asc-347-15-1
+
+10:05:37 Creating default object from empty value in module\common\lang\menuOrder.php on line 39 when visiting 
+
+10:05:37 Creating default object from empty value in module\statistics\config.php on line 4 when visiting statistics-index-student-realname_asc-347-15-1
+
+10:05:37 Creating default object from empty value in module\statistics\config.php on line 5 when visiting statistics-index-student-realname_asc-347-15-1
+
+10:05:37 Creating default object from empty value in module\statistics\config.php on line 6 when visiting statistics-index-student-realname_asc-347-15-1
+
+10:05:37 Creating default object from empty value in module\statistics\config.php on line 7 when visiting statistics-index-student-realname_asc-347-15-1
+
+10:05:37 Creating default object from empty value in module\statistics\config.php on line 8 when visiting statistics-index-student-realname_asc-347-15-1
+
+10:05:37 Creating default object from empty value in module\statistics\config.php on line 9 when visiting statistics-index-student-realname_asc-347-15-1
+
+10:05:37 Creating default object from empty value in module\statistics\config.php on line 10 when visiting statistics-index-student-realname_asc-347-15-1
+
+10:05:37 Declaration of achievementModel::delete() should be compatible with model::delete($table, $id) in module\achievement\model.php on line 289 when visiting statistics-index-student-realname_asc-347-15-1
+
+10:05:37 Creating default object from empty value in module\action\lang\zh-cn.php on line 12 when visiting statistics-index-student-realname_asc-347-15-1
+
+10:05:37 Undefined property: language::$chooseUsersToMail in module\common\view\chosen.html.php on line 11 when visiting statistics-index-student-realname_asc-347-15-1
+
+10:05:37 Attempt to modify property of non-object in module\common\model.php on line 367 when visiting statistics-index-student-realname_asc-347-15-1
+
+10:05:37 Undefined variable: summary in module\statistics\view\index.html.php on line 79 when visiting statistics-index-student-realname_asc-347-15-1
+
+10:05:38 Creating default object from empty value in module\common\lang\menuOrder.php on line 39 when visiting 
+
+10:05:38 Creating default object from empty value in module\statistics\config.php on line 4 when visiting statistics-index-student-realname_desc-347-15-1
+
+10:05:38 Creating default object from empty value in module\statistics\config.php on line 5 when visiting statistics-index-student-realname_desc-347-15-1
+
+10:05:38 Creating default object from empty value in module\statistics\config.php on line 6 when visiting statistics-index-student-realname_desc-347-15-1
+
+10:05:38 Creating default object from empty value in module\statistics\config.php on line 7 when visiting statistics-index-student-realname_desc-347-15-1
+
+10:05:38 Creating default object from empty value in module\statistics\config.php on line 8 when visiting statistics-index-student-realname_desc-347-15-1
+
+10:05:38 Creating default object from empty value in module\statistics\config.php on line 9 when visiting statistics-index-student-realname_desc-347-15-1
+
+10:05:38 Creating default object from empty value in module\statistics\config.php on line 10 when visiting statistics-index-student-realname_desc-347-15-1
+
+10:05:38 Declaration of achievementModel::delete() should be compatible with model::delete($table, $id) in module\achievement\model.php on line 289 when visiting statistics-index-student-realname_desc-347-15-1
+
+10:05:38 Creating default object from empty value in module\action\lang\zh-cn.php on line 12 when visiting statistics-index-student-realname_desc-347-15-1
+
+10:05:38 Undefined property: language::$chooseUsersToMail in module\common\view\chosen.html.php on line 11 when visiting statistics-index-student-realname_desc-347-15-1
+
+10:05:38 Attempt to modify property of non-object in module\common\model.php on line 367 when visiting statistics-index-student-realname_desc-347-15-1
+
+10:05:38 Undefined variable: summary in module\statistics\view\index.html.php on line 79 when visiting statistics-index-student-realname_desc-347-15-1
+
+10:05:40 Creating default object from empty value in module\common\lang\menuOrder.php on line 39 when visiting 
+
+10:05:40 Creating default object from empty value in module\statistics\config.php on line 4 when visiting statistics-index-student-TaskNumber_asc-347-15-1
+
+10:05:40 Creating default object from empty value in module\statistics\config.php on line 5 when visiting statistics-index-student-TaskNumber_asc-347-15-1
+
+10:05:40 Creating default object from empty value in module\statistics\config.php on line 6 when visiting statistics-index-student-TaskNumber_asc-347-15-1
+
+10:05:40 Creating default object from empty value in module\statistics\config.php on line 7 when visiting statistics-index-student-TaskNumber_asc-347-15-1
+
+10:05:40 Creating default object from empty value in module\statistics\config.php on line 8 when visiting statistics-index-student-TaskNumber_asc-347-15-1
+
+10:05:40 Creating default object from empty value in module\statistics\config.php on line 9 when visiting statistics-index-student-TaskNumber_asc-347-15-1
+
+10:05:40 Creating default object from empty value in module\statistics\config.php on line 10 when visiting statistics-index-student-TaskNumber_asc-347-15-1
+
+10:05:40 Declaration of achievementModel::delete() should be compatible with model::delete($table, $id) in module\achievement\model.php on line 289 when visiting statistics-index-student-TaskNumber_asc-347-15-1
+
+10:05:40 Creating default object from empty value in module\action\lang\zh-cn.php on line 12 when visiting statistics-index-student-TaskNumber_asc-347-15-1
+
+10:05:40 Undefined property: language::$chooseUsersToMail in module\common\view\chosen.html.php on line 11 when visiting statistics-index-student-TaskNumber_asc-347-15-1
+
+10:05:40 Attempt to modify property of non-object in module\common\model.php on line 367 when visiting statistics-index-student-TaskNumber_asc-347-15-1
+
+10:05:40 Undefined variable: summary in module\statistics\view\index.html.php on line 79 when visiting statistics-index-student-TaskNumber_asc-347-15-1
+
+10:05:40 Creating default object from empty value in module\common\lang\menuOrder.php on line 39 when visiting 
+
+10:05:40 Creating default object from empty value in module\statistics\config.php on line 4 when visiting statistics-index-student-TaskNumber_desc-347-15-1
+
+10:05:40 Creating default object from empty value in module\statistics\config.php on line 5 when visiting statistics-index-student-TaskNumber_desc-347-15-1
+
+10:05:40 Creating default object from empty value in module\statistics\config.php on line 6 when visiting statistics-index-student-TaskNumber_desc-347-15-1
+
+10:05:40 Creating default object from empty value in module\statistics\config.php on line 7 when visiting statistics-index-student-TaskNumber_desc-347-15-1
+
+10:05:40 Creating default object from empty value in module\statistics\config.php on line 8 when visiting statistics-index-student-TaskNumber_desc-347-15-1
+
+10:05:40 Creating default object from empty value in module\statistics\config.php on line 9 when visiting statistics-index-student-TaskNumber_desc-347-15-1
+
+10:05:40 Creating default object from empty value in module\statistics\config.php on line 10 when visiting statistics-index-student-TaskNumber_desc-347-15-1
+
+10:05:40 Declaration of achievementModel::delete() should be compatible with model::delete($table, $id) in module\achievement\model.php on line 289 when visiting statistics-index-student-TaskNumber_desc-347-15-1
+
+10:05:40 Creating default object from empty value in module\action\lang\zh-cn.php on line 12 when visiting statistics-index-student-TaskNumber_desc-347-15-1
+
+10:05:41 Undefined property: language::$chooseUsersToMail in module\common\view\chosen.html.php on line 11 when visiting statistics-index-student-TaskNumber_desc-347-15-1
+
+10:05:41 Attempt to modify property of non-object in module\common\model.php on line 367 when visiting statistics-index-student-TaskNumber_desc-347-15-1
+
+10:05:41 Undefined variable: summary in module\statistics\view\index.html.php on line 79 when visiting statistics-index-student-TaskNumber_desc-347-15-1
+
+10:05:41 Creating default object from empty value in module\common\lang\menuOrder.php on line 39 when visiting 
+
+10:05:41 Creating default object from empty value in module\statistics\config.php on line 4 when visiting statistics-index-student-ProblemNumber_asc-347-15-1
+
+10:05:41 Creating default object from empty value in module\statistics\config.php on line 5 when visiting statistics-index-student-ProblemNumber_asc-347-15-1
+
+10:05:41 Creating default object from empty value in module\statistics\config.php on line 6 when visiting statistics-index-student-ProblemNumber_asc-347-15-1
+
+10:05:41 Creating default object from empty value in module\statistics\config.php on line 7 when visiting statistics-index-student-ProblemNumber_asc-347-15-1
+
+10:05:41 Creating default object from empty value in module\statistics\config.php on line 8 when visiting statistics-index-student-ProblemNumber_asc-347-15-1
+
+10:05:41 Creating default object from empty value in module\statistics\config.php on line 9 when visiting statistics-index-student-ProblemNumber_asc-347-15-1
+
+10:05:41 Creating default object from empty value in module\statistics\config.php on line 10 when visiting statistics-index-student-ProblemNumber_asc-347-15-1
+
+10:05:41 Declaration of achievementModel::delete() should be compatible with model::delete($table, $id) in module\achievement\model.php on line 289 when visiting statistics-index-student-ProblemNumber_asc-347-15-1
+
+10:05:41 Creating default object from empty value in module\action\lang\zh-cn.php on line 12 when visiting statistics-index-student-ProblemNumber_asc-347-15-1
+
+10:05:41 Undefined property: language::$chooseUsersToMail in module\common\view\chosen.html.php on line 11 when visiting statistics-index-student-ProblemNumber_asc-347-15-1
+
+10:05:41 Attempt to modify property of non-object in module\common\model.php on line 367 when visiting statistics-index-student-ProblemNumber_asc-347-15-1
+
+10:05:41 Undefined variable: summary in module\statistics\view\index.html.php on line 79 when visiting statistics-index-student-ProblemNumber_asc-347-15-1
+
+10:05:42 Creating default object from empty value in module\common\lang\menuOrder.php on line 39 when visiting 
+
+10:05:42 Creating default object from empty value in module\statistics\config.php on line 4 when visiting statistics-index-student-ProblemNumber_desc-347-15-1
+
+10:05:42 Creating default object from empty value in module\statistics\config.php on line 5 when visiting statistics-index-student-ProblemNumber_desc-347-15-1
+
+10:05:42 Creating default object from empty value in module\statistics\config.php on line 6 when visiting statistics-index-student-ProblemNumber_desc-347-15-1
+
+10:05:42 Creating default object from empty value in module\statistics\config.php on line 7 when visiting statistics-index-student-ProblemNumber_desc-347-15-1
+
+10:05:42 Creating default object from empty value in module\statistics\config.php on line 8 when visiting statistics-index-student-ProblemNumber_desc-347-15-1
+
+10:05:42 Creating default object from empty value in module\statistics\config.php on line 9 when visiting statistics-index-student-ProblemNumber_desc-347-15-1
+
+10:05:42 Creating default object from empty value in module\statistics\config.php on line 10 when visiting statistics-index-student-ProblemNumber_desc-347-15-1
+
+10:05:42 Declaration of achievementModel::delete() should be compatible with model::delete($table, $id) in module\achievement\model.php on line 289 when visiting statistics-index-student-ProblemNumber_desc-347-15-1
+
+10:05:42 Creating default object from empty value in module\action\lang\zh-cn.php on line 12 when visiting statistics-index-student-ProblemNumber_desc-347-15-1
+
+10:05:42 Undefined property: language::$chooseUsersToMail in module\common\view\chosen.html.php on line 11 when visiting statistics-index-student-ProblemNumber_desc-347-15-1
+
+10:05:42 Attempt to modify property of non-object in module\common\model.php on line 367 when visiting statistics-index-student-ProblemNumber_desc-347-15-1
+
+10:05:42 Undefined variable: summary in module\statistics\view\index.html.php on line 79 when visiting statistics-index-student-ProblemNumber_desc-347-15-1
+
+10:05:43 Creating default object from empty value in module\common\lang\menuOrder.php on line 39 when visiting 
+
+10:05:43 Creating default object from empty value in module\statistics\config.php on line 4 when visiting statistics-index-student-TaskNumber_asc-347-15-1
+
+10:05:43 Creating default object from empty value in module\statistics\config.php on line 5 when visiting statistics-index-student-TaskNumber_asc-347-15-1
+
+10:05:43 Creating default object from empty value in module\statistics\config.php on line 6 when visiting statistics-index-student-TaskNumber_asc-347-15-1
+
+10:05:43 Creating default object from empty value in module\statistics\config.php on line 7 when visiting statistics-index-student-TaskNumber_asc-347-15-1
+
+10:05:43 Creating default object from empty value in module\statistics\config.php on line 8 when visiting statistics-index-student-TaskNumber_asc-347-15-1
+
+10:05:43 Creating default object from empty value in module\statistics\config.php on line 9 when visiting statistics-index-student-TaskNumber_asc-347-15-1
+
+10:05:43 Creating default object from empty value in module\statistics\config.php on line 10 when visiting statistics-index-student-TaskNumber_asc-347-15-1
+
+10:05:43 Declaration of achievementModel::delete() should be compatible with model::delete($table, $id) in module\achievement\model.php on line 289 when visiting statistics-index-student-TaskNumber_asc-347-15-1
+
+10:05:43 Creating default object from empty value in module\action\lang\zh-cn.php on line 12 when visiting statistics-index-student-TaskNumber_asc-347-15-1
+
+10:05:43 Undefined property: language::$chooseUsersToMail in module\common\view\chosen.html.php on line 11 when visiting statistics-index-student-TaskNumber_asc-347-15-1
+
+10:05:43 Attempt to modify property of non-object in module\common\model.php on line 367 when visiting statistics-index-student-TaskNumber_asc-347-15-1
+
+10:05:43 Undefined variable: summary in module\statistics\view\index.html.php on line 79 when visiting statistics-index-student-TaskNumber_asc-347-15-1
+
+10:05:44 Creating default object from empty value in module\common\lang\menuOrder.php on line 39 when visiting 
+
+10:05:44 Creating default object from empty value in module\statistics\config.php on line 4 when visiting statistics-index-student-TaskNumber_desc-347-15-1
+
+10:05:44 Creating default object from empty value in module\statistics\config.php on line 5 when visiting statistics-index-student-TaskNumber_desc-347-15-1
+
+10:05:44 Creating default object from empty value in module\statistics\config.php on line 6 when visiting statistics-index-student-TaskNumber_desc-347-15-1
+
+10:05:44 Creating default object from empty value in module\statistics\config.php on line 7 when visiting statistics-index-student-TaskNumber_desc-347-15-1
+
+10:05:44 Creating default object from empty value in module\statistics\config.php on line 8 when visiting statistics-index-student-TaskNumber_desc-347-15-1
+
+10:05:44 Creating default object from empty value in module\statistics\config.php on line 9 when visiting statistics-index-student-TaskNumber_desc-347-15-1
+
+10:05:44 Creating default object from empty value in module\statistics\config.php on line 10 when visiting statistics-index-student-TaskNumber_desc-347-15-1
+
+10:05:44 Declaration of achievementModel::delete() should be compatible with model::delete($table, $id) in module\achievement\model.php on line 289 when visiting statistics-index-student-TaskNumber_desc-347-15-1
+
+10:05:44 Creating default object from empty value in module\action\lang\zh-cn.php on line 12 when visiting statistics-index-student-TaskNumber_desc-347-15-1
+
+10:05:44 Undefined property: language::$chooseUsersToMail in module\common\view\chosen.html.php on line 11 when visiting statistics-index-student-TaskNumber_desc-347-15-1
+
+10:05:44 Attempt to modify property of non-object in module\common\model.php on line 367 when visiting statistics-index-student-TaskNumber_desc-347-15-1
+
+10:05:44 Undefined variable: summary in module\statistics\view\index.html.php on line 79 when visiting statistics-index-student-TaskNumber_desc-347-15-1
+
+10:05:53 Creating default object from empty value in module\common\lang\menuOrder.php on line 39 when visiting 
+
+10:05:53 Undefined property: stdClass::$title in module\personalinfo\config.php on line 20 when visiting resources
+
+10:05:53 Undefined property: stdClass::$id in module\personalinfo\config.php on line 21 when visiting resources
+
+10:05:53 Undefined property: stdClass::$keywords in module\personalinfo\config.php on line 22 when visiting resources
+
+10:05:53 Undefined property: stdClass::$product in module\personalinfo\config.php on line 23 when visiting resources
+
+10:05:53 Undefined property: stdClass::$project in module\personalinfo\config.php on line 24 when visiting resources
+
+10:05:53 Undefined property: stdClass::$type in module\personalinfo\config.php on line 25 when visiting resources
+
+10:05:53 Undefined property: stdClass::$module in module\personalinfo\config.php on line 26 when visiting resources
+
+10:05:53 Undefined property: stdClass::$lib in module\personalinfo\config.php on line 27 when visiting resources
+
+10:05:53 Undefined property: stdClass::$digest in module\personalinfo\config.php on line 28 when visiting resources
+
+10:05:53 Undefined property: stdClass::$content in module\personalinfo\config.php on line 29 when visiting resources
+
+10:05:53 Undefined property: stdClass::$url in module\personalinfo\config.php on line 30 when visiting resources
+
+10:05:53 Undefined property: stdClass::$addedBy in module\personalinfo\config.php on line 31 when visiting resources
+
+10:05:53 Undefined property: stdClass::$addedDate in module\personalinfo\config.php on line 32 when visiting resources
+
+10:05:53 Undefined property: stdClass::$editedBy in module\personalinfo\config.php on line 33 when visiting resources
+
+10:05:53 Undefined property: stdClass::$editedDate in module\personalinfo\config.php on line 34 when visiting resources
+
+10:05:53 Undefined property: stdClass::$types in module\personalinfo\config.php on line 41 when visiting resources
+
+10:05:53 Declaration of taskModel::delete() should be compatible with model::delete($table, $id) in module\task\model.php on line 948 when visiting resources
+
+10:05:53 Declaration of achievementModel::delete() should be compatible with model::delete($table, $id) in module\achievement\model.php on line 289 when visiting resources
+
+10:05:53 Declaration of projectModel::delete() should be compatible with model::delete($table, $id) in module\project\model.php on line 425 when visiting resources
+
+10:05:53 Declaration of problemModel::delete() should be compatible with model::delete($table, $id) in module\problem\model.php on line 430 when visiting resources
+
+10:05:53 Creating default object from empty value in module\common\lang\menuOrder.php on line 39 when visiting 
+
+10:05:53 Undefined property: stdClass::$title in module\personalinfo\config.php on line 20 when visiting resources-viewTeachers
+
+10:05:53 Undefined property: stdClass::$id in module\personalinfo\config.php on line 21 when visiting resources-viewTeachers
+
+10:05:53 Undefined property: stdClass::$keywords in module\personalinfo\config.php on line 22 when visiting resources-viewTeachers
+
+10:05:53 Undefined property: stdClass::$product in module\personalinfo\config.php on line 23 when visiting resources-viewTeachers
+
+10:05:53 Undefined property: stdClass::$project in module\personalinfo\config.php on line 24 when visiting resources-viewTeachers
+
+10:05:53 Undefined property: stdClass::$type in module\personalinfo\config.php on line 25 when visiting resources-viewTeachers
+
+10:05:53 Undefined property: stdClass::$module in module\personalinfo\config.php on line 26 when visiting resources-viewTeachers
+
+10:05:53 Undefined property: stdClass::$lib in module\personalinfo\config.php on line 27 when visiting resources-viewTeachers
+
+10:05:53 Undefined property: stdClass::$digest in module\personalinfo\config.php on line 28 when visiting resources-viewTeachers
+
+10:05:53 Undefined property: stdClass::$content in module\personalinfo\config.php on line 29 when visiting resources-viewTeachers
+
+10:05:53 Undefined property: stdClass::$url in module\personalinfo\config.php on line 30 when visiting resources-viewTeachers
+
+10:05:53 Undefined property: stdClass::$addedBy in module\personalinfo\config.php on line 31 when visiting resources-viewTeachers
+
+10:05:53 Undefined property: stdClass::$addedDate in module\personalinfo\config.php on line 32 when visiting resources-viewTeachers
+
+10:05:53 Undefined property: stdClass::$editedBy in module\personalinfo\config.php on line 33 when visiting resources-viewTeachers
+
+10:05:53 Undefined property: stdClass::$editedDate in module\personalinfo\config.php on line 34 when visiting resources-viewTeachers
+
+10:05:53 Undefined property: stdClass::$types in module\personalinfo\config.php on line 41 when visiting resources-viewTeachers
+
+10:05:53 Declaration of taskModel::delete() should be compatible with model::delete($table, $id) in module\task\model.php on line 948 when visiting resources-viewTeachers
+
+10:05:53 Declaration of achievementModel::delete() should be compatible with model::delete($table, $id) in module\achievement\model.php on line 289 when visiting resources-viewTeachers
+
+10:05:53 Declaration of projectModel::delete() should be compatible with model::delete($table, $id) in module\project\model.php on line 425 when visiting resources-viewTeachers
+
+10:05:53 Declaration of problemModel::delete() should be compatible with model::delete($table, $id) in module\problem\model.php on line 430 when visiting resources-viewTeachers
+
+10:05:53 Creating default object from empty value in module\statistics\config.php on line 4 when visiting resources-viewTeachers
+
+10:05:53 Creating default object from empty value in module\statistics\config.php on line 5 when visiting resources-viewTeachers
+
+10:05:53 Creating default object from empty value in module\statistics\config.php on line 6 when visiting resources-viewTeachers
+
+10:05:53 Creating default object from empty value in module\statistics\config.php on line 7 when visiting resources-viewTeachers
+
+10:05:53 Creating default object from empty value in module\statistics\config.php on line 8 when visiting resources-viewTeachers
+
+10:05:53 Creating default object from empty value in module\statistics\config.php on line 9 when visiting resources-viewTeachers
+
+10:05:53 Creating default object from empty value in module\statistics\config.php on line 10 when visiting resources-viewTeachers
+
+10:05:53 Undefined variable: position in module\resources\control.php on line 55 when visiting resources-viewTeachers
+
+10:05:53 Undefined property: language::$chooseUsersToMail in module\common\view\chosen.html.php on line 11 when visiting resources-viewTeachers
+
+10:05:53 Attempt to modify property of non-object in module\common\model.php on line 367 when visiting resources-viewTeachers
+
+10:05:58 Creating default object from empty value in module\common\lang\menuOrder.php on line 39 when visiting 
+
+10:05:58 Undefined property: stdClass::$title in module\personalinfo\config.php on line 20 when visiting resources-search-teachers
+
+10:05:58 Undefined property: stdClass::$id in module\personalinfo\config.php on line 21 when visiting resources-search-teachers
+
+10:05:58 Undefined property: stdClass::$keywords in module\personalinfo\config.php on line 22 when visiting resources-search-teachers
+
+10:05:58 Undefined property: stdClass::$product in module\personalinfo\config.php on line 23 when visiting resources-search-teachers
+
+10:05:58 Undefined property: stdClass::$project in module\personalinfo\config.php on line 24 when visiting resources-search-teachers
+
+10:05:58 Undefined property: stdClass::$type in module\personalinfo\config.php on line 25 when visiting resources-search-teachers
+
+10:05:58 Undefined property: stdClass::$module in module\personalinfo\config.php on line 26 when visiting resources-search-teachers
+
+10:05:58 Undefined property: stdClass::$lib in module\personalinfo\config.php on line 27 when visiting resources-search-teachers
+
+10:05:58 Undefined property: stdClass::$digest in module\personalinfo\config.php on line 28 when visiting resources-search-teachers
+
+10:05:58 Undefined property: stdClass::$content in module\personalinfo\config.php on line 29 when visiting resources-search-teachers
+
+10:05:58 Undefined property: stdClass::$url in module\personalinfo\config.php on line 30 when visiting resources-search-teachers
+
+10:05:58 Undefined property: stdClass::$addedBy in module\personalinfo\config.php on line 31 when visiting resources-search-teachers
+
+10:05:58 Undefined property: stdClass::$addedDate in module\personalinfo\config.php on line 32 when visiting resources-search-teachers
+
+10:05:58 Undefined property: stdClass::$editedBy in module\personalinfo\config.php on line 33 when visiting resources-search-teachers
+
+10:05:58 Undefined property: stdClass::$editedDate in module\personalinfo\config.php on line 34 when visiting resources-search-teachers
+
+10:05:58 Undefined property: stdClass::$types in module\personalinfo\config.php on line 41 when visiting resources-search-teachers
+
+10:05:58 Declaration of taskModel::delete() should be compatible with model::delete($table, $id) in module\task\model.php on line 948 when visiting resources-search-teachers
+
+10:05:58 Declaration of achievementModel::delete() should be compatible with model::delete($table, $id) in module\achievement\model.php on line 289 when visiting resources-search-teachers
+
+10:05:58 Declaration of projectModel::delete() should be compatible with model::delete($table, $id) in module\project\model.php on line 425 when visiting resources-search-teachers
+
+10:05:58 Declaration of problemModel::delete() should be compatible with model::delete($table, $id) in module\problem\model.php on line 430 when visiting resources-search-teachers
+
+10:05:58 Creating default object from empty value in module\common\lang\menuOrder.php on line 39 when visiting 
+
+10:05:58 Undefined property: stdClass::$title in module\personalinfo\config.php on line 20 when visiting resources-viewTeachers-0-15-1-杨哲-
+
+10:05:58 Undefined property: stdClass::$id in module\personalinfo\config.php on line 21 when visiting resources-viewTeachers-0-15-1-杨哲-
+
+10:05:58 Undefined property: stdClass::$keywords in module\personalinfo\config.php on line 22 when visiting resources-viewTeachers-0-15-1-杨哲-
+
+10:05:58 Undefined property: stdClass::$product in module\personalinfo\config.php on line 23 when visiting resources-viewTeachers-0-15-1-杨哲-
+
+10:05:58 Undefined property: stdClass::$project in module\personalinfo\config.php on line 24 when visiting resources-viewTeachers-0-15-1-杨哲-
+
+10:05:58 Undefined property: stdClass::$type in module\personalinfo\config.php on line 25 when visiting resources-viewTeachers-0-15-1-杨哲-
+
+10:05:58 Undefined property: stdClass::$module in module\personalinfo\config.php on line 26 when visiting resources-viewTeachers-0-15-1-杨哲-
+
+10:05:58 Undefined property: stdClass::$lib in module\personalinfo\config.php on line 27 when visiting resources-viewTeachers-0-15-1-杨哲-
+
+10:05:58 Undefined property: stdClass::$digest in module\personalinfo\config.php on line 28 when visiting resources-viewTeachers-0-15-1-杨哲-
+
+10:05:58 Undefined property: stdClass::$content in module\personalinfo\config.php on line 29 when visiting resources-viewTeachers-0-15-1-杨哲-
+
+10:05:58 Undefined property: stdClass::$url in module\personalinfo\config.php on line 30 when visiting resources-viewTeachers-0-15-1-杨哲-
+
+10:05:58 Undefined property: stdClass::$addedBy in module\personalinfo\config.php on line 31 when visiting resources-viewTeachers-0-15-1-杨哲-
+
+10:05:58 Undefined property: stdClass::$addedDate in module\personalinfo\config.php on line 32 when visiting resources-viewTeachers-0-15-1-杨哲-
+
+10:05:58 Undefined property: stdClass::$editedBy in module\personalinfo\config.php on line 33 when visiting resources-viewTeachers-0-15-1-杨哲-
+
+10:05:58 Undefined property: stdClass::$editedDate in module\personalinfo\config.php on line 34 when visiting resources-viewTeachers-0-15-1-杨哲-
+
+10:05:58 Undefined property: stdClass::$types in module\personalinfo\config.php on line 41 when visiting resources-viewTeachers-0-15-1-杨哲-
+
+10:05:58 Declaration of taskModel::delete() should be compatible with model::delete($table, $id) in module\task\model.php on line 948 when visiting resources-viewTeachers-0-15-1-杨哲-
+
+10:05:58 Declaration of achievementModel::delete() should be compatible with model::delete($table, $id) in module\achievement\model.php on line 289 when visiting resources-viewTeachers-0-15-1-杨哲-
+
+10:05:58 Declaration of projectModel::delete() should be compatible with model::delete($table, $id) in module\project\model.php on line 425 when visiting resources-viewTeachers-0-15-1-杨哲-
+
+10:05:58 Declaration of problemModel::delete() should be compatible with model::delete($table, $id) in module\problem\model.php on line 430 when visiting resources-viewTeachers-0-15-1-杨哲-
+
+10:05:58 Creating default object from empty value in module\statistics\config.php on line 4 when visiting resources-viewTeachers-0-15-1-杨哲-
+
+10:05:58 Creating default object from empty value in module\statistics\config.php on line 5 when visiting resources-viewTeachers-0-15-1-杨哲-
+
+10:05:58 Creating default object from empty value in module\statistics\config.php on line 6 when visiting resources-viewTeachers-0-15-1-杨哲-
+
+10:05:58 Creating default object from empty value in module\statistics\config.php on line 7 when visiting resources-viewTeachers-0-15-1-杨哲-
+
+10:05:58 Creating default object from empty value in module\statistics\config.php on line 8 when visiting resources-viewTeachers-0-15-1-杨哲-
+
+10:05:58 Creating default object from empty value in module\statistics\config.php on line 9 when visiting resources-viewTeachers-0-15-1-杨哲-
+
+10:05:58 Creating default object from empty value in module\statistics\config.php on line 10 when visiting resources-viewTeachers-0-15-1-杨哲-
+
+10:05:58 Undefined variable: position in module\resources\control.php on line 55 when visiting resources-viewTeachers-0-15-1-杨哲-
+
+10:05:58 Undefined property: language::$chooseUsersToMail in module\common\view\chosen.html.php on line 11 when visiting resources-viewTeachers-0-15-1-杨哲-
+
+10:05:58 Attempt to modify property of non-object in module\common\model.php on line 367 when visiting resources-viewTeachers-0-15-1-杨哲-
+
+10:06:07 Creating default object from empty value in module\common\lang\menuOrder.php on line 39 when visiting 
+
+10:06:07 Undefined property: stdClass::$title in module\personalinfo\config.php on line 20 when visiting resources-viewteacherdetails-yangzhe
+
+10:06:07 Undefined property: stdClass::$id in module\personalinfo\config.php on line 21 when visiting resources-viewteacherdetails-yangzhe
+
+10:06:07 Undefined property: stdClass::$keywords in module\personalinfo\config.php on line 22 when visiting resources-viewteacherdetails-yangzhe
+
+10:06:07 Undefined property: stdClass::$product in module\personalinfo\config.php on line 23 when visiting resources-viewteacherdetails-yangzhe
+
+10:06:07 Undefined property: stdClass::$project in module\personalinfo\config.php on line 24 when visiting resources-viewteacherdetails-yangzhe
+
+10:06:07 Undefined property: stdClass::$type in module\personalinfo\config.php on line 25 when visiting resources-viewteacherdetails-yangzhe
+
+10:06:07 Undefined property: stdClass::$module in module\personalinfo\config.php on line 26 when visiting resources-viewteacherdetails-yangzhe
+
+10:06:07 Undefined property: stdClass::$lib in module\personalinfo\config.php on line 27 when visiting resources-viewteacherdetails-yangzhe
+
+10:06:07 Undefined property: stdClass::$digest in module\personalinfo\config.php on line 28 when visiting resources-viewteacherdetails-yangzhe
+
+10:06:07 Undefined property: stdClass::$content in module\personalinfo\config.php on line 29 when visiting resources-viewteacherdetails-yangzhe
+
+10:06:07 Undefined property: stdClass::$url in module\personalinfo\config.php on line 30 when visiting resources-viewteacherdetails-yangzhe
+
+10:06:07 Undefined property: stdClass::$addedBy in module\personalinfo\config.php on line 31 when visiting resources-viewteacherdetails-yangzhe
+
+10:06:07 Undefined property: stdClass::$addedDate in module\personalinfo\config.php on line 32 when visiting resources-viewteacherdetails-yangzhe
+
+10:06:07 Undefined property: stdClass::$editedBy in module\personalinfo\config.php on line 33 when visiting resources-viewteacherdetails-yangzhe
+
+10:06:07 Undefined property: stdClass::$editedDate in module\personalinfo\config.php on line 34 when visiting resources-viewteacherdetails-yangzhe
+
+10:06:07 Undefined property: stdClass::$types in module\personalinfo\config.php on line 41 when visiting resources-viewteacherdetails-yangzhe
+
+10:06:07 Declaration of taskModel::delete() should be compatible with model::delete($table, $id) in module\task\model.php on line 948 when visiting resources-viewteacherdetails-yangzhe
+
+10:06:07 Declaration of achievementModel::delete() should be compatible with model::delete($table, $id) in module\achievement\model.php on line 289 when visiting resources-viewteacherdetails-yangzhe
+
+10:06:07 Declaration of projectModel::delete() should be compatible with model::delete($table, $id) in module\project\model.php on line 425 when visiting resources-viewteacherdetails-yangzhe
+
+10:06:07 Declaration of problemModel::delete() should be compatible with model::delete($table, $id) in module\problem\model.php on line 430 when visiting resources-viewteacherdetails-yangzhe
+
+10:06:07 Use of undefined constant t1 - assumed 't1' in module\task\model.php on line 332 when visiting resources-viewteacherdetails-yangzhe
+
+10:06:07 Use of undefined constant t2 - assumed 't2' in module\task\model.php on line 333 when visiting resources-viewteacherdetails-yangzhe
+
+10:06:07 Use of undefined constant t1 - assumed 't1' in module\task\model.php on line 737 when visiting resources-viewteacherdetails-yangzhe
+
+10:06:07 Use of undefined constant t2 - assumed 't2' in module\task\model.php on line 738 when visiting resources-viewteacherdetails-yangzhe
+
+10:06:07 Use of undefined constant t1 - assumed 't1' in module\project\model.php on line 336 when visiting resources-viewteacherdetails-yangzhe
+
+10:06:07 Use of undefined constant t2 - assumed 't2' in module\project\model.php on line 337 when visiting resources-viewteacherdetails-yangzhe
+
+10:06:07 Use of undefined constant t1 - assumed 't1' in module\problem\model.php on line 282 when visiting resources-viewteacherdetails-yangzhe
+
+10:06:07 Use of undefined constant t2 - assumed 't2' in module\problem\model.php on line 283 when visiting resources-viewteacherdetails-yangzhe
+
+10:06:07 Undefined property: language::$chooseUsersToMail in module\common\view\chosen.html.php on line 11 when visiting resources-viewteacherdetails-yangzhe
+
+10:06:07 Attempt to modify property of non-object in module\common\model.php on line 367 when visiting resources-viewteacherdetails-yangzhe
+
+10:06:10 Creating default object from empty value in module\common\lang\menuOrder.php on line 39 when visiting 
+
+10:06:10 Declaration of taskModel::delete() should be compatible with model::delete($table, $id) in module\task\model.php on line 948 when visiting task-view-21-yes
+
+10:06:10 Creating default object from empty value in module\action\lang\zh-cn.php on line 12 when visiting task-view-21-yes
+
+10:06:10 Use of undefined constant G - assumed 'G' in module\tutorial\lang\zh-cn.php on line 39 when visiting task-view-21-yes
+
+10:06:10 Use of undefined constant T - assumed 'T' in module\tutorial\lang\zh-cn.php on line 40 when visiting task-view-21-yes
+
+10:06:10 Use of undefined constant R - assumed 'R' in module\tutorial\lang\zh-cn.php on line 41 when visiting task-view-21-yes
+
+10:06:10 Use of undefined constant P - assumed 'P' in module\tutorial\lang\zh-cn.php on line 42 when visiting task-view-21-yes
+
+10:06:10 Use of undefined constant G - assumed 'G' in module\tutorial\lang\zh-cn.php on line 44 when visiting task-view-21-yes
+
+10:06:10 Use of undefined constant T - assumed 'T' in module\tutorial\lang\zh-cn.php on line 45 when visiting task-view-21-yes
+
+10:06:10 Use of undefined constant R - assumed 'R' in module\tutorial\lang\zh-cn.php on line 46 when visiting task-view-21-yes
+
+10:06:10 Use of undefined constant P - assumed 'P' in module\tutorial\lang\zh-cn.php on line 47 when visiting task-view-21-yes
+
+10:06:10 Use of undefined constant G - assumed 'G' in module\tutorial\lang\zh-cn.php on line 49 when visiting task-view-21-yes
+
+10:06:10 Use of undefined constant T - assumed 'T' in module\tutorial\lang\zh-cn.php on line 50 when visiting task-view-21-yes
+
+10:06:10 Use of undefined constant R - assumed 'R' in module\tutorial\lang\zh-cn.php on line 51 when visiting task-view-21-yes
+
+10:06:10 Use of undefined constant P - assumed 'P' in module\tutorial\lang\zh-cn.php on line 52 when visiting task-view-21-yes
+
+10:06:10 Undefined variable: lang in module\tutorial\config.php on line 8 when visiting task-view-21-yes
+
+10:06:10 Trying to get property of non-object in module\tutorial\config.php on line 8 when visiting task-view-21-yes
+
+10:06:10 Trying to get property of non-object in module\tutorial\config.php on line 8 when visiting task-view-21-yes
+
+10:06:10 Undefined variable: lang in module\tutorial\config.php on line 9 when visiting task-view-21-yes
+
+10:06:10 Trying to get property of non-object in module\tutorial\config.php on line 9 when visiting task-view-21-yes
+
+10:06:10 Trying to get property of non-object in module\tutorial\config.php on line 9 when visiting task-view-21-yes
+
+10:06:10 ERROR: SQLSTATE[42S22]: Column not found: 1054 Unknown column 't2.college_id' in 'where clause'The sql is: SELECT * FROM `oa_task` wHeRe id  = '21' OR ACL  = '3' AND t2.college_id  = '27' AND deleted  = '0' AND title  LIKE '%%' AND t2.grade IN ('2014') GROUP BY createtime  oRdEr bY `id` desc  in lib\dao\dao.class.php on line 462, last called by lib\dao\dao.class.php on line 561 through function query.
+ in framework\router.class.php on line 1577 when visiting task-view-21-yes
+
+10:06:48 Creating default object from empty value in module\common\lang\menuOrder.php on line 39 when visiting 
+
+10:06:48 Declaration of problemModel::delete() should be compatible with model::delete($table, $id) in module\problem\model.php on line 430 when visiting problem-view-2-yes
+
+10:06:48 Declaration of taskModel::delete() should be compatible with model::delete($table, $id) in module\task\model.php on line 948 when visiting problem-view-2-yes
+
+10:06:48 Creating default object from empty value in module\action\lang\zh-cn.php on line 12 when visiting problem-view-2-yes
+
+10:06:48 Use of undefined constant G - assumed 'G' in module\tutorial\lang\zh-cn.php on line 39 when visiting problem-view-2-yes
+
+10:06:48 Use of undefined constant T - assumed 'T' in module\tutorial\lang\zh-cn.php on line 40 when visiting problem-view-2-yes
+
+10:06:48 Use of undefined constant R - assumed 'R' in module\tutorial\lang\zh-cn.php on line 41 when visiting problem-view-2-yes
+
+10:06:48 Use of undefined constant P - assumed 'P' in module\tutorial\lang\zh-cn.php on line 42 when visiting problem-view-2-yes
+
+10:06:48 Use of undefined constant G - assumed 'G' in module\tutorial\lang\zh-cn.php on line 44 when visiting problem-view-2-yes
+
+10:06:48 Use of undefined constant T - assumed 'T' in module\tutorial\lang\zh-cn.php on line 45 when visiting problem-view-2-yes
+
+10:06:48 Use of undefined constant R - assumed 'R' in module\tutorial\lang\zh-cn.php on line 46 when visiting problem-view-2-yes
+
+10:06:48 Use of undefined constant P - assumed 'P' in module\tutorial\lang\zh-cn.php on line 47 when visiting problem-view-2-yes
+
+10:06:48 Use of undefined constant G - assumed 'G' in module\tutorial\lang\zh-cn.php on line 49 when visiting problem-view-2-yes
+
+10:06:48 Use of undefined constant T - assumed 'T' in module\tutorial\lang\zh-cn.php on line 50 when visiting problem-view-2-yes
+
+10:06:48 Use of undefined constant R - assumed 'R' in module\tutorial\lang\zh-cn.php on line 51 when visiting problem-view-2-yes
+
+10:06:48 Use of undefined constant P - assumed 'P' in module\tutorial\lang\zh-cn.php on line 52 when visiting problem-view-2-yes
+
+10:06:48 Undefined variable: lang in module\tutorial\config.php on line 8 when visiting problem-view-2-yes
+
+10:06:48 Trying to get property of non-object in module\tutorial\config.php on line 8 when visiting problem-view-2-yes
+
+10:06:48 Trying to get property of non-object in module\tutorial\config.php on line 8 when visiting problem-view-2-yes
+
+10:06:48 Undefined variable: lang in module\tutorial\config.php on line 9 when visiting problem-view-2-yes
+
+10:06:48 Trying to get property of non-object in module\tutorial\config.php on line 9 when visiting problem-view-2-yes
+
+10:06:48 Trying to get property of non-object in module\tutorial\config.php on line 9 when visiting problem-view-2-yes
+
+10:06:48 Undefined property: language::$chooseUsersToMail in module\common\view\chosen.html.php on line 11 when visiting problem-view-2-yes
+
+10:06:48 Undefined index: problem in module\problem\view\view.html.php on line 5 when visiting problem-view-2-yes
+
+10:06:48 Object of class stdClass could not be converted to string in module\problem\view\view.html.php on line 35 when visiting problem-view-2-yes
+
+10:06:48 Object of class stdClass could not be converted to string in module\problem\view\view.html.php on line 47 when visiting problem-view-2-yes

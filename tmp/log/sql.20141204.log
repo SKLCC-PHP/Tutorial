@@ -1,0 +1,14 @@
+20141204 19:27:52: 
+  SELECT * FROM `oa_company` ORDER BY `id`  LIMIT 1 
+  SELECT * FROM `oa_config` WHERE owner IN ('system','') ORDER BY `id` 
+
+20141204 19:27:53: user-login-L29hL3d3dy8=
+  SELECT * FROM `oa_config` WHERE owner IN ('system','') ORDER BY `id` 
+
+20141204 23:01:27: 
+  SELECT * FROM `oa_company` ORDER BY `id`  LIMIT 1 
+  SELECT * FROM `oa_config` WHERE owner IN ('system','') ORDER BY `id` 
+
+20141204 23:01:27: user-login-L29hL3d3dy8=
+  SELECT * FROM `oa_config` WHERE owner IN ('system','') ORDER BY `id` 
+
