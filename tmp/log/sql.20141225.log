@@ -1,0 +1,85 @@
+20141225 19:24:34: 
+  SELECT * FROM `oa_company` ORDER BY `id`  LIMIT 1 
+  SELECT * FROM `oa_config` WHERE owner IN ('system','') ORDER BY `id` 
+
+20141225 19:24:34: user-login-L29hL3d3dy8=
+  SELECT * FROM `oa_config` WHERE owner IN ('system','') ORDER BY `id` 
+
+20141225 19:24:34: user-captcha
+  SELECT * FROM `oa_config` WHERE owner IN ('system','') ORDER BY `id` 
+
+20141225 19:24:44: user-login-L29hL3d3dy8=
+  SELECT * FROM `oa_config` WHERE owner IN ('system','') ORDER BY `id` 
+
+20141225 19:24:44: user-captcha
+  SELECT * FROM `oa_config` WHERE owner IN ('system','') ORDER BY `id` 
+
+20141225 19:25:44: misc-ping
+  SELECT * FROM `oa_config` WHERE owner IN ('system','') ORDER BY `id` 
+
+20141225 19:27:45: user-login-L29hL3d3dy8=
+  SELECT * FROM `oa_config` WHERE owner IN ('system','') ORDER BY `id` 
+
+20141225 19:27:45: user-login-L29hL3d3dy8=
+  SELECT * FROM `oa_config` WHERE owner IN ('system','') ORDER BY `id` 
+
+20141225 19:27:46: user-login-L29hL3d3dy8=
+  SELECT * FROM `oa_config` WHERE owner IN ('system','') ORDER BY `id` 
+
+20141225 19:27:46: user-login-L29hL3d3dy8=
+  SELECT * FROM `oa_config` WHERE owner IN ('system','') ORDER BY `id` 
+
+20141225 19:27:47: user-login-L29hL3d3dy8=
+  SELECT * FROM `oa_config` WHERE owner IN ('system','') ORDER BY `id` 
+
+20141225 19:28:41: user-login-L29hL3d3dy8=
+  SELECT * FROM `oa_config` WHERE owner IN ('system','') ORDER BY `id` 
+
+20141225 19:28:41: user-login-L29hL3d3dy8=
+  SELECT * FROM `oa_config` WHERE owner IN ('system','') ORDER BY `id` 
+
+20141225 19:28:41: user-login-L29hL3d3dy8=
+  SELECT * FROM `oa_config` WHERE owner IN ('system','') ORDER BY `id` 
+
+20141225 19:28:42: user-login-L29hL3d3dy8=
+  SELECT * FROM `oa_config` WHERE owner IN ('system','') ORDER BY `id` 
+
+20141225 19:29:11: user-login-L29hL3d3dy8=
+  SELECT * FROM `oa_config` WHERE owner IN ('system','') ORDER BY `id` 
+
+20141225 19:29:11: user-login-L29hL3d3dy8=
+  SELECT * FROM `oa_config` WHERE owner IN ('system','') ORDER BY `id` 
+
+20141225 19:29:11: user-login-L29hL3d3dy8=
+  SELECT * FROM `oa_config` WHERE owner IN ('system','') ORDER BY `id` 
+
+20141225 19:29:58: user-login-L29hL3d3dy8=
+  SELECT * FROM `oa_config` WHERE owner IN ('system','') ORDER BY `id` 
+
+20141225 19:29:58: user-captcha
+  SELECT * FROM `oa_config` WHERE owner IN ('system','') ORDER BY `id` 
+
+20141225 19:29:59: user-login-L29hL3d3dy8=
+  SELECT * FROM `oa_config` WHERE owner IN ('system','') ORDER BY `id` 
+
+20141225 19:29:59: user-captcha
+  SELECT * FROM `oa_config` WHERE owner IN ('system','') ORDER BY `id` 
+
+20141225 19:30:00: user-captcha
+  SELECT * FROM `oa_config` WHERE owner IN ('system','') ORDER BY `id` 
+
+20141225 19:30:00: user-captcha
+  SELECT * FROM `oa_config` WHERE owner IN ('system','') ORDER BY `id` 
+
+20141225 19:30:00: user-captcha
+  SELECT * FROM `oa_config` WHERE owner IN ('system','') ORDER BY `id` 
+
+20141225 19:30:00: user-captcha
+  SELECT * FROM `oa_config` WHERE owner IN ('system','') ORDER BY `id` 
+
+20141225 19:30:01: user-captcha
+  SELECT * FROM `oa_config` WHERE owner IN ('system','') ORDER BY `id` 
+
+20141225 19:30:01: user-captcha
+  SELECT * FROM `oa_config` WHERE owner IN ('system','') ORDER BY `id` 
+
