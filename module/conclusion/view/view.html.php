@@ -9,6 +9,10 @@
     <?php
       common::printIcon('conclusion', 'edit', "conclusionID=$conclusion->id", '', 'button', 'pencil');
       common::printIcon('conclusion', 'delete', "conclusionID=$conclusion->id", '', 'button', '', 'hiddenwin');
+
+      echo "<div class='btn-group'>";
+      common::printRPN($this->inlink('viewAchievement'), $preAndNext, 'view');
+      echo '</div>';
     ?>
   </div>
 </div>

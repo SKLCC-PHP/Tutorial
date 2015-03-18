@@ -209,6 +209,7 @@ class conclusion extends control
         $this->view->conclusion  = $conclusion;
         $this->view->comments    = $comments;
         $this->view->userpairs   = $userpairs;
+        $this->view->preAndNext = $this->loadModel('common')->getPreAndNextObject('achievement', $achievementID);
         $this->display();
     } 
 
