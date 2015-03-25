@@ -1,2 +1,0 @@
-function setForm(){}
-function setOuterBox(){}

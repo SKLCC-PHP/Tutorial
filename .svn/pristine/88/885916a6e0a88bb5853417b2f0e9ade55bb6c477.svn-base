@@ -1,6 +1,0 @@
-.input-group-btn {width: 0.0%}
-.memberBox {margin-bottom: 0px; width: 100%}
-table.memberBox td {padding: 0!important}
-.memberBox .input-control{width: 100%; height: 100%; height: 26px; line-height: 26px; border: none; position: relative;}
-.memberBox td .btn {border-radius: 0; border-left: none}
-.member-wrapper.form-control {border-right: 0}

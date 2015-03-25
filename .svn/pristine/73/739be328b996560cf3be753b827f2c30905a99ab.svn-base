@@ -1,7 +1,0 @@
-
-$(document).ready(function()
-{
-    setPreview();
-    $("#story, #mailto, #assignedTo").chosen(defaultChosenOptions);
-});
-
