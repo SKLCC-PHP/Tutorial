@@ -1,0 +1,66 @@
+<?php 
+include '../../common/view/header.html.php';
+js::set('confirmDelete', $lang->user->confirmDelete);
+?>
+<div class='main'>
+	<form action='<?php echo $this->createLink('user', 'batchEdit'/*@Green*/)?>' method='post' id='userListForm'>
+		<table class='table table-condensed table-hover table-striped tablesorter table-fixed' id='userList'>
+			<thead>
+				<tr class='colhead'>
+				<?php $vars = "param=$param&orderBy=%s&recTotal={$pager->recTotal}&recPerPage={$pager->recPerPage}";?>
+				<th><?php common::printOrderLink('account', $orderBy, $vars, $lang->user->account);?></th>
+				<th width="90px"><?php common::printorderlink('realname', $orderBy, $vars, $lang->user->realname);?></th>
+				<th width="150px"><?php common::printorderlink('collegeid', $orderBy, $vars, $lang->user->college);?></th>
+				<th width="80px"><?php common::printorderlink('roleid', $orderBy, $vars, $lang->user->role);?></th>
+				<th><?php common::printOrderLink('mobile',  $orderBy, $vars, $lang->user->mobile);?></th>
+				<th width="180px"><?php common::printOrderLink('email', $orderBy, $vars, $lang->user->email);?></th>
+				<th><?php common::printOrderLink('createtime', $orderBy, $vars, $lang->user->createtime);?></th>
+				<th class='w-125px'><?php common::printOrderLink('last', $orderBy, $vars, $lang->user->last);?></th>
+				<th width="60px"><?php common::printOrderLink('visits', $orderBy, $vars, $lang->user->visits);?></th>
+				<th><?php echo $lang->actions;?></th>
+				</tr>
+			</thead>
+
+			<tbody>
+				<?php 
+				$canManageContacts = common::hasPriv('user', 'manageContacts');
+				?>
+				<?php foreach($users as $user):?>
+				<tr class='text-center'>
+					<td><?php echo $user->account;?></td>
+					<td><?php echo $user->realname;?></td>
+					<td><?php echo $collegeList[$user->collegeid];?></td>
+					<td><?php echo $groupList[$user->roleid];?></td>	
+					<td><?php echo $user->phone;?></td>
+					<td><?php echo html::mailto($user->email);?></td>
+					<td><?php echo $user->createtime;?></td>
+					<td><?php if($user->last) echo date('Y-m-d H:i:s', $user->last);?></td>
+					<td><?php echo $user->visits;?></td>
+					<td class='a-left w-80px'>
+					<?php 
+						common::printIcon('user', 'edit',  "user_account=$user->account&from=company", '', 'list');
+						if(strpos($this->app->company->admins, ",{$user->account},") === false and common::hasPriv('user', 'delete'))
+						{
+							$deleteURL = $this->createLink('user', 'delete', "user_account=$user->account&confirm=yes");
+							echo html::a("javascript:ajaxDelete(\"$deleteURL\",\"userList\",confirmDelete)", '<i class="icon-remove"></i>', '', "title='{$lang->user->delete}' class='btn-icon'");
+						}
+					?>
+					</td>
+				</tr>
+				<?php endforeach;?>
+			</tbody>
+			<tfoot>
+				<tr>
+				<td colspan='10'>
+				<div class='table-actions clearfix'>
+				
+				</div>
+				<?php echo $pager->show();?>
+				</td>
+				</tr>
+			</tfoot>
+		</table>
+	</form>
+</div>
+
+<?php include '../../common/view/footer.html.php';?>

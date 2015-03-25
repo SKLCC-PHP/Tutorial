@@ -1,0 +1,98 @@
+<?php
+/**
+ * The view file of task module of ZenTaoPMS.
+ *
+ * @copyright   Copyright 2009-2013 青岛易软天创网络科技有限公司 (QingDao Nature Easy Soft Network Technology Co,LTD www.cnezsoft.com)
+ * @license     LGPL (http://www.gnu.org/licenses/lgpl.html)
+ * @author      Chunsheng Wang <chunsheng@cnezsoft.com>
+ * @package     task
+ * @version     $Id: view.html.php 4808 2013-06-17 05:48:13Z zhujinyonging@gmail.com $
+ * @link        http://www.zentao.net
+ */
+?>
+<?php include '../../common/view/header.html.php';?>
+<?php include '../../common/view/kindeditor.html.php';?>
+<?php js::set('confirmFinish', $lang->task->confirmFinish); ?>
+<div id='titlebar'>
+  <div class='heading'>
+    <span class='prefix'><?php echo html::icon($lang->icons['task']);?> <strong><?php echo $task->id;?></strong></span>
+    <strong><?php echo $task->title;?></strong>
+  </div>
+  <div class='actions'>
+    <?php
+    $actionLinks = '';
+    if(!$task->deleted)
+    {
+        ob_start();
+        /*if(!$task->completetime)
+        {
+          echo "<div class='btn-group'>";
+          $deleteURL = $this->createLink('task', 'finish', "taskID=$task->id&confirm=yes");
+          echo html::a("javascript:ajaxFinish(\"$deleteURL\", confirmFinish)", '<i class="icon-ok-sign"></i>', '', "title='{$lang->task->finish}' class='btn-icon'");
+          echo '</div>';
+
+        }*/
+
+        echo "<div class='btn-group'>";
+        if (!$task->completetime) 
+        common::printIcon('task', 'finish', "taskID=$task->id", '', 'button', 'ok-sign','hiddenwin');
+        common::printIcon('task', 'edit',  "taskID=$task->id");
+        common::printIcon('task', 'create', "productID=0&storyID=0&moduleID=0&taskID=$task->id", '', 'button', 'copy');
+        common::printIcon('task', 'delete', "projectID=$task->project&taskID=$task->id", '', 'button', '', 'hiddenwin');
+        echo '</div>';
+
+        $actionLinks = ob_get_contents();
+        ob_clean();
+        echo $actionLinks;
+    }
+    else
+    {
+        common::printRPN($browseLink);
+    }
+    ?>
+  </div>
+</div>
+<div class='row-table'>
+  <div class='col-main'>
+    <div class='main'>
+      <fieldset>
+        <legend><?php echo $lang->task->title;?></legend>
+        <div class='content'><?php echo $task->title;?></div>
+      </fieldset>
+      <fieldset>
+        <legend><?php echo $lang->task->content;?></legend>
+        <div class='content'><?php echo $task->content;?></div>
+      </fieldset>
+      <?php echo $this->fetch('file', 'printFiles', array('files' => $task->files, 'fieldset' => 'true'));?>
+      <div class='actions'> <?php if(!$task->deleted) echo $actionLinks;?></div>
+      <fieldset id='commentBox'>
+        <legend><?php echo $lang->comment;?></legend>
+        <ol id='historyItem'>
+        <?php $i = 1; ?>
+        <?php foreach ($comments as $comment):echo $comment;?>
+          <li value="<?php echo $i++?>">
+            <span>
+              <?php echo $comment->create_time.' '.$comment->realname.'：'.$comment->content;?>
+            </span>
+          </li>
+        <?php endforeach;?>
+        </ol>
+      </fieldset>
+      <fieldset>
+        <div class='content'><?php echo $comment;?>
+        <form class='form-condensed' method='post' target='hiddenwin'>
+          <table class='table table-form'>
+            <tr>
+              <td colspan='2'><?php echo html::textarea('comment', '', "rows='6' class='w-p98'");?></td>
+            </tr>
+            <tr>
+              <td colspan='3' class='text-center'><?php echo html::submitButton('批阅') . html::backButton();?></td>
+            </tr>
+          </table>
+        </form>
+      </fieldset>
+    </div>
+  </div>
+</div>
+<?php include '../../common/view/syntaxhighlighter.html.php';?>
+<?php include '../../common/view/footer.html.php';?>

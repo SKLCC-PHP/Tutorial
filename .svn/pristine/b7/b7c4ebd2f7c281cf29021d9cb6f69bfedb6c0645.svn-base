@@ -1,0 +1,146 @@
+<?php
+
+class problem extends control
+{
+    /**
+     * Construct function, load model of project and story modules.
+     * 
+     * @access public
+     * @return void
+     */
+    public function __construct()
+    {
+        parent::__construct();
+        $this->loadModel('tree');
+        $this->loadModel('user');
+        $this->loadModel('workspace');
+        $this->loadModel('tutor');
+        $this->loadModel('task');
+        $this->loadModel('action');
+    }
+
+    /**
+     * 查看所有问题
+     * 
+     * @param  string    $viewtype 
+     * @access public
+     * @return void
+     */
+    public function viewProblem($viewtype = 'all', $orderBy = 'id_desc', $recTotal = 0, $recPerPage = 15, $pageID = 1)
+    {
+        /* Process the order by field. */
+        if(!$orderBy) $orderBy = $this->cookie->problemOrder ? $this->cookie->problemOrder : 'createtime|desc';
+        setcookie('problemOrder', $orderBy, $this->config->cookieLife, $this->config->webRoot);
+
+        /* Load pager and get problems. */
+        $this->app->loadClass('pager', $static = true);
+        $pager = new pager($recTotal, $recPerPage, $pageID);
+
+        $this->view->problems = $this->problem->getProblems($viewtype, '', '', $orderBy, $pager);
+        $this->view->users    = $this->user->getPairs('noletter');
+        
+        $this->view->pager              = $pager;
+        $this->view->recTotal           = $pager->recTotal;
+        $this->view->recPerPage         = $pager->recPerPage;
+        $this->view->pageID             = $pager->pageID;
+        $this->view->orderBy            = $orderBy;
+        $this->view->viewtype           = $viewtype;
+        $this->display();
+    }
+
+    /**
+     * 我要提问按钮
+     * 
+     * @param  int    $moduleID 
+     * @param  int    $problemID
+     * @access public
+     * @return void
+     */
+    public function create()
+    {
+        if(!empty($_POST))
+        {  
+            if (!implode('', $this->post->teachers))
+            {
+                echo js::alert($this->lang->problem->noTeacher);
+                die(js::locate($this->createLink('problem', 'create'), 'parent'));
+            }
+            $this->problem->create();
+            die(js::locate($this->createLink('problem', 'viewProblem', "viewtype=all"), 'parent'));
+        }
+        
+        $teachers = $this->tutor->getTutorByStudent();
+        
+        $this->view->teachers = array('' => '');
+        foreach ($teachers as $key => $teacher) 
+        {
+            $this->view->teachers[$teacher->account] = $teacher->realname;
+        }
+        $this->display();
+    }
+
+    public function view($problemID)
+    {
+        $this->view->problem = $this->problem->getProblemById($problemID);
+        
+        if (!$this->problem->checkPriv($this->view->problem, 'view')) die();
+        
+        $this->problem->saveRead($this->view->problem);
+
+        if(!empty($_POST))
+        {   $this->problem->savesolve($this->view->problem);
+            $this->task->makeComment($problemID,'Q');
+            die(js::locate($this->createLink('problem', 'view', "problemID=$problemID"), 'parent'));
+        }
+        $comments = $this->task->getComments('problem',$problemID);
+        $this->view->comments    = $comments;
+        $this->view->users    = $this->user->getPairs('noletter');
+        $this->display();
+    }
+
+    public function edit($problemID)
+    {
+        if (!empty($_POST))
+        {  
+            $this->problem->update($problemID);
+            $this->action->create('problem', $problemID, 'edited');
+            die(js::locate($this->createLink('problem', 'view', "problemID=$problemID"), 'parent'));
+        }
+
+        $this->view->problem = $this->problem->getProblemById($problemID);
+        if (!$this->problem->checkPriv($this->view->problem, 'edit')) die();
+        $this->display();
+    }
+
+    public function delete($problemID, $confirm = 'no')
+    {
+        if (!$this->problem->checkPriv($this->problem->getProblemById($problemID), 'delete')) die();
+        if($confirm == 'no')
+        {
+            echo js::confirm($this->lang->problem->confirmDelete, $this->createLink('problem', 'delete', "problemID=$problemID&confirm=yes"));
+            exit;
+        }
+        else
+        {
+            $this->problem->delete($problemID);
+            $this->action->create('problem', $problemID, 'deleted');
+            die(js::locate($this->createLink('problem', 'viewProblem'), 'parent'));
+        }
+    }
+
+    public function complete($problemID, $confirm = 'no')
+    {
+        if (!$this->problem->checkPriv($this->problem->getProblemById($problemID), 'complete')) die();
+        if ($confirm == 'no')
+        {
+            echo js::confirm($this->lang->problem->confirmComplete, $this->createLink('problem', 'complete', "problemID=$problemID&confirm=yes"));
+            exit;
+        }
+        else
+        {
+            $this->problem->complete($problemID);
+            $this->action->create('problem', $problemID, 'finished');
+            die(js::locate($this->createLink('problem', 'viewProblem'), 'parent'));
+        }
+    }
+}

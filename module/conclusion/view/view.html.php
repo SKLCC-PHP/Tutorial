@@ -11,7 +11,7 @@
       common::printIcon('conclusion', 'delete', "conclusionID=$conclusion->id", '', 'button', '', 'hiddenwin');
 
       echo "<div class='btn-group'>";
-      common::printRPN($this->inlink('viewAchievement'), $preAndNext, 'view');
+      common::printRPN($this->inlink('viewConclusion'), $preAndNext, 'view');
       echo '</div>';
     ?>
   </div>

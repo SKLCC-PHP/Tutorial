@@ -1,0 +1,71 @@
+<?php
+class tutorModel extends model
+{
+	/**
+     * 学生获取自己的导师
+     */
+    public function getTutorByStudent($user = '')
+    {
+        if(!$user) $user = $this->session->user->account;
+        $teacher = $this->dao
+                    ->select('t2.account, t2.realname')
+                    ->from(TABLE_RELATIONS)->alias(t1)
+                    ->leftJoin(TABLE_USER)->alias(t2)
+                    ->on('t1.tea_ID=t2.account')
+                    ->where('t1.stu_ID')->eq($user)
+                    ->andWhere('t1.deleted')->eq(0)
+                    ->fetchAll();
+        return $teacher;
+    }
+
+    /**
+     * 获取特定学院内的所有导师信息
+     */
+    public function getTutorByCollege($collegeID = '', $name = '', $account = '', $pager = null, $orderBy = '')
+    {
+        if (!$collegeID) $collegeID = $this->session->userinfo->collegeid;
+        if (!$orderBy) $orderBy = 'realname';
+
+        $tutors = $this->dao
+                    ->select('t1.account, t1.realname, t1.gender, t1.department, t1.title, t1.college_id')
+                    ->from(TABLE_USER)->alias(t1)
+                    ->leftJoin(TABLE_USERGROUP)->alias(t2)
+                    ->on('t1.account=t2.account')
+                    ->where('t1.deleted')->eq(0)
+                    ->andWhere('t1.status')->ne(-1)
+                    ->andWhere('t1.college_id')->eq($collegeID)
+                    ->andWhere('t2.group')->eq('teacher') 
+                    ->andWhere('t1.realname')->like('%' . $name . '%')
+                    ->andWhere('t1.account')->like('%' . $account . '%')                 
+                    ->orderBy($orderBy)
+                    ->page($pager)
+                    ->fetchAll();
+        return $tutors;
+    }
+
+    public function getGroupFile($orderBy = '', $pager = null)
+    {
+        if (!$orderBy) $orderBy = 'id_desc';
+
+        $cur_account = $this->session->user->account;
+
+        $members = $this->loadModel('common')->getTeamByStudent($cur_account);
+        $lists = implode(',', array_keys($members)) . ',' . $cur_account;
+
+        $teachers = $this->getTutorByStudent($cur_account);
+        foreach ($teachers as $teacher) 
+        {
+            $lists .= ',' . $teacher->account;
+        }
+
+        $files = $this->dao->select('*')
+                ->from(TABLE_FILE)
+                ->where('addedBy')->in($lists)
+                ->andWhere('acl')->in('2,3')
+                ->andWhere('deleted')->eq(0)
+                ->orderBy($orderBy)
+                ->page($pager)
+                ->fetchAll();
+        return $files;
+    }
+}    

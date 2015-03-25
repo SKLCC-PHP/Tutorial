@@ -1,0 +1,73 @@
+<?php include '../../common/view/header.html.php';?>
+<?php include '../../common/view/datepicker.html.php';?>
+<?php js::set('holders', $lang->user->placeholder);?>
+
+<div class='container mw-600px'>
+	<div id='titlebar'>
+	<div class='heading'>
+		<span class='prefix'>
+			<?php echo html::icon($lang->icons['user']);?>
+		</span>
+		<strong>
+			<small class='text-muted'>
+				<?php echo html::icon($lang->icons['create']);?>
+			</small> <?php echo $lang->user->create;?>
+		</strong>
+	</div>
+	</div>
+	<form class='form-condensed mw-500px' method='post' target='hiddenwin' id='dataform'>
+		<table align='center' class='table table-form' id="info"> 
+		<tr>
+			<th><?php echo $lang->user->collegeName;?></th>
+			<?php if($role_id != 'admin') :?>
+				<td><?php echo html::input('college', $creatorcollege, "class='form-control' readonly = 'true' required='required' autocomplete='off'");?></td>
+			<?php else :?>
+				<td><?php echo html::select('college_id', $collegeList, '100', "class='form-control' required='required'");?></td>
+			<?php endif;?>
+		</tr>
+		<tr id="role">
+			<th><?php echo $lang->user->role;?></th>
+	        <td><?php echo html::select('group', $groupList, 'student', 'onchange="addMember()" class="form-control" required="required"');?></td>
+		</tr>
+		<tr>
+			<th><?php echo $lang->user->account;?></th>
+			<td><?php echo html::input('account', '', "class='form-control' required='required' autocomplete='off'");?></td>
+		</tr>
+		<tr>
+			<th><?php echo $lang->user->realname;?></th>
+			<td><?php echo html::input('realname', '', "class='form-control' required='required' autocomplete='off'");?></td>
+		</tr>
+		<tr>
+			<th><?php echo $lang->user->password;?></th>
+			<td><?php echo html::password('password1', '', "class='form-control' required='required' autocomplete='off'");?></td>
+		</tr>
+		<tr>
+			<th><?php echo $lang->user->password2;?></th>
+			<td><?php echo html::password('password2', '', "class='form-control' required='required' autocomplete='off'");?></td>
+		</tr>
+		<tr><td colspan='2' class='text-center'><?php echo html::submitButton() . html::backButton();?></td></tr>
+		</table>
+	</form>
+</div>
+<script type="text/javascript">
+function addMember()
+{
+	var selected_value = document.getElementById('group').value;
+	if(selected_value != 'counselor')
+		return;
+	// alert(selected_value);
+    var tr_grade = document.getElementById('role');
+
+    var td_grade = document.createElement("td");
+    var input_grade = document.createElement("input");
+    input_grade.setAttribute("type", "text");
+    input_grade.setAttribute("name", "grade");
+    input_grade.setAttribute("id", "grade");
+    input_grade.setAttribute("class", "form-control form-condensed");
+    input_grade.setAttribute("placeholder", "请输入管理年级");
+
+    td_grade.appendChild(input_grade);
+    tr_grade.appendChild(td_grade);
+}
+</script>
+<?php include '../../common/view/footer.html.php';?>

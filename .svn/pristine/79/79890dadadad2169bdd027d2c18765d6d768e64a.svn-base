@@ -1,0 +1,97 @@
+<?php
+/**
+ * The model file of resources module of ZenTaoPMS.
+ *
+ * @copyright   Copyright 2009-2013 青岛易软天创网络科技有限公司 (QingDao Nature Easy Soft Network Technology Co,LTD www.cnezsoft.com)
+ * @license     LGPL (http://www.gnu.org/licenses/lgpl.html)
+ * @author      Chunsheng Wang <chunsheng@cnezsoft.com>
+ * @package     resources
+ * @version     $Id: model.php 5079 2013-07-10 00:44:34Z chencongzhi520@gmail.com $
+ * @link        http://www.zentao.net
+ */
+?>
+<?php
+class resourcesModel extends model
+{
+	/**
+     * upload a file.
+     * 
+     * @access public
+     * @return void
+     */
+    public function upload()
+    {
+        $file = '';
+
+        $file_temp = fixer::input('post')
+                        ->remove('files,labels')
+                        ->get();
+
+	    $file_title = $this->loadModel('file')->saveUpload('sharing', 0, $file_temp->extra, $file_temp->acl);
+	    $file = $this->dao->select('*')->from(TABLE_FILE)->where('id')->eq(key($file_title))->fetch();
+	    unset($file->id);
+
+        // /* Create actions. */
+        // $this->loadModel('action');
+        // foreach($tasksID as $taskID)
+        // {
+        //     $actionID = $this->action->create('task', $taskID, 'Opened', '');
+        // }
+    }
+
+    /**
+     * get file by acl.
+     * 
+     * @access public
+     * @return void
+     */
+    public function getFilesByACL($acl = 0)
+    {
+        if(is_array($acl)) $acl = (array)$acl;
+    	if(!$acl) $acl = array(1,2,3);
+
+		$files = $this->dao->select('*')->from(TABLE_FILE)
+			->where('objectType')->eq('sharing')
+			->andWhere('objectID')->eq(0)
+			->andWhere('ACL')->in($acl)
+            ->andWhere('deleted')->eq(0)
+	    	->fetchAll();
+
+	    if($files) return $files;
+    }
+
+    /**
+     * check the user priv.
+     * 
+     * @access public
+     * @return void
+     */
+    public function checkPriv($file, $user = 0)
+    {
+        if(!$user) $user = $this->app->user->account;
+        $user_group = $this->loadModel('group')->getByAccount($user);
+        if($file->addedBy == $user or $user_group->role != 'student') return true;
+        else
+            return false;
+    }
+
+    /**
+     * get all the teachers.
+     * 
+     * @access public
+     * @return void
+     */
+    public function getAllTeachers()
+    {
+        $teachers = $this->dao->select('t1.*, t2.group')
+                        ->from(TABLE_USER)->alias('t1')
+                        ->leftJoin(TABLE_USERGROUP)->alias('t2')
+                        ->on('t1.account = t2.account')
+                        ->where('t2.group')->eq('teacher')
+                        ->andWhere('t1.deleted')->eq(0)
+                        ->fetchAll();
+
+        if($teachers) return $teachers;
+    }
+
+}

@@ -1,0 +1,77 @@
+<div class='panel panel-block basicinformation'>
+    <div class='panel-heading'>
+      <strong><?php echo $lang->personalinfo->common;?></strong>
+    </div>
+    <div class="main">
+    <table class='table table-borderless table-data'>
+        <tr>
+          <th width="150px"><?php echo $lang->user->account;?></th>
+          <td><?php echo $teacher->account;?></td>
+        </tr>
+        <tr>
+          <th><?php echo $lang->user->realname;?></th>
+          <td><?php echo $teacher->realname;?></td>
+        </tr>
+        <tr>
+          <th><?php echo $lang->user->gender;?></th>
+          <td><?php echo $lang->user->genderList[$teacher->gender];?></td>
+        </tr>
+        <tr>
+          <th><?php echo $lang->user->college;?></th>
+          <td><?php echo $collegelist[$teacher->college_id]; ?></td>
+        </tr>
+        <tr>
+          <th><?php echo $lang->user->specialty;?></th>
+          <td><?php echo $teacher->specialty;?></td>
+        </tr>
+        <tr>
+          <th><?php echo $lang->user->department;?></th>
+          <td><?php echo $teacher->department;?></td>
+        </tr>
+        <tr>
+          <th><?php echo $lang->user->po_status;?></th>
+          <td><?php echo $teacher->po_status;?></td>
+        </tr>
+        <tr>
+          <th><?php echo $lang->user->title;?></th>
+          <td><?php echo $teacher->title;?></td>
+        </tr>
+        <tr>
+          <th><?php echo $lang->user->education;?></th>
+          <td><?php echo $teacher->education;?></td>
+        </tr>
+        <tr>
+          <th><?php echo $lang->user->join;?></th>
+          <td><?php echo $teacher->join;?></td>
+        </tr>
+        <tr>
+          <th><?php echo $lang->user->visits;?></th>
+          <td><?php echo $teacher->visits;?></td>
+        </tr>
+        <tr>
+          <th><?php echo $lang->user->ip;?></th>
+          <td><?php echo $teacher->ip;?></td>
+        </tr>
+        <tr>
+          <th><?php echo $lang->user->last;?></th>
+          <td><?php echo $teacher->last;?></td>
+        </tr>
+        <tr>
+          <th><?php echo $lang->user->qq;?></th>
+          <td><?php if($teacher->qq) echo html::a("tencent://message/?uin=$user->qq", $teacher->qq);?></td>
+        </tr>     
+        <tr>
+          <th><?php echo $lang->user->mobile;?></th>
+          <td><?php echo $teacher->mobile;?></td>
+        </tr>
+        <tr>
+          <th><?php echo $lang->user->email;?></th>
+          <td><?php echo $teacher->email;?></td>
+        </tr>  
+        <tr>
+          <th><?php echo $lang->user->status;?></th>
+          <td><?php echo $lang->user->statusList[$teacher->status];?></td>
+        </tr>
+    </table>
+    </div>
+</div>

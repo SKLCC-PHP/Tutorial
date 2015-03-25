@@ -1,0 +1,19 @@
+<?php include '../../common/view/header.html.php';?>
+<div class='side'>
+	<div class='side-body'>
+		<div class='panel panel-sm'>
+			<div class='panel-heading nobr'>
+				<strong><?php echo $lang->statistics->index;?></strong>
+			</div>
+			<ul id='report-list' class='list-group'>
+			
+			</ul>
+		</div>
+	</div>
+</div>
+<div class='main'>
+	<table class='table table-condensed table-striped table-bordered tablesorter table-fixed active-disabled' id="workload">
+
+	</table>
+</div>
+<?php include '../../common/view/footer.html.php';?>

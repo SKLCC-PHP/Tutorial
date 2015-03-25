@@ -1,0 +1,35 @@
+<div class='panel panel-block' id='projectbox'>
+  <?php if(count($achievements) == 0):?>
+    <div class='panel-heading'>
+      <strong><?php echo $lang->tutor->achievement;?></strong>
+    </div>
+    <div class='panel-body text-center'><br><br>
+      <span></span>
+    </div>
+  <?php else:?>
+    <table class='table table-condensed table-hover table-striped table-borderless table-fixed'>
+      <thead>
+    <tr class='text-left'>
+      <th class='w-90px'><div class='text-left'><?php echo $lang->achievement->title;?></div></th>
+      <th class='w-30px' > <?php echo $lang->achievement->type;?></th>
+      <th class='w-hour' > <?php echo $lang->achievement->create_time;?></th>
+      <th class='w-hour' > <?php echo $lang->achievement->update_time;?></th>
+      <th class='w-90px' > <?php echo $lang->achievement->other_name;?></th>
+      <th class='w-30px' > <?php echo $lang->achievement->ischecked;?></th>
+    </tr>
+    </thead>   
+    <tbody>
+    <?php foreach($achievements as $achievement):?>
+    <tr class='text-center'>
+      <td class='text-left nobr'><?php echo $achievement->title;?></td>
+      <td><?php echo $lang->achievement->typeList[$achievement->type];?></td>
+      <td><?php echo $achievement->create_time;?></td>
+      <td><?php echo $achievement->update_time;?></td>
+      <td><?php echo $achievement->other_name;?></td>
+      <td><?php echo $lang->achievement->checkedList[$achievement->checked];?></td>
+    </tr>
+    <?php endforeach;?>
+    </tbody>
+    </table>
+  <?php endif;?>
+</div>

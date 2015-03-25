@@ -1,0 +1,15 @@
+<?php
+$lang->statistics->common  				= '统计信息';
+$lang->statistics->index   				= '一览';
+$lang->statistics->details   			= '详细';
+$lang->statistics->viewGraduationThesis = '毕业论文';
+$lang->statistics->viewAchievement 		= '成果统计';
+$lang->statistics->viewOthers   		= '其他';
+
+$lang->statistics->task_number			= '布置任务数';
+$lang->statistics->project_number		= '指导项目数';
+$lang->statistics->answer_number		= '回复次数';
+$lang->statistics->thesis_number		= '论文数量';
+$lang->statistics->student_number		= '指导学生数';
+$lang->statistics->assess_number		= '批阅任务数';
+?>

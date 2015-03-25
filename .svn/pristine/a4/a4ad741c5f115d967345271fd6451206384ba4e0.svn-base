@@ -1,0 +1,205 @@
+<?php
+/**
+ * The control file of student module of ZenTaoPMS.
+ *
+ * @copyright   Copyright 2009-2013 青岛易软天创网络科技有限公司 (QingDao Nature Easy Soft Network Technology Co,LTD www.cnezsoft.com)
+ * @license     LGPL (http://www.gnu.org/licenses/lgpl.html)
+ * @author      Chunsheng Wang <chunsheng@cnezsoft.com>
+ * @package     student
+ * @version     $Id: control.php 4622 2013-03-28 01:09:02Z chencongzhi520@gmail.com $
+ * @link        http://www.zentao.net
+ */
+class student extends control
+{
+    public function __construct()
+    {
+        parent::__construct();
+        $this->loadModel('user');
+        $this->loadModel('task');
+        $this->loadModel('tutor');
+        $this->loadModel('project');
+        $this->loadModel('achievement');
+        $this->loadModel('personalinfo');
+        $this->loadModel('problem');
+    }
+    /**
+     * The index of student, goto project deviation.
+     * 
+     * @access public
+     * @return void
+     */
+    public function index()
+    {
+        $this->locate(inlink('viewAll')); 
+    }
+    
+    public function viewAll($orderBy = 'account', $recTotal = 0, $recPerPage = 15, $pageID = 1)
+    {
+        $this->app->loadClass('pager', $static = true);
+        $pager = new pager($recTotal, $recPerPage, $pageID);
+
+        if(!$orderBy) $orderBy = $this->cookie->tutorialOrder ? $this->cookie->tutorialOrder : 'account';
+        setcookie('tutorialOrder', $orderBy, $this->config->cookieLife, $this->config->webRoot);
+
+        $this->view->students = $this->student->getAll('', $orderBy, $pager);
+        $this->view->pager = $pager;
+        $this->view->recTotal = $pager->recTotal;
+        $this->view->recPerPage = $pager->recPerPage;
+        $this->view->pageID = $pager->pageID;
+        $this->display();
+    }
+    /**
+     * Product information student.
+     * 
+     * @access public
+     * @return void
+     */
+    public function viewUndergraduate($orderBy = 'account', $recTotal = 0, $recPerPage = 15, $pageID = 1)
+    {
+        $this->app->loadClass('pager', $static = true);
+        $pager = new pager($recTotal, $recPerPage, $pageID);
+
+        if(!$orderBy) $orderBy = $this->cookie->tutorialOrder ? $this->cookie->tutorialOrder : 'account';
+        setcookie('tutorialOrder', $orderBy, $this->config->cookieLife, $this->config->webRoot);
+
+        $this->view->students = $this->student->getUndergraduate('', $orderBy, $pager);
+        $this->view->pager = $pager;
+        $this->view->recTotal = $pager->recTotal;
+        $this->view->recPerPage = $pager->recPerPage;
+        $this->view->pageID = $pager->pageID;
+        $this->display();
+    }
+
+
+    /**
+     * Project deviation student.
+     * 
+     * @access public
+     * @return void
+     */
+    public function viewGraduate($orderBy = 'account', $recTotal = 0, $recPerPage = 15, $pageID = 1)
+    {
+        $this->app->loadClass('pager', $static = true);
+        $pager = new pager($recTotal, $recPerPage, $pageID);
+
+        if(!$orderBy) $orderBy = $this->cookie->tutorialOrder ? $this->cookie->tutorialOrder : 'account';
+        setcookie('tutorialOrder', $orderBy, $this->config->cookieLife, $this->config->webRoot);
+
+        $this->view->students = $this->student->getgraduate('', $orderBy, $pager);
+        $this->view->pager = $pager;
+        $this->view->recTotal = $pager->recTotal;
+        $this->view->recPerPage = $pager->recPerPage;
+        $this->view->pageID = $pager->pageID;
+        $this->display();
+    }
+
+    /**
+     * viewPostgraduate student.
+     * 
+     * @param  int    $begin 
+     * @param  int    $end 
+     * @access public
+     * @return void
+     */
+    public function viewPostgraduate($orderBy = 'account', $recTotal = 0, $recPerPage = 15, $pageID = 1)
+    {
+        $this->app->loadClass('pager', $static = true);
+        $pager = new pager($recTotal, $recPerPage, $pageID);
+
+        if(!$orderBy) $orderBy = $this->cookie->tutorialOrder ? $this->cookie->tutorialOrder : 'account';
+        setcookie('tutorialOrder', $orderBy, $this->config->cookieLife, $this->config->webRoot);
+
+        $this->view->students = $this->student->getpostgraduate('', $orderBy, $pager);
+        $this->view->pager = $pager;
+        $this->view->recTotal = $pager->recTotal;
+        $this->view->recPerPage = $pager->recPerPage;
+        $this->view->pageID = $pager->pageID;
+        $this->display(); 
+    }
+
+     public function viewStudentDetails($student_account)
+    {
+        $student = $this->user->getByAccount($student_account);
+        $tasks = $this->task->getOtherTask($student_account);
+        $userpairs = $this->user->getPairs('noletter');
+        $achievements = $this->achievement->getOtherAchievements($student_account);
+        $tutors = $this->tutor->getTutorByStudent($student_account);
+        $problems = $this->problem->getOtherProblem($student_account);
+
+        if (count($tasks) >= 7)  $breakTaskNum = 5;
+        else  $breakTaskNum = 6;
+
+        if (count($achievements) >= 7) $breakAchNum = 5;
+        else  $breakAchNum = 6;
+        
+        if (count($problems) >= 7) $breakPromNum = 5;
+        else  $breakPromNum = 6;
+
+        $this->view->module = 'student';
+        $this->view->achievements = $achievements;
+        $this->view->student = $student;
+        $this->view->tasks = $tasks;
+        $this->view->problems = $problems;
+        $this->view->breakTaskNum = $breakTaskNum;
+        $this->view->breakAchNum = $breakAchNum;
+        $this->view->breakPromNum = $breakPromNum;
+        $this->view->userpairs = $userpairs;
+        $this->view->tutors = $tutors;
+        $this->view->student_account = $student_account;
+        $this->display();
+    }
+
+    public function viewMoreTask($student_account, $orderBy = '', $recTotal = 0, $recPerPage = 15, $pageID = 1)
+    {
+        $this->app->loadClass('pager', $static = true);
+        $pager = pager::init($recTotal, $recPerPage, $pageID);
+
+        if(!$orderBy) $orderBy = 'id_desc';
+        setcookie('projectTaskOrder', $orderBy, $this->config->cookieLife, $this->config->webRoot);
+        
+        $this->view->tasks = $this->task->getOtherTask($student_account, $orderBy, $pager);
+        $this->view->userpairs = $this->user->getPairs('noletter');
+        $this->view->pager = $pager;
+        $this->view->recTotal = $pager->recTotal;
+        $this->view->recPerPage = $pager->recPerPage;
+        $this->view->pageID = $pager->pageID;
+        $this->view->student_account = $student_account;
+        $this->display();
+    }
+
+    public function viewMoreAchievement($student_account, $orderBy = '', $recTotal = 0, $recPerPage = 15, $pageID = 1)
+    {
+        $this->app->loadClass('pager', $static = true);
+        $pager = pager::init($recTotal, $recPerPage, $pageID);
+
+        if(!$orderBy) $orderBy = 'id_desc';
+        setcookie('projectTaskOrder', $orderBy, $this->config->cookieLife, $this->config->webRoot);
+        
+        $this->view->achievements = $this->achievement->getOtherAchievements($student_account, $orderBy, $pager);
+        $this->view->userpairs = $this->user->getPairs('noletter');
+        $this->view->pager = $pager;
+        $this->view->recTotal = $pager->recTotal;
+        $this->view->recPerPage = $pager->recPerPage;
+        $this->view->pageID = $pager->pageID;
+        $this->view->student_account = $student_account;
+        $this->display();
+    }
+
+    public function viewMoreProblem($student_account, $orderBy = '', $recTotal = 0, $recPerPage = 15, $pageID = 1)
+    {
+        $this->app->loadClass('pager', $static = true);
+        $pager = pager::init($recTotal, $recPerPage, $pageID);
+
+        if(!$orderBy) $orderBy = 'id_desc';
+        setcookie('projectTaskOrder', $orderBy, $this->config->cookieLife, $this->config->webRoot);
+        
+        $this->view->problems = $this->problem->getOtherProblem($student_account, $orderBy, $pager);
+        $this->view->userpairs = $this->user->getPairs('noletter');
+        $this->view->pager = $pager;
+        $this->view->recTotal = $pager->recTotal;
+        $this->view->recPerPage = $pager->recPerPage;
+        $this->view->pageID = $pager->pageID;
+        $this->view->student_account = $student_account;
+        $this->display();
+    }
+}

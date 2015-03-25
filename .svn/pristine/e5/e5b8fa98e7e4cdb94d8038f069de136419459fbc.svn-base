@@ -1,0 +1,12 @@
+<?php
+	$lang->company->common   = '后台管理';
+	$lang->company->index    = "后台管理首页";
+	$lang->company->setUser  = "用户列表";
+
+	/**
+	 * @author iat
+	 * date 20140829
+	 */
+	$lang->notice->common = '通知';
+	$lang->notice->dynamic = '动态';
+?>

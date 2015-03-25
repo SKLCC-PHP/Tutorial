@@ -1,0 +1,151 @@
+<?php
+/**
+ * The control file of tutor module of ZenTaoPMS.
+ *
+ * @copyright   Copyright 2009-2013 青岛易软天创网络科技有限公司 (QingDao Nature Easy Soft Network Technology Co,LTD www.cnezsoft.com)
+ * @license     LGPL (http://www.gnu.org/licenses/lgpl.html)
+ * @author      Chunsheng Wang <chunsheng@cnezsoft.com>
+ * @package     tutor
+ * @version     $Id: control.php 4622 2013-03-28 01:09:02Z chencongzhi520@gmail.com $
+ * @link        http://www.zentao.net
+ */
+class workspace extends control
+{
+
+    /**
+     * Construct function, load user models auto.
+     * 
+     * @access public
+     * @return void
+     */
+    public function __construct()
+    {
+        parent::__construct();
+        $this->loadModel('task');
+        $this->loadModel('project');
+        $this->loadModel('tutorial');
+    }
+
+
+    /**
+     * Index page, to browse.
+     *
+     * @param  string $locate     locate to browse page or not. If not, display all products.
+     * @param  int    $productID 
+     * @access public
+     * @return void
+     */
+    public function index()
+    {
+        $this->locate(inlink('Task'));
+    }
+
+    /**
+     * Browse a product.
+     * 
+     * @param  int    $productID 
+     * @param  string $browseType 
+     * @param  int    $param 
+     * @param  string $orderBy 
+     * @param  int    $recTotal 
+     * @param  int    $recPerPage 
+     * @param  int    $pageID 
+     * @access public
+     * @return void
+     */
+    public function MyCalendar()
+    {
+
+        // $this->product->setMenu();
+        // $this->view->title      = $this->products[$productID]. $this->lang->colon . $this->lang->product->browse;
+        // $this->view->position[] = $this->lang->product->browse;
+        $this->display();
+    }
+
+    /**
+     * Browse a product.
+     * 
+     * @param  int    $productID 
+     * @param  string $browseType 
+     * @param  int    $param 
+     * @param  string $orderBy 
+     * @param  int    $recTotal 
+     * @param  int    $recPerPage 
+     * @param  int    $pageID 
+     * @access public
+     * @return void
+     */
+    public function Task()
+    {  
+        // $typeList = array('undone' , 'done' , 'assess' , 'arrange' , 'history');
+
+        // $this->view->typeList = $typeList;
+        // $this->display();
+        $this->locate($this->createLink('Task', 'viewTask' ,'viewtype=all'), 'parent');
+    }
+
+    /**
+     * Browse a product.
+     * 
+     * @param  int    $productID 
+     * @param  string $browseType 
+     * @param  int    $param 
+     * @param  string $orderBy 
+     * @param  int    $recTotal 
+     * @param  int    $recPerPage 
+     * @param  int    $pageID 
+     * @access public
+     * @return void
+     */
+    public function viewProblem()
+    {
+        $this->locate($this->createLink('problem', 'viewProblem', 'viewtype=all'), 'parent');
+    }
+
+    /**
+     * View a product.
+     * 
+     * @param  int    $productID 
+     * @access public
+     * @return void
+     */
+    public function viewAchievement()
+    {
+        $this->locate($this->createLink('achievement', 'viewAchievement'), 'parent');
+    }
+
+    /**
+     * View a product.
+     * 
+     * @param  int    $productID 
+     * @access public
+     * @return void
+     */
+    public function viewProject()
+    {
+        $this->locate($this->createLink('project', 'viewProject'), 'parent');
+    }
+
+    /**
+     * Browse a product.
+     * 
+     * @param  int    $productID 
+     * @param  string $browseType 
+     * @param  int    $param 
+     * @param  string $orderBy 
+     * @param  int    $recTotal 
+     * @param  int    $recPerPage 
+     * @param  int    $pageID 
+     * @access public
+     * @return void
+     */
+    public function viewConclusion()
+    {
+        $this->locate($this->createLink('conclusion', 'viewConclusion'), 'parent');
+    }
+
+    public function viewTutorialSystem()
+    {
+        $this->locate($this->createLink('tutorial', 'viewTutorialSystem'), 'parent');
+    }
+}

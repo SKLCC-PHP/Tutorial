@@ -1,0 +1,534 @@
+
+19:33:21 Undefined property: stdClass::$title in module\product\config.php on line 8 when visiting product-create
+
+19:33:21 Undefined property: stdClass::$id in module\product\config.php on line 9 when visiting product-create
+
+19:33:21 Undefined property: stdClass::$keywords in module\product\config.php on line 10 when visiting product-create
+
+19:33:21 Undefined property: stdClass::$stage in module\product\config.php on line 11 when visiting product-create
+
+19:33:21 Undefined property: stdClass::$status in module\product\config.php on line 12 when visiting product-create
+
+19:33:21 Undefined property: stdClass::$pri in module\product\config.php on line 13 when visiting product-create
+
+19:33:21 Undefined property: stdClass::$product in module\product\config.php on line 15 when visiting product-create
+
+19:33:21 Undefined property: stdClass::$module in module\product\config.php on line 16 when visiting product-create
+
+19:33:21 Undefined property: stdClass::$plan in module\product\config.php on line 17 when visiting product-create
+
+19:33:21 Undefined property: stdClass::$estimate in module\product\config.php on line 18 when visiting product-create
+
+19:33:21 Undefined property: stdClass::$source in module\product\config.php on line 20 when visiting product-create
+
+19:33:21 Undefined property: stdClass::$fromBug in module\product\config.php on line 21 when visiting product-create
+
+19:33:21 Undefined property: stdClass::$openedBy in module\product\config.php on line 23 when visiting product-create
+
+19:33:21 Undefined property: stdClass::$reviewedBy in module\product\config.php on line 24 when visiting product-create
+
+19:33:21 Undefined property: stdClass::$assignedTo in module\product\config.php on line 25 when visiting product-create
+
+19:33:21 Undefined property: stdClass::$closedBy in module\product\config.php on line 26 when visiting product-create
+
+19:33:21 Undefined property: stdClass::$lastEditedBy in module\product\config.php on line 27 when visiting product-create
+
+19:33:21 Undefined property: stdClass::$mailto in module\product\config.php on line 29 when visiting product-create
+
+19:33:21 Undefined property: stdClass::$closedReason in module\product\config.php on line 31 when visiting product-create
+
+19:33:21 Undefined property: stdClass::$version in module\product\config.php on line 32 when visiting product-create
+
+19:33:21 Undefined property: stdClass::$openedDate in module\product\config.php on line 34 when visiting product-create
+
+19:33:21 Undefined property: stdClass::$reviewedDate in module\product\config.php on line 35 when visiting product-create
+
+19:33:21 Undefined property: stdClass::$assignedDate in module\product\config.php on line 36 when visiting product-create
+
+19:33:21 Undefined property: stdClass::$closedDate in module\product\config.php on line 37 when visiting product-create
+
+19:33:21 Undefined property: stdClass::$lastEditedDate in module\product\config.php on line 38 when visiting product-create
+
+19:33:21 Undefined property: stdClass::$statusList in module\product\config.php on line 42 when visiting product-create
+
+19:33:21 Undefined property: stdClass::$stageList in module\product\config.php on line 43 when visiting product-create
+
+19:33:21 Undefined property: stdClass::$priList in module\product\config.php on line 44 when visiting product-create
+
+19:33:21 Undefined property: stdClass::$sourceList in module\product\config.php on line 51 when visiting product-create
+
+19:33:21 Undefined property: stdClass::$reasonList in module\product\config.php on line 62 when visiting product-create
+
+19:33:21 include(module\story\model.php): failed to open stream: No such file or directory in framework\helper.class.php on line 132 when visiting product-create
+
+19:33:21 include(): Failed opening 'module\story\model.php' for inclusion (include_path='.;D:\xampp\php\PEAR') in framework\helper.class.php on line 132 when visiting product-create
+
+19:33:21 Undefined property: stdClass::$product in module\common\model.php on line 365 when visiting product-create
+
+19:33:21 Undefined property: stdClass::$project in module\common\model.php on line 365 when visiting product-create
+
+19:33:21 Undefined property: stdClass::$qa in module\common\model.php on line 365 when visiting product-create
+
+19:33:21 Undefined property: stdClass::$doc in module\common\model.php on line 365 when visiting product-create
+
+19:33:21 Undefined property: stdClass::$report in module\common\model.php on line 365 when visiting product-create
+
+19:33:21 Undefined property: stdClass::$company in module\common\model.php on line 365 when visiting product-create
+
+19:33:21 Attempt to modify property of non-object in module\common\model.php on line 457 when visiting product-create
+
+19:33:22 ERROR: the control file module\conclusion\control.php not found. in framework\router.class.php on line 971, last called by framework\router.class.php on line 1061 through function setControlFile.
+ in framework\router.class.php on line 1577 when visiting conclusion
+
+19:33:24 Undefined property: stdClass::$product in module\common\model.php on line 365 when visiting my
+
+19:33:24 Undefined property: stdClass::$project in module\common\model.php on line 365 when visiting my
+
+19:33:24 Undefined property: stdClass::$qa in module\common\model.php on line 365 when visiting my
+
+19:33:24 Undefined property: stdClass::$doc in module\common\model.php on line 365 when visiting my
+
+19:33:24 Undefined property: stdClass::$report in module\common\model.php on line 365 when visiting my
+
+19:33:24 Undefined property: stdClass::$company in module\common\model.php on line 365 when visiting my
+
+19:33:24 Attempt to modify property of non-object in module\common\model.php on line 457 when visiting my
+
+19:33:26 Undefined property: stdClass::$actor in module\company\config.php on line 12 when visiting company
+
+19:33:26 Undefined property: stdClass::$objectID in module\company\config.php on line 13 when visiting company
+
+19:33:26 Undefined property: stdClass::$objectType in module\company\config.php on line 15 when visiting company
+
+19:33:26 Undefined property: stdClass::$date in module\company\config.php on line 16 when visiting company
+
+19:33:26 Undefined property: stdClass::$action in module\company\config.php on line 17 when visiting company
+
+19:33:26 Undefined property: stdClass::$actor in module\company\config.php on line 12 when visiting company-browse
+
+19:33:26 Undefined property: stdClass::$objectID in module\company\config.php on line 13 when visiting company-browse
+
+19:33:26 Undefined property: stdClass::$objectType in module\company\config.php on line 15 when visiting company-browse
+
+19:33:26 Undefined property: stdClass::$date in module\company\config.php on line 16 when visiting company-browse
+
+19:33:26 Undefined property: stdClass::$action in module\company\config.php on line 17 when visiting company-browse
+
+19:33:26 Undefined variable: deptID in module\company\control.php on line 51 when visiting company-browse
+
+19:33:26 Undefined property: stdClass::$addUser in module\common\control.php on line 118 when visiting company-browse
+
+19:33:26 Undefined property: stdClass::$addUser in module\common\control.php on line 126 when visiting company-browse
+
+19:33:26 Undefined property: stdClass::$batchAddUser in module\common\control.php on line 118 when visiting company-browse
+
+19:33:26 Undefined property: stdClass::$batchAddUser in module\common\control.php on line 126 when visiting company-browse
+
+19:33:26 Undefined property: stdClass::$product in module\common\model.php on line 365 when visiting company-browse
+
+19:33:26 Undefined property: stdClass::$project in module\common\model.php on line 365 when visiting company-browse
+
+19:33:26 Undefined property: stdClass::$qa in module\common\model.php on line 365 when visiting company-browse
+
+19:33:26 Undefined property: stdClass::$doc in module\common\model.php on line 365 when visiting company-browse
+
+19:33:26 Undefined property: stdClass::$report in module\common\model.php on line 365 when visiting company-browse
+
+19:33:26 Undefined property: stdClass::$company in module\common\model.php on line 365 when visiting company-browse
+
+19:33:26 Attempt to modify property of non-object in module\common\model.php on line 457 when visiting company-browse
+
+19:33:26 Undefined variable: deptID in module\company\view\browse.html.php on line 16 when visiting company-browse
+
+19:33:26 Undefined variable: deptID in module\company\view\browse.html.php on line 24 when visiting company-browse
+
+19:33:27 ERROR: the control file module\conclusion\control.php not found. in framework\router.class.php on line 971, last called by framework\router.class.php on line 1061 through function setControlFile.
+ in framework\router.class.php on line 1577 when visiting conclusion
+
+19:33:58 Undefined property: stdClass::$actor in module\company\config.php on line 12 when visiting company-browse
+
+19:33:58 Undefined property: stdClass::$objectID in module\company\config.php on line 13 when visiting company-browse
+
+19:33:58 Undefined property: stdClass::$objectType in module\company\config.php on line 15 when visiting company-browse
+
+19:33:58 Undefined property: stdClass::$date in module\company\config.php on line 16 when visiting company-browse
+
+19:33:58 Undefined property: stdClass::$action in module\company\config.php on line 17 when visiting company-browse
+
+19:33:58 Undefined variable: deptID in module\company\control.php on line 51 when visiting company-browse
+
+19:33:58 Undefined property: stdClass::$addUser in module\common\control.php on line 118 when visiting company-browse
+
+19:33:58 Undefined property: stdClass::$addUser in module\common\control.php on line 126 when visiting company-browse
+
+19:33:58 Undefined property: stdClass::$batchAddUser in module\common\control.php on line 118 when visiting company-browse
+
+19:33:58 Undefined property: stdClass::$batchAddUser in module\common\control.php on line 126 when visiting company-browse
+
+19:33:58 Undefined property: stdClass::$product in module\common\model.php on line 365 when visiting company-browse
+
+19:33:58 Undefined property: stdClass::$project in module\common\model.php on line 365 when visiting company-browse
+
+19:33:58 Undefined property: stdClass::$qa in module\common\model.php on line 365 when visiting company-browse
+
+19:33:58 Undefined property: stdClass::$doc in module\common\model.php on line 365 when visiting company-browse
+
+19:33:58 Undefined property: stdClass::$report in module\common\model.php on line 365 when visiting company-browse
+
+19:33:58 Undefined property: stdClass::$company in module\common\model.php on line 365 when visiting company-browse
+
+19:33:58 Attempt to modify property of non-object in module\common\model.php on line 457 when visiting company-browse
+
+19:33:58 Undefined variable: deptID in module\company\view\browse.html.php on line 16 when visiting company-browse
+
+19:33:58 Undefined variable: deptID in module\company\view\browse.html.php on line 24 when visiting company-browse
+
+19:33:59 Creating default object from empty value in module\conclusion\lang\zh-cn.php on line 12 when visiting conclusion
+
+19:33:59 Undefined property: stdClass::$common in module\conclusion\control.php on line 22 when visiting conclusion
+
+19:33:59 Undefined property: stdClass::$index in module\conclusion\control.php on line 23 when visiting conclusion
+
+19:33:59 Undefined property: stdClass::$product in module\common\model.php on line 365 when visiting conclusion
+
+19:33:59 Undefined property: stdClass::$project in module\common\model.php on line 365 when visiting conclusion
+
+19:33:59 Undefined property: stdClass::$qa in module\common\model.php on line 365 when visiting conclusion
+
+19:33:59 Undefined property: stdClass::$doc in module\common\model.php on line 365 when visiting conclusion
+
+19:33:59 Undefined property: stdClass::$report in module\common\model.php on line 365 when visiting conclusion
+
+19:33:59 Undefined property: stdClass::$company in module\common\model.php on line 365 when visiting conclusion
+
+19:37:16 Undefined property: stdClass::$actor in module\company\config.php on line 12 when visiting 
+
+19:37:16 Undefined property: stdClass::$objectID in module\company\config.php on line 13 when visiting 
+
+19:37:16 Undefined property: stdClass::$objectType in module\company\config.php on line 15 when visiting 
+
+19:37:16 Undefined property: stdClass::$date in module\company\config.php on line 16 when visiting 
+
+19:37:16 Undefined property: stdClass::$action in module\company\config.php on line 17 when visiting 
+
+19:37:16 Undefined property: stdClass::$actor in module\company\config.php on line 12 when visiting user-login-L29hL3d3dy9teS5odG1s
+
+19:37:16 Undefined property: stdClass::$objectID in module\company\config.php on line 13 when visiting user-login-L29hL3d3dy9teS5odG1s
+
+19:37:16 Undefined property: stdClass::$objectType in module\company\config.php on line 15 when visiting user-login-L29hL3d3dy9teS5odG1s
+
+19:37:16 Undefined property: stdClass::$date in module\company\config.php on line 16 when visiting user-login-L29hL3d3dy9teS5odG1s
+
+19:37:16 Undefined property: stdClass::$action in module\company\config.php on line 17 when visiting user-login-L29hL3d3dy9teS5odG1s
+
+19:37:16 Undefined property: stdClass::$addUser in module\common\control.php on line 118 when visiting user-login-L29hL3d3dy9teS5odG1s
+
+19:37:16 Undefined property: stdClass::$addUser in module\common\control.php on line 126 when visiting user-login-L29hL3d3dy9teS5odG1s
+
+19:37:16 Undefined property: stdClass::$batchAddUser in module\common\control.php on line 118 when visiting user-login-L29hL3d3dy9teS5odG1s
+
+19:37:16 Undefined property: stdClass::$batchAddUser in module\common\control.php on line 126 when visiting user-login-L29hL3d3dy9teS5odG1s
+
+19:37:16 include(module\todo\model.php): failed to open stream: No such file or directory in framework\helper.class.php on line 132 when visiting user-login-L29hL3d3dy9teS5odG1s
+
+19:37:16 include(): Failed opening 'module\todo\model.php' for inclusion (include_path='.;D:\xampp\php\PEAR') in framework\helper.class.php on line 132 when visiting user-login-L29hL3d3dy9teS5odG1s
+
+19:37:16 Undefined property: language::$misc in module\user\control.php on line 706 when visiting user-login-L29hL3d3dy9teS5odG1s
+
+19:37:16 Trying to get property of non-object in module\user\control.php on line 706 when visiting user-login-L29hL3d3dy9teS5odG1s
+
+19:37:17 Undefined property: stdClass::$actor in module\company\config.php on line 12 when visiting user-login-L29hL3d3dy9teS5odG1s
+
+19:37:17 Undefined property: stdClass::$objectID in module\company\config.php on line 13 when visiting user-login-L29hL3d3dy9teS5odG1s
+
+19:37:17 Undefined property: stdClass::$objectType in module\company\config.php on line 15 when visiting user-login-L29hL3d3dy9teS5odG1s
+
+19:37:17 Undefined property: stdClass::$date in module\company\config.php on line 16 when visiting user-login-L29hL3d3dy9teS5odG1s
+
+19:37:17 Undefined property: stdClass::$action in module\company\config.php on line 17 when visiting user-login-L29hL3d3dy9teS5odG1s
+
+19:37:17 Undefined property: stdClass::$addUser in module\common\control.php on line 118 when visiting user-login-L29hL3d3dy9teS5odG1s
+
+19:37:17 Undefined property: stdClass::$addUser in module\common\control.php on line 126 when visiting user-login-L29hL3d3dy9teS5odG1s
+
+19:37:17 Undefined property: stdClass::$batchAddUser in module\common\control.php on line 118 when visiting user-login-L29hL3d3dy9teS5odG1s
+
+19:37:17 Undefined property: stdClass::$batchAddUser in module\common\control.php on line 126 when visiting user-login-L29hL3d3dy9teS5odG1s
+
+19:37:17 include(module\todo\model.php): failed to open stream: No such file or directory in framework\helper.class.php on line 132 when visiting user-login-L29hL3d3dy9teS5odG1s
+
+19:37:17 include(): Failed opening 'module\todo\model.php' for inclusion (include_path='.;D:\xampp\php\PEAR') in framework\helper.class.php on line 132 when visiting user-login-L29hL3d3dy9teS5odG1s
+
+19:37:17 Undefined property: language::$misc in module\user\control.php on line 706 when visiting user-login-L29hL3d3dy9teS5odG1s
+
+19:37:17 Trying to get property of non-object in module\user\control.php on line 706 when visiting user-login-L29hL3d3dy9teS5odG1s
+
+19:37:26 Undefined property: stdClass::$actor in module\company\config.php on line 12 when visiting user-login-L29hL3d3dy9teS5odG1s
+
+19:37:26 Undefined property: stdClass::$objectID in module\company\config.php on line 13 when visiting user-login-L29hL3d3dy9teS5odG1s
+
+19:37:26 Undefined property: stdClass::$objectType in module\company\config.php on line 15 when visiting user-login-L29hL3d3dy9teS5odG1s
+
+19:37:26 Undefined property: stdClass::$date in module\company\config.php on line 16 when visiting user-login-L29hL3d3dy9teS5odG1s
+
+19:37:26 Undefined property: stdClass::$action in module\company\config.php on line 17 when visiting user-login-L29hL3d3dy9teS5odG1s
+
+19:37:26 Undefined property: stdClass::$addUser in module\common\control.php on line 118 when visiting user-login-L29hL3d3dy9teS5odG1s
+
+19:37:26 Undefined property: stdClass::$addUser in module\common\control.php on line 126 when visiting user-login-L29hL3d3dy9teS5odG1s
+
+19:37:26 Undefined property: stdClass::$batchAddUser in module\common\control.php on line 118 when visiting user-login-L29hL3d3dy9teS5odG1s
+
+19:37:26 Undefined property: stdClass::$batchAddUser in module\common\control.php on line 126 when visiting user-login-L29hL3d3dy9teS5odG1s
+
+19:37:26 include(module\todo\model.php): failed to open stream: No such file or directory in framework\helper.class.php on line 132 when visiting user-login-L29hL3d3dy9teS5odG1s
+
+19:37:26 include(): Failed opening 'module\todo\model.php' for inclusion (include_path='.;D:\xampp\php\PEAR') in framework\helper.class.php on line 132 when visiting user-login-L29hL3d3dy9teS5odG1s
+
+19:37:26 Undefined offset: 1 in module\user\control.php on line 655 when visiting user-login-L29hL3d3dy9teS5odG1s
+
+19:37:26 Undefined property: stdClass::$product in module\common\model.php on line 365 when visiting my
+
+19:37:26 Undefined property: stdClass::$project in module\common\model.php on line 365 when visiting my
+
+19:37:26 Undefined property: stdClass::$qa in module\common\model.php on line 365 when visiting my
+
+19:37:26 Undefined property: stdClass::$doc in module\common\model.php on line 365 when visiting my
+
+19:37:26 Undefined property: stdClass::$report in module\common\model.php on line 365 when visiting my
+
+19:37:26 Undefined property: stdClass::$company in module\common\model.php on line 365 when visiting my
+
+19:37:26 Attempt to modify property of non-object in module\common\model.php on line 457 when visiting my
+
+19:37:28 Creating default object from empty value in module\conclusion\lang\zh-cn.php on line 12 when visiting conclusion
+
+19:37:28 Undefined property: stdClass::$common in module\conclusion\control.php on line 22 when visiting conclusion
+
+19:37:28 Undefined property: stdClass::$index in module\conclusion\control.php on line 23 when visiting conclusion
+
+19:37:28 Undefined property: stdClass::$product in module\common\model.php on line 365 when visiting conclusion
+
+19:37:28 Undefined property: stdClass::$project in module\common\model.php on line 365 when visiting conclusion
+
+19:37:28 Undefined property: stdClass::$qa in module\common\model.php on line 365 when visiting conclusion
+
+19:37:28 Undefined property: stdClass::$doc in module\common\model.php on line 365 when visiting conclusion
+
+19:37:28 Undefined property: stdClass::$report in module\common\model.php on line 365 when visiting conclusion
+
+19:37:28 Undefined property: stdClass::$company in module\common\model.php on line 365 when visiting conclusion
+
+19:38:28 ERROR: the control file module\misc\control.php not found. in framework\router.class.php on line 971, last called by framework\router.class.php on line 1061 through function setControlFile.
+ in framework\router.class.php on line 1577 when visiting misc-ping
+
+19:41:52 Undefined property: stdClass::$product in module\common\model.php on line 365 when visiting my
+
+19:41:52 Undefined property: stdClass::$project in module\common\model.php on line 365 when visiting my
+
+19:41:52 Undefined property: stdClass::$qa in module\common\model.php on line 365 when visiting my
+
+19:41:52 Undefined property: stdClass::$doc in module\common\model.php on line 365 when visiting my
+
+19:41:52 Undefined property: stdClass::$report in module\common\model.php on line 365 when visiting my
+
+19:41:52 Undefined property: stdClass::$company in module\common\model.php on line 365 when visiting my
+
+19:41:52 Attempt to modify property of non-object in module\common\model.php on line 457 when visiting my
+
+19:42:55 ERROR: the control file module\misc\control.php not found. in framework\router.class.php on line 971, last called by framework\router.class.php on line 1061 through function setControlFile.
+ in framework\router.class.php on line 1577 when visiting misc-ping
+
+19:42:58 Undefined property: stdClass::$product in module\common\model.php on line 365 when visiting my
+
+19:42:58 Undefined property: stdClass::$project in module\common\model.php on line 365 when visiting my
+
+19:42:58 Undefined property: stdClass::$qa in module\common\model.php on line 365 when visiting my
+
+19:42:58 Undefined property: stdClass::$doc in module\common\model.php on line 365 when visiting my
+
+19:42:58 Undefined property: stdClass::$report in module\common\model.php on line 365 when visiting my
+
+19:42:58 Undefined property: stdClass::$company in module\common\model.php on line 365 when visiting my
+
+19:42:58 Attempt to modify property of non-object in module\common\model.php on line 457 when visiting my
+
+19:42:59 Undefined property: stdClass::$product in module\common\model.php on line 365 when visiting my
+
+19:42:59 Undefined property: stdClass::$project in module\common\model.php on line 365 when visiting my
+
+19:42:59 Undefined property: stdClass::$qa in module\common\model.php on line 365 when visiting my
+
+19:42:59 Undefined property: stdClass::$doc in module\common\model.php on line 365 when visiting my
+
+19:42:59 Undefined property: stdClass::$report in module\common\model.php on line 365 when visiting my
+
+19:42:59 Undefined property: stdClass::$company in module\common\model.php on line 365 when visiting my
+
+19:42:59 Attempt to modify property of non-object in module\common\model.php on line 457 when visiting my
+
+19:43:59 ERROR: the control file module\misc\control.php not found. in framework\router.class.php on line 971, last called by framework\router.class.php on line 1061 through function setControlFile.
+ in framework\router.class.php on line 1577 when visiting misc-ping
+
+19:44:23 Undefined property: stdClass::$title in module\product\config.php on line 8 when visiting product
+
+19:44:23 Undefined property: stdClass::$id in module\product\config.php on line 9 when visiting product
+
+19:44:23 Undefined property: stdClass::$keywords in module\product\config.php on line 10 when visiting product
+
+19:44:23 Undefined property: stdClass::$stage in module\product\config.php on line 11 when visiting product
+
+19:44:23 Undefined property: stdClass::$status in module\product\config.php on line 12 when visiting product
+
+19:44:23 Undefined property: stdClass::$pri in module\product\config.php on line 13 when visiting product
+
+19:44:23 Undefined property: stdClass::$product in module\product\config.php on line 15 when visiting product
+
+19:44:23 Undefined property: stdClass::$module in module\product\config.php on line 16 when visiting product
+
+19:44:23 Undefined property: stdClass::$plan in module\product\config.php on line 17 when visiting product
+
+19:44:23 Undefined property: stdClass::$estimate in module\product\config.php on line 18 when visiting product
+
+19:44:23 Undefined property: stdClass::$source in module\product\config.php on line 20 when visiting product
+
+19:44:23 Undefined property: stdClass::$fromBug in module\product\config.php on line 21 when visiting product
+
+19:44:23 Undefined property: stdClass::$openedBy in module\product\config.php on line 23 when visiting product
+
+19:44:23 Undefined property: stdClass::$reviewedBy in module\product\config.php on line 24 when visiting product
+
+19:44:23 Undefined property: stdClass::$assignedTo in module\product\config.php on line 25 when visiting product
+
+19:44:23 Undefined property: stdClass::$closedBy in module\product\config.php on line 26 when visiting product
+
+19:44:23 Undefined property: stdClass::$lastEditedBy in module\product\config.php on line 27 when visiting product
+
+19:44:23 Undefined property: stdClass::$mailto in module\product\config.php on line 29 when visiting product
+
+19:44:23 Undefined property: stdClass::$closedReason in module\product\config.php on line 31 when visiting product
+
+19:44:23 Undefined property: stdClass::$version in module\product\config.php on line 32 when visiting product
+
+19:44:23 Undefined property: stdClass::$openedDate in module\product\config.php on line 34 when visiting product
+
+19:44:23 Undefined property: stdClass::$reviewedDate in module\product\config.php on line 35 when visiting product
+
+19:44:23 Undefined property: stdClass::$assignedDate in module\product\config.php on line 36 when visiting product
+
+19:44:23 Undefined property: stdClass::$closedDate in module\product\config.php on line 37 when visiting product
+
+19:44:23 Undefined property: stdClass::$lastEditedDate in module\product\config.php on line 38 when visiting product
+
+19:44:23 Undefined property: stdClass::$statusList in module\product\config.php on line 42 when visiting product
+
+19:44:23 Undefined property: stdClass::$stageList in module\product\config.php on line 43 when visiting product
+
+19:44:23 Undefined property: stdClass::$priList in module\product\config.php on line 44 when visiting product
+
+19:44:23 Undefined property: stdClass::$sourceList in module\product\config.php on line 51 when visiting product
+
+19:44:23 Undefined property: stdClass::$reasonList in module\product\config.php on line 62 when visiting product
+
+19:44:23 include(module\story\model.php): failed to open stream: No such file or directory in framework\helper.class.php on line 132 when visiting product
+
+19:44:23 include(): Failed opening 'module\story\model.php' for inclusion (include_path='.;D:\xampp\php\PEAR') in framework\helper.class.php on line 132 when visiting product
+
+19:44:24 Undefined property: stdClass::$title in module\product\config.php on line 8 when visiting product-create
+
+19:44:24 Undefined property: stdClass::$id in module\product\config.php on line 9 when visiting product-create
+
+19:44:24 Undefined property: stdClass::$keywords in module\product\config.php on line 10 when visiting product-create
+
+19:44:24 Undefined property: stdClass::$stage in module\product\config.php on line 11 when visiting product-create
+
+19:44:24 Undefined property: stdClass::$status in module\product\config.php on line 12 when visiting product-create
+
+19:44:24 Undefined property: stdClass::$pri in module\product\config.php on line 13 when visiting product-create
+
+19:44:24 Undefined property: stdClass::$product in module\product\config.php on line 15 when visiting product-create
+
+19:44:24 Undefined property: stdClass::$module in module\product\config.php on line 16 when visiting product-create
+
+19:44:24 Undefined property: stdClass::$plan in module\product\config.php on line 17 when visiting product-create
+
+19:44:24 Undefined property: stdClass::$estimate in module\product\config.php on line 18 when visiting product-create
+
+19:44:24 Undefined property: stdClass::$source in module\product\config.php on line 20 when visiting product-create
+
+19:44:24 Undefined property: stdClass::$fromBug in module\product\config.php on line 21 when visiting product-create
+
+19:44:24 Undefined property: stdClass::$openedBy in module\product\config.php on line 23 when visiting product-create
+
+19:44:24 Undefined property: stdClass::$reviewedBy in module\product\config.php on line 24 when visiting product-create
+
+19:44:24 Undefined property: stdClass::$assignedTo in module\product\config.php on line 25 when visiting product-create
+
+19:44:24 Undefined property: stdClass::$closedBy in module\product\config.php on line 26 when visiting product-create
+
+19:44:24 Undefined property: stdClass::$lastEditedBy in module\product\config.php on line 27 when visiting product-create
+
+19:44:24 Undefined property: stdClass::$mailto in module\product\config.php on line 29 when visiting product-create
+
+19:44:24 Undefined property: stdClass::$closedReason in module\product\config.php on line 31 when visiting product-create
+
+19:44:24 Undefined property: stdClass::$version in module\product\config.php on line 32 when visiting product-create
+
+19:44:24 Undefined property: stdClass::$openedDate in module\product\config.php on line 34 when visiting product-create
+
+19:44:24 Undefined property: stdClass::$reviewedDate in module\product\config.php on line 35 when visiting product-create
+
+19:44:24 Undefined property: stdClass::$assignedDate in module\product\config.php on line 36 when visiting product-create
+
+19:44:24 Undefined property: stdClass::$closedDate in module\product\config.php on line 37 when visiting product-create
+
+19:44:24 Undefined property: stdClass::$lastEditedDate in module\product\config.php on line 38 when visiting product-create
+
+19:44:24 Undefined property: stdClass::$statusList in module\product\config.php on line 42 when visiting product-create
+
+19:44:24 Undefined property: stdClass::$stageList in module\product\config.php on line 43 when visiting product-create
+
+19:44:24 Undefined property: stdClass::$priList in module\product\config.php on line 44 when visiting product-create
+
+19:44:24 Undefined property: stdClass::$sourceList in module\product\config.php on line 51 when visiting product-create
+
+19:44:24 Undefined property: stdClass::$reasonList in module\product\config.php on line 62 when visiting product-create
+
+19:44:24 include(module\story\model.php): failed to open stream: No such file or directory in framework\helper.class.php on line 132 when visiting product-create
+
+19:44:24 include(): Failed opening 'module\story\model.php' for inclusion (include_path='.;D:\xampp\php\PEAR') in framework\helper.class.php on line 132 when visiting product-create
+
+19:44:24 Undefined property: stdClass::$product in module\common\model.php on line 365 when visiting product-create
+
+19:44:24 Undefined property: stdClass::$project in module\common\model.php on line 365 when visiting product-create
+
+19:44:24 Undefined property: stdClass::$qa in module\common\model.php on line 365 when visiting product-create
+
+19:44:24 Undefined property: stdClass::$doc in module\common\model.php on line 365 when visiting product-create
+
+19:44:24 Undefined property: stdClass::$report in module\common\model.php on line 365 when visiting product-create
+
+19:44:24 Undefined property: stdClass::$company in module\common\model.php on line 365 when visiting product-create
+
+19:44:24 Attempt to modify property of non-object in module\common\model.php on line 457 when visiting product-create
+
+19:44:27 Creating default object from empty value in module\conclusion\lang\zh-cn.php on line 12 when visiting conclusion
+
+19:44:27 Undefined property: stdClass::$common in module\conclusion\control.php on line 22 when visiting conclusion
+
+19:44:27 Undefined property: stdClass::$index in module\conclusion\control.php on line 23 when visiting conclusion
+
+19:44:27 Undefined property: stdClass::$product in module\common\model.php on line 365 when visiting conclusion
+
+19:44:27 Undefined property: stdClass::$project in module\common\model.php on line 365 when visiting conclusion
+
+19:44:27 Undefined property: stdClass::$qa in module\common\model.php on line 365 when visiting conclusion
+
+19:44:27 Undefined property: stdClass::$doc in module\common\model.php on line 365 when visiting conclusion
+
+19:44:27 Undefined property: stdClass::$report in module\common\model.php on line 365 when visiting conclusion
+
+19:44:27 Undefined property: stdClass::$company in module\common\model.php on line 365 when visiting conclusion
+
+19:45:27 ERROR: the control file module\misc\control.php not found. in framework\router.class.php on line 971, last called by framework\router.class.php on line 1061 through function setControlFile.
+ in framework\router.class.php on line 1577 when visiting misc-ping

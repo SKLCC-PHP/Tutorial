@@ -1,0 +1,190 @@
+<?php
+/**
+ * The control file of tutor module of ZenTaoPMS.
+ *
+ * @copyright   Copyright 2009-2013 青岛易软天创网络科技有限公司 (QingDao Nature Easy Soft Network Technology Co,LTD www.cnezsoft.com)
+ * @license     LGPL (http://www.gnu.org/licenses/lgpl.html)
+ * @author      Chunsheng Wang <chunsheng@cnezsoft.com>
+ * @package     tutor
+ * @version     $Id: control.php 4622 2013-03-28 01:09:02Z chencongzhi520@gmail.com $
+ * @link        http://www.zentao.net
+ */
+class project extends control
+{
+
+    public function __construct()
+    {
+        parent::__construct();
+        $this->loadModel('workspace');
+        $this->loadModel('task');
+        $this->loadModel('tutor');
+        $this->loadModel('student');
+        $this->loadModel('user');
+        $this->loadModel('common');
+        $this->loadModel('project');
+        $this->loadModel('action');
+    }
+
+
+    /**
+     * View a product.
+     * 
+     * @param  int    $productID 
+     * @access public
+     * @return void
+     */
+    public function viewProject($orderBy = '', $recTotal = 0, $recPerPage = 15, $pageID = 1)
+    { 
+        $this->app->loadClass('pager', $static = true);
+        $pager = pager::init($recTotal, $recPerPage, $pageID);
+
+        if(!$orderBy) $orderBy = 'id_desc';
+        setcookie('projectTaskOrder', $orderBy, $this->config->cookieLife, $this->config->webRoot);
+        
+        $cur_role = $this->session->userinfo->roleid;
+
+        if ($cur_role == 'student')
+        {
+            $projects = $this->project->getProjectByStudent($this->session->user->account, $pager, $orderBy);
+        }
+        elseif ($cur_role == 'teacher')
+        {
+            $projects = $this->project->getProjectBytutor($this->session->user->account, $pager, $orderBy);
+        }
+        elseif ($cur_role == 'admin') 
+        {
+            $projects = $this->project->getAllProject($pager, $orderBy);
+        }
+        else
+        {
+            $projects = $this->project->getProjectByManager($pager, $orderBy);
+        }
+        
+        $this->view->projects = array();
+        foreach ($projects as $value) 
+        {   
+            $this->view->projects[$i] = $value;
+            $this->view->projects[$i]->creator_name = $this->user->getByAccount($value->creator_ID)->realname;
+            $this->view->projects[$i]->status = $this->project->checkStatus($value);
+            $this->view->projects[$i]->tea_name = $this->user->getByAccount($value->tea_ID)->realname;
+            $this->view->projects[$i]->priv = $this->project->checkPriv($value->id);
+            $i++;                
+        }
+
+        $this->view->pager       = $pager;
+        $this->view->recTotal = $pager->recTotal;
+        $this->view->recPerPage = $pager->recPerPage;
+        $this->view->pageID    = $pager->pageID;
+        $this->display();
+    }
+
+    public function create()
+    {
+        $cur_account = $this->session->user->account;
+        if (!empty($_POST))
+        { 
+            $projectID = $this->project->create();
+            $this->action->create('project', $projectID, 'created');
+            echo js::alert($this->lang->project->createsucceed);                    
+            die(js::locate($this->createLink('project', 'viewProject'), 'parent'));
+        }
+
+        $teachers = $this->tutor->getTutorByStudent($cur_account);
+        $this->view->teachers = array();
+
+        foreach ($teachers as $key => $value) 
+        {
+            $this->view->teachers[$value->account] = $value->realname;
+        }
+
+        $this->view->menberLists = $this->common->getTeamByStudent($cur_account);
+        
+        if (!($this->view->menberLists)) $this->view->menberLists = '无小组成员';
+        
+        $this->display();
+    }
+    
+    public function view($projectID)
+    {
+        if(!empty($_POST))
+        { 
+            $this->task->makeComment($projectID,'P');
+            die(js::locate($this->createLink('project', 'view', "projectID=$projectID"), 'parent'));
+        }
+        $this->view->comments = $this->task->getComments('project',$projectID);
+        $this->view->project = $this->project->getProjectByPID($projectID);
+
+        if (!$this->project->checkViewPriv($this->view->project)) die();
+        $this->display();
+    }
+
+    public function edit($projectID)
+    {
+        if (!$this->project->checkPriv($projectID)) die();
+
+        if (!empty($_POST))
+        {  
+            $this->project->update($projectID);
+            $this->action->create('project', $projectID, 'edited');
+            echo js::alert($this->lang->project->editsucceed);
+            die(js::locate($this->createLink('project', 'view', "projectID=$projectID"), 'parent'));
+        }
+
+        $cur_account = $this->session->user->account;
+        $this->view->menberLists = $this->common->getTeamByStudent($cur_account);
+              
+        $teachers = $this->tutor->getTutorByStudent($cur_account);
+        if ($teachers)
+        {
+            $this->view->teachers = array('' => '');
+
+            foreach ($teachers as $key => $value) 
+            {
+                $this->view->teachers[$value->account] = $value->realname;
+            }
+        }
+        else
+        {
+            $this->view->teachers = array('' => $this->lang->project->noteacher);
+        }
+        
+
+        $this->view->project = $this->project->getProjectByPID($projectID);
+
+        $this->display();
+    }
+
+    public function delete($projectID, $confirm = 'no')
+    {
+        if (!$this->project->checkPriv($projectID))  die();
+
+        if($confirm == 'no')
+        {
+            echo js::confirm($this->lang->project->confirmDelete, $this->createLink('project', 'delete', "projectID=$projectID&confirm=yes"), '');
+            exit;
+        }
+        else
+        {
+            $this->project->delete($projectID);
+            $this->action->create('project', $projectID, 'deleted');
+            die(js::locate($this->createLink('project', 'viewProject'), 'parent'));
+        }
+    }
+
+    public function finish($projectID, $confirm = 'no')
+    {
+        if (!$this->project->checkPriv($projectID))  die();
+
+        if ($confirm == 'no')
+        {
+            echo js::confirm($this->lang->project->confirmFinish, $this->createLink('project', 'finish', "projectID=$projectID&confirm=yes"), '');
+            exit;
+        }
+        else
+        {
+            $this->project->finish($projectID);
+            $this->action->create('project', $projectID, 'finished');
+            die(js::locate($this->createLink('project', 'viewProject'), 'parent'));
+        }
+    }
+}

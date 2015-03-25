@@ -1,0 +1,37 @@
+<?php
+/**
+ * The browse view file of product module of ZenTaoPMS.
+ *
+ * @copyright   Copyright 2009-2013 青岛易软天创网络科技有限公司 (QingDao Nature Easy Soft Network Technology Co,LTD www.cnezsoft.com)
+ * @license     LGPL (http://www.gnu.org/licenses/lgpl.html)
+ * @author      Chunsheng Wang <chunsheng@cnezsoft.com>
+ * @package     product
+ * @version     $Id: browse.html.php 4909 2013-06-26 07:23:50Z chencongzhi520@gmail.com $
+ * @link        http://www.zentao.net
+ */
+?>
+<?php include '../../common/view/header.html.php';?>
+<?php include '../../common/view/treeview.html.php';?>
+<?php js::set('browseType', $browseType);?>
+<div id='featurebar'>
+  <ul class='nav'>
+  </ul>
+  <div class='actions'>
+  </div>
+  <div id='querybox' class='<?php if($browseType =='bysearch') echo 'show';?>'></div>
+</div>
+<div class='main'>
+  <form method='post' id='productStoryForm'>
+    <table class='table table-condensed table-hover table-striped tablesorter table-fixed' id='storyList'>
+      <tfoot>
+      <tr>
+      </tr>
+      </tfoot>
+    </table>
+  </form>
+</div>
+<script language='javascript'>
+$('#module<?php echo $moduleID;?>').addClass('active')
+$('#<?php echo $browseType;?>Tab').addClass('active')
+</script>
+<?php include '../../common/view/footer.html.php';?>

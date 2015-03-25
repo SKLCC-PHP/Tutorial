@@ -1,0 +1,318 @@
+<?php
+
+class problemModel extends model
+{ 
+    /**
+     * get problem list
+     *
+     * @param  string  $viewtype  see the type of question
+     *         string  $field     the role of search object    
+     */
+    public function getProblems($viewtype = '', $account = '', $limit = null, $orderBy = '', $pager = null)
+    {
+        $cur_role = $this->session->userinfo->roleid;
+
+        if (!$viewtype) $viewtype = 'all';
+        if (!$account) $account = $this->session->user->account;
+        if (!$orderBy) $orderBy = 'createtime|desc';
+        if ($cur_role == 'student') $field = 'asgID';
+        else $field = 'acpID';
+        
+        if ($cur_role == 'admin')
+        {
+            return $this->dao->select('*')
+                ->from (TABLE_QUESTION)
+                ->where('ACL')->eq(3)
+                ->andWhere('deleted')->eq(0)
+                ->orderBy($orderBy)
+                ->page($pager)
+                ->fetchAll();
+        }
+
+        if (($cur_role != 'teacher')&&($cur_role != 'student'))
+        {
+            return $this->dao->select('t1.*')
+                ->from (TABLE_QUESTION)->alias(t1)
+                ->leftJoin(TABLE_USER)->alias(t2)
+                ->on('t1.acpID=t2.account')
+                ->where('t2.college_id')->eq($this->session->userinfo->collegeid)
+                ->andWhere('t1.ACL')->eq(3)
+                ->andWhere('t1.deleted')->eq(0)
+                ->orderBy($orderBy)
+                ->page($pager)
+                ->fetchAll();
+        }       
+        
+        if ($viewtype == 'all')
+        {
+            return $this->dao->select('*')
+                ->from(TABLE_QUESTION)
+                ->where($field)->eq($account)
+                ->andWhere('deleted')->eq(0)
+                ->orderBy($orderBy)
+                ->page($pager)
+                ->limit($limit)
+                ->fetchAll();
+        }
+
+        if ($viewtype == 'isRead')
+        {
+            return $this->dao->select('*')
+                ->from(TABLE_QUESTION)
+                ->where($field)->eq($account)
+                ->andWhere('deleted')->eq(0)
+                ->andWhere('readtime')->neqnull()
+                ->orderBy($orderBy)
+                ->page($pager)
+                ->limit($limit)
+                ->fetchAll();
+        }
+
+        if ($viewtype == 'unRead')
+        {
+            return $this->dao->select('*')
+                ->from(TABLE_QUESTION)
+                ->where($field)->eq($account)
+                ->andWhere('deleted')->eq(0)
+                ->andWhere('readtime')->eqnull()
+                ->orderBy($orderBy)
+                ->page($pager)
+                ->limit($limit)
+                ->fetchAll();
+        }
+
+        if (dao::isError())
+        {
+            die(js::error(dao::getError()));
+        }
+
+        return false;
+    }
+
+    public function create()
+    {
+        $problem = fixer::input('post')->get();
+          
+        $teachers = $this->post->teachers;
+
+        foreach ($teachers as $teacher) 
+        {
+            $data = fixer::input('post')
+                        ->add('asgID', $this->session->user->account)
+                        ->add('acpID', $teacher)
+                        ->add('createtime', date('Y-m-d H:i:s'))
+                        ->remove('labels, teachers')->get();
+
+            $this->dao->insert(TABLE_QUESTION)
+                ->data($data)
+                ->exec();
+
+            $problemID = $this->dao->lastInsertID();
+            $this->loadModel('file')->saveUpload('problem', $problemID, '', $data->ACL);
+
+            if (dao::isError())
+            {
+                die(js::error(dao::getError()));
+            }
+            $this->loadModel('action')->create('problem', $problemID, 'created');
+        }
+    }
+
+    public function getProblemById($problemID)
+    {
+        $problem =  $this->dao->select('*')
+                    ->from(TABLE_QUESTION)
+                    ->where('id')->eq($problemID)
+                    ->fetch();
+        $problem->files = $this->loadModel('file')->getByObject('problem', $problemID);
+
+        return $problem;
+    }
+
+    public function saveRead($problem)
+    {
+        $data = new stdclass();
+        $cur_account = $this->session->user->account;
+        if (($cur_account == $problem->acpID) && ($problem->readtime == null))
+        {
+            $data->readtime = date('Y-m-d H:i:s');
+        }
+        $data->readtimes = $problem->readtimes + 1;
+        $this->dao->update(TABLE_QUESTION)->data($data)
+            ->where('id')->eq($problem->id)
+            ->exec();
+
+        if(dao::isError())
+        {
+            die(js::error(dao::getError()));
+        }
+    }
+
+    public function update($problemID)
+    {
+        $data = fixer::input('post')
+            ->add('updatetime', date('Y-m-d H:i:s'))
+            ->remove('labels,files')
+            ->get();
+        $this->dao->update(TABLE_QUESTION)
+            ->data($data)
+            ->where('id')->eq($problemID)
+            ->exec();
+
+        if(!dao::isError())
+        {   
+            $this->dao->update(TABLE_FILE)->set('acl')->eq($data->ACL)->where('objectType')->eq('problem')->andWhere('objectID')->eq($problemID)->andWhere('deleted')->eq(0)->exec();
+            $this->loadModel('file')->saveUpload('problem', $problemID, '', $data->ACL);
+        }
+        else
+        {
+            die(js::error(dao::getError()));
+        }
+    }
+
+    public function savesolve($problem)
+    {
+        $cur_account = $this->session->user->account;
+        if ($problem->asgID != $cur_account) 
+        {
+            $data['solvetime'] = date('Y-m-d H:i:s');
+            $data['solID'] = $cur_account;
+
+            $this->dao->update(TABLE_QUESTION)
+                   ->data($data)
+                   ->where('id')->eq($problem->id)
+                   ->exec();
+
+            if (dao::isError())
+            {
+                die(js::error(dao::getError()));
+            }
+        }
+    }
+
+    public function delete($problemID)
+    {
+        $this->dao->update(TABLE_QUESTION)
+               ->set('deleted')->eq(1)
+               ->where('id')->eq($problemID)
+               ->exec();
+        $this->dao->update(TABLE_FILE)->set('deleted')->eq(1)->where('objectType')->eq('problem')->andWhere('objectID')->eq($problemID)->andWhere('deleted')->eq(0)->exec();
+        if (dao::isError())
+        {
+            die(js::error(dao::getError()));
+        }       
+    }
+
+    public function complete($problemID)
+    {
+        $this->dao->update(TABLE_QUESTION)
+               ->set('completetime')->eq(date('Y-m-d H:i:s'))
+               ->where('id')->eq($problemID)
+               ->exec();
+               
+        if (dao::isError())
+        {
+            die(js::error(dao::getError()));
+        }
+    }
+
+    public function getOtherProblem($account, $orderBy = '', $pager = null, $field = '')
+    {
+        $cur_account = $this->session->user->account;
+        $cur_role = $this->session->userinfo->roleid;
+        if (!$orderBy) $orderBy = 'id_desc';
+        
+        if (!$field) $field = 'asgID';
+
+        if ($cur_role == 'admin')
+        {
+            return $this->dao->select('*')
+                        ->from(TABLE_QUESTION)
+                        ->where('ACL')->eq(3)
+                        ->andWhere('deleted')->eq(0)
+                        ->andWhere($field)->eq($account)
+                        ->orderBy($orderBy)
+                        ->page($pager)
+                        ->fetchAll();
+        }
+
+        if (($cur_role != 'teacher') && ($cur_role != 'student'))
+        {
+            return $this->dao->select('t1.*')
+                        ->from(TABLE_QUESTION)->alias(t1)
+                        ->leftJoin(TABLE_USER)->alias(t2)
+                        ->on('t1.'.$field.'=t2.account')
+                        ->where('t1.ACL')->eq(3)
+                        ->andWhere('t1.deleted')->eq(0)
+                        ->andWhere('t2.college_id')->eq($this->session->userinfo->collegeid)
+                        ->orderBy($orderBy)
+                        ->page($pager)
+                        ->fetchAll();
+        }
+
+        if ($this->loadModel('project')->checkRelation($cur_account, $account))
+        {
+            return $this->dao->select('*')
+                        ->from(TABLE_QUESTION)
+                        ->where('ACL')->in('2, 3')
+                        ->andWhere('deleted')->eq(0)
+                        ->andWhere($field)->eq($account)
+                        ->orderBy($orderBy)
+                        ->page($pager)
+                        ->fetchAll();
+        }
+        else
+        {  
+            return $this->dao->select('*')
+                        ->from(TABLE_QUESTION)
+                        ->where('ACL')->eq(3)
+                        ->andWhere('deleted')->eq(0)
+                        ->andWhere($field)->eq($account)
+                        ->orderBy($orderBy)
+                        ->page($pager)
+                        ->fetchAll();
+        }
+    }
+
+    public function checkPriv($problem, $method)
+    {
+        $cur_account = $this->session->user->account;
+        if ($cur_account == $problem->asgID) return 1;
+        if($cur_account == $problem->acpID)
+        {   
+            if ($method == 'view') return 1;
+            else return 0;
+        }
+
+        if ($method == 'view')
+        {   
+            $collegeid = $this->dao->select('college_id')->from(TABLE_USER)->where('account')->eq($problem->asgID)->andWhere('deleted')->eq(0)->fetch()->college_id;
+ 
+            if (($collegeid != $this->session->userinfo->collegeid) && ($this->session->userinfo->roleid != 'admin')) 
+                return 0;
+
+            if ($problem->ACL == 3) return 1;
+
+            if ($this->session->userinfo->roleid == 'manager') return 0;
+
+            if ($this->loadModel('project')->checkRelation($cur_account, $problem->asgID))
+            {   
+                if (($problem->ACL == 2) || ($problem->ACL == 3))
+                    return 1;
+                else
+                    return 0;
+            }
+            else
+            {   
+                if ($problem->ACL == 3)
+                    return 1;
+                else
+                    return 0;
+            }
+        }
+        else
+        {  
+            return 0;
+        }
+    }
+}    

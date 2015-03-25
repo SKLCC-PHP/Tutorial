@@ -1,0 +1,147 @@
+function changeGroup(role)
+{
+    if(role || roleGroup[role])
+    {
+        $('#group').val(roleGroup[role]); 
+    }
+    else
+    {
+        $('#group').val(''); 
+    }
+}
+
+function createCheckbox(parentID){
+	var parent = document.getElementById(parentID);//获取父元素
+	var specialtyInput = document.getElementById('specialtyInput');
+	var classInput = document.getElementById('classInput');
+	var selected_value = document.getElementById('group').value;
+
+	if(selected_value != 'counselor')
+	{
+		if(document.getElementById('manager_years') != null)
+			parent.deleteCell(document.getElementById('manager_years'));
+		if (document.getElementById('yearBox') != null)
+			parent.deleteCell(document.getElementById('yearBox'));
+	}
+	else if(selected_value == 'counselor')
+	{
+		var myDate = new Date();
+		cur_year = myDate.getFullYear();
+
+		var  thElement = document.createElement("th");
+		thElement.id = "manager_years";
+		thElement.innerText = "管理年级";
+		parent.appendChild(thElement);
+
+		var  tdElement = document.createElement("td");
+		tdElement.id = "yearBox";
+		parent.appendChild(tdElement);
+		for (var i = 0; i <= 3; i++)
+		{
+			var  labElement = document.createElement("label");
+			labElement.setAttribute("class",'checkbox-inline');
+			labElement.innerText = cur_year-i;
+			tdElement.appendChild(labElement);
+			var  inputElement = document.createElement("input"); //创建input
+			inputElement.type = "checkbox";
+			inputElement.name = "grade[]";
+			inputElement.id = "grade[]";
+			inputElement.value = cur_year-i;
+			labElement.appendChild(inputElement);
+		};
+
+		document.getElementById('grade[]').checked = cur_year;
+	}
+
+	if(selected_value != 'student')
+	{
+		specialtyInput.deleteCell(document.getElementById('hspecialty'));
+		specialtyInput.deleteCell(document.getElementById('dspecialty'));
+		classInput.deleteCell(document.getElementById('hclass'));
+		classInput.deleteCell(document.getElementById('dclass'));
+	}
+	else if(selected_value == 'student')
+	{
+		var  thElement1 = document.createElement("th");
+		thElement1.id = "hspecialty";
+		thElement1.innerText = "专业";
+		specialtyInput.appendChild(thElement1);
+
+		var  tdElement1 = document.createElement("td");
+		tdElement1.id = "dspecialty";
+		specialtyInput.appendChild(tdElement1);
+
+		var  inputElement = document.createElement("input"); //创建input
+		inputElement.type = "text";
+		inputElement.name = "specialty";
+		inputElement.id = "specialty";
+		inputElement.setAttribute("class",'form-control');
+		tdElement1.appendChild(inputElement);
+
+		var  thElement2 = document.createElement("th");
+		thElement2.id = "hclass";
+		thElement2.innerText = "班级";
+		classInput.appendChild(thElement2);
+
+		var  tdElement2 = document.createElement("td");
+		tdElement2.id = "dclass";
+		classInput.appendChild(tdElement2);
+
+		var  inputElement = document.createElement("input"); //创建input
+		inputElement.type = "text";
+		inputElement.name = "class";
+		inputElement.id = "class";
+		inputElement.setAttribute("class",'form-control');
+		tdElement2.appendChild(inputElement);
+	}
+	
+}
+
+function createInput(){
+	
+
+	var selected_value = document.getElementById('group').value;
+	if(selected_value != 'student')
+	{
+		specialtyInput.deleteCell(document.getElementById('hspecialty'));
+		specialtyInput.deleteCell(document.getElementById('dspecialty'));
+		classInput.deleteCell(document.getElementById('hclass'));
+		classInput.deleteCell(document.getElementById('dclass'));
+		return;
+	}
+
+	if(selected_value == 'student')
+	{
+		var  thElement1 = document.createElement("th");
+		thElement1.id = "hspecialty";
+		thElement1.innerText = "专业";
+		specialtyInput.appendChild(thElement1);
+
+		var  tdElement1 = document.createElement("td");
+		tdElement1.id = "dspecialty";
+		specialtyInput.appendChild(tdElement1);
+
+		var  inputElement = document.createElement("input"); //创建input
+		inputElement.type = "text";
+		inputElement.name = "specialty";
+		inputElement.id = "specialty";
+		inputElement.setAttribute("class",'form-control');
+		tdElement1.appendChild(inputElement);
+
+		var  thElement2 = document.createElement("th");
+		thElement2.id = "hclass";
+		thElement2.innerText = "班级";
+		classInput.appendChild(thElement2);
+
+		var  tdElement2 = document.createElement("td");
+		tdElement2.id = "dclass";
+		classInput.appendChild(tdElement2);
+
+		var  inputElement = document.createElement("input"); //创建input
+		inputElement.type = "text";
+		inputElement.name = "class";
+		inputElement.id = "class";
+		inputElement.setAttribute("class",'form-control');
+		tdElement2.appendChild(inputElement);
+	}
+}

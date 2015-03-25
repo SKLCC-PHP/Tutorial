@@ -1,0 +1,30 @@
+测试用附件。
+无限循环+延迟执行来实现计划任务
+
+0
+今天看到这么一段代码：
+
+do {
+    $res = $this->tasks_db->get_one(array('taskid' => $taskid));
+    // 得到下次运行时间
+    $interval = $res['tasktime'] * 60;
+    //检测本次任务开关，0为关闭，1为继续，如果退出，写入日志
+    if ($res["taskswitch"] == 0) {
+        $ltime = time();
+        $this->tasks_db->update(array('taskon' => 0), array('taskid' => $taskid));
+        $this->tasks_log_db->insert(array('logtaskid' => $taskid, 'loginfo' => '结束', 'logtime' => time(), 'logsize' => 'NONE'));
+        exit();
+    }
+    //检测最终任务状态，执行最关键一步
+    if ($res) {
+        $html = pc_base::load_app_class('html', 'content'); //加载pc 生成页面的类
+        $filesize = $html->index(); //生成页面并得到页面大小
+        $lsize = sizecount($filesize); //格式化文件大小
+        $ltime = time(); //记录任务完毕的时间并写入日志
+        $this->tasks_log_db->insert(array('logtaskid' => $taskid, 'loginfo' => '成功', 'logtime' => $ltime, 'logsize' => $lsize));
+        sleep($interval); // 等待一个周期
+    } else {
+        exit(); //找不到任务时停止（适用于删除了已经开始的任务）
+    }
+} while (true); //无限循环
+代码也看到了，主要是通过PHP的ignore_user_abort()，set_time_limit(0)，sleep()外加一个无限循环来延续这个程序的执行生命周期！

@@ -1,0 +1,118 @@
+<?php
+class statistics extends control
+{
+	private $roleid;
+	
+	/**
+	 * Construct function, load model of project and story modules.
+	 * 
+	 * @access public
+	 * @return void
+	 */
+	public function __construct()
+	{
+		parent::__construct();
+		$roleid = $this->session->userinfo->roleid;
+		
+		$this->loadModel('resources');
+		$this->loadModel('user');
+		$this->loadModel('tutor');
+		$this->loadModel('achievement');
+	}
+
+
+	/**
+	 * Index page.
+	 * @access public
+	 * @return void
+	 */
+	public function index()
+	{
+		$this->display();
+		//$this->locate($this->createLink('statistics', 'viewGraduationThesis', 'tutor=all'));
+	}
+
+	/**
+	 * viewGraduationThesis page.
+	 * @access public
+	 * @return void
+	 */
+	public function viewGraduationThesis($tutor = 'all', $orderBy = '', $recTotal = 0, $recPerPage = 100, $pageID = 1)
+	{
+		/* Load pager and get tasks. */
+		$this->app->loadClass('pager', $static = true);
+		$pager = new pager($recTotal, $recPerPage, $pageID);
+
+		$userpairs = $this->user->getPairs('noletter');
+
+		$results = $this->achievement->getUserAchievements($pager, 'thesis');
+
+		$tutors = $this->resources->getAllTeachers();
+		foreach ($results as $thesis) 
+		{
+			if($thesis->tea_ID)
+			{ 
+				if($tutor == 'all')
+				{
+					$thesises[] = $thesis;
+					continue;
+				}
+				elseif($tutor == $thesis->tea_ID)
+				{
+					$thesises[] = $thesis;
+				}
+			}
+		}
+
+		/*set the summary*/
+		$summary = sprintf($this->lang->achievement->thesis->summary, count($thesises));
+
+		$this->view->position[] = $this->lang->statistics->index;
+		$this->view->thesises = $thesises;
+		$this->view->tutors = $tutors;
+		$this->view->userpairs = $userpairs;
+		$this->view->pager          = $pager;
+		$this->view->recTotal    = $pager->recTotal;
+		$this->view->recPerPage  = $pager->recPerPage;
+		$this->view->orderBy     = $orderBy;
+		$this->view->summary     = $summary;
+		$this->display();
+	}
+
+	/**
+	 * viewAchievement page.
+	 * @access public
+	 * @return void
+	 */
+	public function viewAchievement()
+	{
+		$userpairs = $this->user->getPairs('noletter');
+		$results = $this->achievement->getUserAchievements('thesis');
+		$tutors = $this->resources->getAllTeachers();
+		foreach ($results as $thesis) 
+		{
+			if($thesis->tea_ID)
+				$thesises[] = $thesis;
+		}
+
+		//$this->view->position[] = $this->lang->statistics->index;
+		$this->view->thesises = $thesises;
+		$this->view->tutors = $tutors;
+		$this->view->userpairs = $userpairs;
+		$this->display();
+	}
+
+	/**
+	 * viewAchievement page.
+	 * @access public
+	 * @return void
+	 */
+	public function viewOthers()
+	{
+
+		$this->view->title      = $this->lang->statistics->common;
+		$this->view->position[] = $this->lang->statistics->index;
+		$this->display();
+	}
+
+}

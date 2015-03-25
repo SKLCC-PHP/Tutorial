@@ -1,0 +1,262 @@
+<?php
+class achievementModel extends model
+{
+
+    /**
+     * Create a achievement.
+     * 
+     * @access public
+     * @return void
+     */
+    public function create()
+    {
+        $achievementFile = '';
+
+        $achievement = fixer::input('post')
+            ->striptags('title')
+            ->setForce('creatorID',  $this->session->user->account)
+            ->add('createtime', helper::now())
+            ->remove('files,labels,member')
+            ->get();
+        
+        $achievement->othername = '';
+        foreach ($this->post->member as $member) 
+        {
+            if ($member == null) continue;
+            $achievement->othername .= $member . ',';
+        }
+
+        $this->dao->insert(TABLE_ACHIEVEMENT)->data($achievement)->exec();
+
+        if(!dao::isError())
+        {
+            $achievementID = $this->dao->lastInsertID();
+            if(!empty($achievementFile))
+            {
+                $achievementFile->objectID = $achievementID;
+                $this->dao->insert(TABLE_FILE)->data($achievementFile)->exec();
+            }
+            else
+            {
+                $achievementFileTitle = $this->loadModel('file')->saveUpload('achievement', $achievementID);
+                $achievementFile = $this->dao->select('*')->from(TABLE_FILE)->where('id')->eq(key($achievementFileTitle))->fetch();
+                unset($achievementFile->id);
+            }
+        }
+        else
+        {
+            die(js::error(dao::getError()));
+        }
+    }
+
+    /**
+     * Update a achievement.
+     * 
+     * @param  int    $achievementID 
+     * @access public
+     * @return void
+     */
+    public function update($achievementID)
+    {
+        $oldachievement = $this->getById($achievementID);
+        $now     = helper::now();
+
+        $achievement    = fixer::input('post')
+            ->striptags('title')
+            ->setForce('updatetime',  $now)
+            ->remove('files,labels,member')
+            ->get();
+        
+        $achievement->othername = '';
+        foreach ($this->post->member as $member) 
+        {
+            if ($member == null) continue;
+            $achievement->othername .= $member . ',';
+        }
+
+        $this->dao->update(TABLE_ACHIEVEMENT)->data($achievement)
+            ->autoCheck()
+            ->batchCheckIF($this->config->achievement->edit->requiredFields, 'notempty')
+            ->where('id')->eq((int)$achievementID)->exec();
+        if(dao::isError())
+        {
+            die(js::error(dao::getError()));
+        }
+            
+    }
+
+    /**
+     * delete a achievement.
+     * 
+     * @param  int    $achievementID 
+     * @access public
+     * @return void
+     */
+    public function delete($achievementID)
+    {
+       $this->dao->update(TABLE_ACHIEVEMENT)->set('deleted')->eq(1)->where('id')->eq((int)$achievementID)->exec(); 
+       $this->dao->update(TABLE_FILE)->set('deleted')->eq(1)->where('objectType')->eq('achievement')->andWhere('objectID')->eq($achievementID)->andWhere('deleted')->eq(0)->exec();
+    
+    }
+
+    /**
+     * Get achievement info by Id.
+     * 
+     * @param  int    $achievementID 
+     * @param  bool   $setImgSize
+     * @access public
+     * @return object|bool
+     */
+    public function getById($achievementID, $setImgSize = false)
+    {
+        $achievement = $this->dao->select('t1.*, t2.realname AS assignedToRealName')
+            ->from(TABLE_ACHIEVEMENT)->alias('t1')
+            ->leftJoin(TABLE_USER)->alias('t2')
+            ->on('t1.creatorID = t2.account')
+            ->where('t1.id')->eq((int)$achievementID)
+            ->andWhere('t1.deleted')->eq(0)
+            ->fetch();
+
+        if(!$achievement) return false;
+        if($setImgSize) $achievement->description = $this->loadModel('file')->setImgSize($achievement->description);
+        foreach($achievement as $key => $value) if(strpos($key, 'Date') !== false and !(int)substr($value, 0, 4)) $achievement->$key = '';
+        $achievement->files = $this->loadModel('file')->getByObject('achievement', $achievementID);
+        return $achievement;
+    }
+
+    /**
+     * Get achievements of a user.
+     * 
+     * @param  string $account 
+     * @param  string $type     the query type 
+     * @param  int    $limit   
+     * @param  object $pager   
+     * @access public
+     * @return array
+     */
+    public function getUserAchievements($account = null, $orderBy = "id_desc", $pager = '')
+    {
+        $cur_role = $this->session->userinfo->roleid;
+        if (!$account)   $account = $this->app->user->account;
+        if ($cur_role == 'student')
+        {
+            $field = 'creatorID';
+        }
+        elseif ($cur_role == 'teacher')
+        {
+            $field = 'teaID';
+        }
+        
+        if ($cur_role == 'admin')
+        {
+            return $this->dao->select('*')
+                    ->from(TABLE_ACHIEVEMENT)
+                    ->where('deleted')->eq(0)
+                    ->orderBy($orderBy)
+                    ->page($pager)
+                    ->fetchAll();
+        }
+
+        if (($cur_role != 'student')&&($cur_role != 'teacher'))
+        {
+            return $this->dao->select('t1.*')
+                    ->from(TABLE_ACHIEVEMENT)->alias(t1)
+                    ->leftJoin(TABLE_USER)->alias(t2)
+                    ->on('t1.creatorID=t2.account')
+                    ->where('t1.deleted')->eq(0)
+                    ->andWhere('t2.college_id')->eq($this->session->userinfo->collegeid)
+                    ->orderBy($orderBy)
+                    ->page($pager)
+                    ->fetchAll();
+        }
+        return $this->dao->select('*')
+            ->from(TABLE_ACHIEVEMENT)
+            ->where($field)->eq($account)
+            ->andWhere('deleted')->eq(0)      
+            ->orderBy($orderBy)
+            ->page($pager)
+            ->fetchAll();
+    }
+
+    public function saveChecked($achievementID)
+    {
+        $data =  fixer::input('post')
+                    ->add('checkID', $this->session->user->account)
+                    ->add('checktime', date('Y-m-d H:i:s'))
+                    ->remove('comment')
+                    ->get();
+
+        $this->dao->update(TABLE_ACHIEVEMENT)
+            ->data($data)
+            ->where('id')->eq($achievementID)
+            ->exec();
+        
+        if ($data->checked == 1) 
+            $acl = 3;
+        elseif($data->checked == -1) 
+            $acl = 1;
+
+        $this->dao->update(TABLE_FILE)
+                ->set('acl')->eq($acl)
+                ->where('objectType')->eq('achievement')
+                ->andWhere('objectID')->eq($achievementID)
+                ->exec();
+        if(dao::isError())
+        {
+            die(js::error(dao::getError()));
+        }
+    }
+
+    public function getOtherAchievements($account, $orderBy = '', $pager = null, $field = '')
+    {
+        if (!$orderBy) $orderBy = 'id_desc';
+        if (!$field) $field = 'creatorID';
+
+        return $this->dao->select('*')
+                ->from(TABLE_ACHIEVEMENT)
+                ->where($field)->eq($account)
+                ->andWhere('checked')->eq(1)
+                ->andWhere('deleted')->eq(0)
+                ->orderBy($orderBy)
+                ->page($pager)
+                ->fetchAll();
+    }
+
+    public function checkPriv($achievement, $method)
+    {
+        $cur_account = $this->session->user->account;
+
+        if ($cur_account == $achievement->creatorID) return 1;
+        
+        if ($cur_account == $achievement->teaID)
+        {
+            if ($method == 'view')
+                return 1;
+            else
+                return 0;
+        }
+
+        if ($this->session->userinfo->roleid == 'manager')
+        {
+            $collegeid = $this->dao->select('college_id')->from(TABLE_USER)->where('account')->eq($achievement->creatorID)->andWhere('deleted')->eq(0)->fetch()->college_id;
+            
+            if (($this->session->userinfo->collegeid == $collegeid) && (($method == 'view') ||($method == 'check')))
+            {
+                return 1;
+            }
+            else
+            {
+                return 0;
+            }
+        }
+
+        if (($method == 'view') && ($achievement->checked == 1))
+        {
+            return 1;
+        }
+        else
+        {
+            return 0;
+        }
+    }
+}

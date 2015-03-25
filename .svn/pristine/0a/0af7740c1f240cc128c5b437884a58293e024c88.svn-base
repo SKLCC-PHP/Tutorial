@@ -1,0 +1,35 @@
+function changeGroup(role)
+{
+    if(role || roleGroup[role])
+    {
+        $('#group').val(roleGroup[role]); 
+    }
+    else
+    {
+        $('#group').val(''); 
+    }
+}
+
+// /* Set the assignedTos field. */
+// function setOwners(result)
+// {
+//     if(result == 'affair')
+//     {
+//         $('#grade').attr('multiple', 'multiple');
+//         $('#grade').chosen('destroy');
+//         $('#grade').chosen(defaultChosenOptions);
+//     }
+//     else if($('#grade').attr('multiple') == 'multiple')
+//     {
+//         $('#grade').removeAttr('multiple');
+//         $('#grade').chosen('destroy');
+//         $('#grade').chosen(defaultChosenOptions);
+//     }
+// }
+
+
+// $(document).ready(function()
+// {
+//     setPreview();
+//     $("#grade").chosen(defaultChosenOptions);
+// });
