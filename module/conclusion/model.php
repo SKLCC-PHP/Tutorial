@@ -150,7 +150,7 @@ class conclusionModel extends model
         $this->loadModel('common')->saveQueryCondition($this->dao->get(), 'conclusion');
 
         if($conclusions) return $conclusions;
-        return array();
+        else return array();
     }
 
     public function getStudentConclusions($account = '', $orderBy = '', $pager = null, $paramtitle = '', $paramstu = '')
@@ -159,18 +159,22 @@ class conclusionModel extends model
         if (!$orderBy) $orderBy = 'createtime_desc';
         $paramstu = $this->loadModel('user')->getAccountByName($paramstu);
 
-        return $this->dao->select('t1.*')
-                    ->from(TABLE_CONCLUSION)->alias(t1)
-                    ->leftJoin(TABLE_RELATIONS)->alias(t2)
-                    ->on('t1.creatorID=t2.stu_ID')
-                    ->where('t2.deleted')->eq(0)
-                    ->andWhere('t2.tea_ID')->eq($account)
-                    ->andWhere('t1.deleted')->eq(0)
-                    ->andWhere('title')->like('%' . $paramtitle . '%')
-                    ->andWhere('creatorID')->in($paramstu)
-                    ->orderBy($orderBy)
-                    ->page($pager)
-                    ->fetchAll();
+        $conclusions = $this->dao->select('t1.*')
+                            ->from(TABLE_CONCLUSION)->alias(t1)
+                            ->leftJoin(TABLE_RELATIONS)->alias(t2)
+                            ->on('t1.creatorID=t2.stu_ID')
+                            ->where('t2.deleted')->eq(0)
+                            ->andWhere('t2.tea_ID')->eq($account)
+                            ->andWhere('t1.deleted')->eq(0)
+                            ->andWhere('title')->like('%' . $paramtitle . '%')
+                            ->andWhere('creatorID')->in($paramstu)
+                            ->orderBy($orderBy)
+                            ->page($pager)
+                            ->fetchAll();
+        $this->loadModel('common')->saveQueryCondition($this->dao->get(), 'conclusion');
+
+        if($conclusions) return $conclusions;
+        else return array();
     }
 
     public function getAllConclusions($orderBy = '', $pager = null, $paramtitle = '', $paramstu = '')
@@ -178,14 +182,18 @@ class conclusionModel extends model
         if (!$orderBy) $orderBy = 'createtime_desc';
         $paramstu = $this->loadModel('user')->getAccountByName($paramstu);
 
-        return $this->dao->select('*')
-                    ->from(TABLE_CONCLUSION)
-                    ->where('deleted')->eq(0)
-                    ->andWhere('title')->like('%' . $paramtitle . '%')
-                    ->andWhere('creatorID')->in($paramstu)
-                    ->orderBy($orderBy)
-                    ->page($pager)
-                    ->fetchAll();
+        $conclusions = $this->dao->select('*')
+                            ->from(TABLE_CONCLUSION)
+                            ->where('deleted')->eq(0)
+                            ->andWhere('title')->like('%' . $paramtitle . '%')
+                            ->andWhere('creatorID')->in($paramstu)
+                            ->orderBy($orderBy)
+                            ->page($pager)
+                            ->fetchAll();
+        $this->loadModel('common')->saveQueryCondition($this->dao->get(), 'conclusion');
+
+        if($conclusions) return $conclusions;
+        else return array();
     }
 
     public function getCollegeConclusions($account = '', $orderBy = '', $pager = null, $paramtitle = '', $paramstu = '')
@@ -194,17 +202,21 @@ class conclusionModel extends model
         if (!$orderBy) $orderBy = 'createtime_desc';
         $paramstu = $this->loadModel('user')->getAccountByName($paramstu);
         
-        return $this->dao->select('t1.*')
-                    ->from(TABLE_CONCLUSION)->alias(t1)
-                    ->leftJoin(TABLE_USER)->alias(t2)
-                    ->on('t1.creatorID=t2.account')
-                    ->where('t1.deleted')->eq(0)
-                    ->andWhere('t2.college_id')->eq($cur_collegeid)
-                    ->andWhere('title')->like('%' . $paramtitle . '%')
-                    ->andWhere('creatorID')->in($paramstu)
-                    ->orderBy($orderBy)
-                    ->page($pager)
-                    ->fetchAll();
+        $conclusions = $this->dao->select('t1.*')
+                            ->from(TABLE_CONCLUSION)->alias(t1)
+                            ->leftJoin(TABLE_USER)->alias(t2)
+                            ->on('t1.creatorID=t2.account')
+                            ->where('t1.deleted')->eq(0)
+                            ->andWhere('t2.college_id')->eq($cur_collegeid)
+                            ->andWhere('title')->like('%' . $paramtitle . '%')
+                            ->andWhere('creatorID')->in($paramstu)
+                            ->orderBy($orderBy)
+                            ->page($pager)
+                            ->fetchAll();
+        $this->loadModel('common')->saveQueryCondition($this->dao->get(), 'conclusion');
+
+        if($conclusions) return $conclusions;
+        else return array();
     }
 
     public function saveRead($conclusion)
@@ -241,10 +253,32 @@ class conclusionModel extends model
 
     public function checkPriv($conclusion, $method)
     {
-        $cur_account = $this->session->user->account;
+        $cur_role= $this->session->user->roleid;
+        if($cur_role == 'admin') return 1;
 
-        if ($cur_account == $conclusion->creatorID) return 1;
- 
+        $collegeid = $this->dao->select('college_id')->from(TABLE_USER)->where('account')->eq($conclusion->creatorID)->andWhere('deleted')->eq(0)->fetch()->college_id;
+   
+        if ($collegeid != $this->session->userinfo->collegeid ) return 0;
+        switch ($cur_role) {
+            case 'student':
+                return $this->checkStudentPriv($conclusion,$method);
+                break;
+
+            case 'teacher':
+                return $this->checkTeacherPriv($conclusion,$method);
+                break;
+
+            case 'counselor':
+                return $this->checkCounselorPriv($conclusion,$method);
+                break;
+
+            case 'manager':
+                return $this->checkManagerPriv($conclusion, $method);
+                break;
+            default:
+                return 0;
+                break;
+        }
         if ($method != 'view') return 0;
 
         if ($this->session->userinfo->roleid == 'admin') return 1;
@@ -254,11 +288,40 @@ class conclusionModel extends model
         if ($collegeid != $this->session->userinfo->collegeid) return 0;
 
         if ($this->session->userinfo->roleid == 'manager') return 1;
+    }
 
-        if (($this->loadModel('project')->checkRelation($cur_account, $conclusion->creatorID)) && ($this->session->userinfo->roleid == 'teacher'))
+    private function checkStudentPriv($conclusion, $method){
+        $cur_account = $this->session->user->account;
+
+        if ($cur_account == $conclusion->creatorID) return 1;
+        else return 0;
+
+    }
+
+    private function checkTeacherPriv($conclusion, $method){
+        $cur_account = $this->session->user->account;
+
+        if($method != 'view') return 0;
+        else if($this->loadModel('project')->checkRelation($cur_account, $conclusion->creatorID))
             return 1;
         else
             return 0;
 
+        
+    }
+
+    private function checkCounselorPriv($conclusion, $method){
+        $cur_account = $this->session->user->account;
+        
+        if($method != 'view') return 0;
+
+        $grade = $this->dao->select('grade')->from(TABLE_USER)->where('account')->eq($conclusion->creatorID)->andWhere('deleted')->eq(0)->fetch()->grade;
+        if(strstr($this->session->user->grade, $grade)) return 1;
+        else return 0;
+    }
+
+    private function checkManagerPriv($conclusion, $method){
+        if($method != 'view') return 0;
+        return 1;
     }
 }
