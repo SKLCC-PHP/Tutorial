@@ -75,6 +75,7 @@ class task extends control
                 die(js::locate($this->createLink('task', 'create', "recreate=1"), 'parent'));
             }
             $this->task->create();
+            echo js::alert($this->lang->task->createsucceed);
             die(js::locate($this->createLink('task', 'viewTask', "viewtype=all"), 'parent'));
         }
 
@@ -131,6 +132,7 @@ class task extends control
                 $actionID = $this->action->create('task', $taskID, $action, $fileAction . $this->post->comment);
                 if(!empty($changes)) $this->action->logHistory($actionID, $changes);
             }
+            echo js::alert($this->lang->task->editsucceed);
             die(js::locate($this->createLink('task', 'view', "taskID=$taskID"), 'parent'));
         }
         
@@ -174,6 +176,7 @@ class task extends control
                 ->where('id')->eq($taskID)
                 ->exec();
             $this->action->create('task', $taskID, 'assessed');
+            echo js::alert($this->lang->task->assesssucceed);
             die(js::locate($this->createLink('task', 'view', "taskID=$taskID"), 'parent'));
         }
         $assess_comments = $this->task->getComments('assessTask', $taskID);
@@ -206,6 +209,7 @@ class task extends control
         {
             $this->task->delete($taskID);
             $this->action->create('task', $taskID, 'deleted');
+            echo js::alert($this->lang->task->deletesucceed);
             if ($group)
                 die(js::locate($this->createLink('task', 'viewGroup', "taskID=$taskID&is_onlybody=no&isDeleted=$group"),'parent'));
             else 
@@ -230,6 +234,7 @@ class task extends control
         else
         {
             $this->task->deleteGroup($taskID);
+            echo js::alert($this->lang->task->deletesucceed);
             die(js::reload('parent'));
         }
     }
@@ -272,6 +277,7 @@ class task extends control
                 $this->send($response);
             }
             
+            echo js::alert($this->lang->task->finishsucceed);
             die(js::locate(inlink('viewTask', 'viewtype=done')));
         }
     }
@@ -375,6 +381,7 @@ class task extends control
             if(dao::isError()) die(js::error(dao::getError()));
 
             if(isonlybody()) die(js::closeModal('parent.parent', 'this'));
+            echo js::alert($this->lang->task->submitsucceed);
             die(js::locate($this->createLink('task', 'view', "taskID=$taskID"), 'parent'));
         }
         $this->view->date = strftime("%Y-%m-%d %X", strtotime('now'));
@@ -389,6 +396,7 @@ class task extends control
             $this->task->editSubmit($taskID);
             if(dao::isError()) die(js::error(dao::getError()));
             $this->action->create('task', $taskID, 'changed');
+            echo js::alert($this->lang->task->submitsucceed);
             die(js::closeModal('parent.parent', 'this'));
         }
 

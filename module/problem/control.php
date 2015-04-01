@@ -68,6 +68,7 @@ class problem extends control
                 die(js::locate($this->createLink('problem', 'create', "recreate=1"), 'parent'));
             }
             $this->problem->create();
+            echo js::alert($this->lang->problem->createsucceed);
             die(js::locate($this->createLink('problem', 'viewProblem', "viewtype=all"), 'parent'));
         }
         

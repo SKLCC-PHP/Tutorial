@@ -85,7 +85,7 @@ class project extends control
         }
 
         $teachers = $this->tutor->getTutorByStudent($cur_account);
-        $this->view->teachers = array('' => '');
+        $this->view->teachers = array();
 
         foreach ($teachers as $key => $value) 
         {
@@ -94,7 +94,7 @@ class project extends control
             $this->view->teachers[$value->account] .= (strstr($value->team, 'P')) ? '(毕业设计)' : '';
         }
 
-        $this->view->menberLists = $this->common->getTeamByStudent($cur_account);
+        $this->view->memberLists = $this->common->getTeamByStudent($cur_account);
         
         $this->display();
     }
@@ -141,7 +141,7 @@ class project extends control
         $teachers = $this->tutor->getTutorByStudent($cur_account);
         if ($teachers)
         {
-            $this->view->teachers = array('' => '');
+            $this->view->teachers = array();
 
             foreach ($teachers as $key => $value) 
             {

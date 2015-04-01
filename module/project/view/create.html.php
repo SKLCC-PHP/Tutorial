@@ -44,13 +44,13 @@
           </div>
         </td>
       </tr>
-    <?php if($menberLists):?>
+    <?php if($memberLists):?>
       <tr>
-        <th><nobr><?php echo $lang->project->menber;?></nobr></th>
+        <th><nobr><?php echo $lang->project->member;?></nobr></th>
         <td colspan='2'>
           <div class='input-group'>
             <?php 
-              echo html::select('mailto[]', $menberLists, '', "class='form-control' multiple"); 
+              echo html::select('mailto[]', $memberLists, '', "class='form-control' multiple"); 
             ?>
           </div>
         </td>

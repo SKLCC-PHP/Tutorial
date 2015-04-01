@@ -76,7 +76,7 @@ class achievement extends control
         }
        
         $teachers = $this->tutor->getTutorByStudent();
-        $this->view->teachers = array(''=>'');
+        $this->view->teachers = array();
         foreach ($teachers as $key => $teacher) 
         {
             if (strstr($teacher->team, 'G')) 
