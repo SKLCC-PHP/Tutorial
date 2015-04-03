@@ -93,6 +93,7 @@ class conclusion extends control
         {
             $this->conclusion->create();
             $this->action->create('conclusion', $conclusionID, 'created');
+            echo js::alert($this->lang->conclusion->createsucceed);
             die(js::locate($this->createLink('conclusion', 'viewConclusion'), 'parent'));
         }
         
@@ -129,6 +130,7 @@ class conclusion extends control
                 $fileAction = '';
                 if(!empty($files)) $fileAction = $this->lang->addFiles . join(',', $files) . "\n" ;
             }
+            echo js::alert($this->lang->conclusion->editsucceed);
             die(js::locate($this->createLink('conclusion', 'view', "conclusionID=$conclusionID"), 'parent'));
         }
 
@@ -176,7 +178,7 @@ class conclusion extends control
                 }
                 $this->send($response);
             }
-            
+            echo js::alert($this->lang->conclusion->deletesucceed);
             die(js::locate($this->createLink('conclusion', 'viewConclusion'), 'parent'));
         }
     }

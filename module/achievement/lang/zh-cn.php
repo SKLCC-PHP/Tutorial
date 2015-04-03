@@ -15,6 +15,11 @@ $lang->achievement->tea_ID       		= "指导老师";
 $lang->achievement->ischecked       	= "审核状态";
 $lang->achievement->comment             = "评论";
 $lang->achievement->search              = "搜索";
+
+$lang->achievement->createsucceed           = "成果新增成功！";
+$lang->achievement->editsucceed           = "成果修改成功！";
+$lang->achievement->deletesucceed           = "成果删除成功！";
+$lang->achievement->checksucceed           = "成果通过成功！";
 /*操作*/
 $lang->achievement->check           = "审核";
 $lang->achievement->description     = "简述";

@@ -173,6 +173,7 @@ class project extends control
         {
             $this->project->delete($projectID);
             $this->action->create('project', $projectID, 'deleted');
+            echo js::alert($this->lang->project->deletesucceed);
             die(js::locate($this->createLink('project', 'viewProject'), 'parent'));
         }
     }
@@ -190,6 +191,7 @@ class project extends control
         {
             $this->project->finish($projectID);
             $this->action->create('project', $projectID, 'finished');
+            echo js::alert($this->lang->project->finishsucceed);
             die(js::locate($this->createLink('project', 'viewProject'), 'parent'));
         }
     }

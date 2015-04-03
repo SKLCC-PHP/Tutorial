@@ -53,10 +53,10 @@
         <th class='w-40px'> <?php echo $lang->problem->solvetime;?></th>
       <?php if ($viewtype == 'all'):?>
         <th class='w-40px'> <?php echo $lang->problem->isRead;?></th>
-      <?php endif;
-      if ($this->session->userinfo->roleid == 'student'):?> 
-        <th class='w-40px'> <?php echo $lang->actions;?></th>
       <?php endif;?>
+<!--       <?php if ($this->session->userinfo->roleid == 'student')://@Green?> 
+        <th class='w-40px'> <?php echo $lang->actions;?></th>
+      <?php endif;?> -->
       </tr>
     </thead>
     <tbody>
@@ -84,8 +84,8 @@
         <td><?php echo $problem->solvetime;?></td>
       <?php if ($viewtype == 'all'):?>
         <td><?php echo $lang->problem->readStatusList[($problem->readtime != null) && ($problem->readtime != '0000-00-00 00:00:00')];?></td>
-      <?php endif;
-      if ($problem->asgID == $this->session->user->account):?> 
+      <?php endif;?>
+     <!--  <?php if ($problem->asgID == $this->session->user->account)://@Green?> 
         <td>
           <?php 
             if ($problem->completetime == null)
@@ -104,13 +104,13 @@
             }      
           ?>
         </td>
-      <?php endif;?>
+      <?php endif;?> -->
       </tr>
     <?php endforeach;?>
     </tbody>
     <tfoot>
         <tr>
-        <?php $columns = $this->cookie->windowWidth > $this->config->wideSize ? 14 : 12;?>
+        <?php $columns = $this->cookie->windowWidth > $this->config->wideSize ? 6 : 5;?>
           <td colspan='<?php echo $columns;?>'>
             <?php $pager->show();?>
           </td>

@@ -146,6 +146,7 @@ class notice extends control
         {
             $this->notice->create();
             $this->action->create('notice', $noticeID, 'created');
+            echo js::alert($this->lang->notice->createsucceed);
            	die(js::locate($this->createLink('notice', 'viewNotice'), 'parent'));
         }
 
@@ -256,7 +257,7 @@ class notice extends control
                 }
                 $this->send($response);
             }
-
+            echo js::alert($this->lang->notice->deletesucceed);
             die(js::locate($this->createLink('notice', 'viewNotice'), 'parent'));
         }
 	}

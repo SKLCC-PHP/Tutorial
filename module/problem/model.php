@@ -426,7 +426,7 @@ class problemModel extends model
         case 'complete':
             if ($problem->asgID == $cur_account)
             {
-                if ($problem->completetime != null)
+                if ($problem->completetime == null && $problem->solvetime)
                     return 1;
             }
             return 0;

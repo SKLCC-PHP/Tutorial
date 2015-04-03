@@ -147,6 +147,7 @@ class problem extends control
         {  
             $this->problem->update($problemID);
             $this->action->create('problem', $problemID, 'edited');
+            echo js::alert($this->lang->problem->editsucceed);
             die(js::locate($this->createLink('problem', 'view', "problemID=$problemID"), 'parent'));
         }
 
@@ -167,6 +168,7 @@ class problem extends control
         {
             $this->problem->delete($problemID);
             $this->action->create('problem', $problemID, 'deleted');
+            echo js::alert($this->lang->problem->deletesucceed);
             if ($group)
             {
                 die(js::locate($this->createLink('problem', 'viewGroup', "problemID=$problemID&is_onlybody=no&isDeleted=$group"), 'parent'));                
@@ -187,6 +189,7 @@ class problem extends control
         else
         {
             $this->problem->deleteGroup($problem);
+            echo js::alert($this->lang->problem->deletesucceed);
             die(js::reload('parent'));
         }
     }
@@ -203,6 +206,7 @@ class problem extends control
         {
             $this->problem->complete($problemID);
             $this->action->create('problem', $problemID, 'finished');
+            echo js::alert($this->lang->problem->completesucceed);
             die(js::locate($this->createLink('problem', 'viewProblem'), 'parent'));
         }
     }
