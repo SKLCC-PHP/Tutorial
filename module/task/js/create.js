@@ -47,18 +47,3 @@ $(document).ready(function()
     setPreview();
     $("#story, #mailto, #assignedTo").chosen(defaultChosenOptions);
 });
-
-/**
-* check the title
-*
-**/
-function checkTitle()
-{
-    var title = document.getElementById('title').value;
-    title = title.replace(/\s/g,'');
-
-    if(title == '')
-        alert("Please input the title of the task!");
-    else
-        return;
-}

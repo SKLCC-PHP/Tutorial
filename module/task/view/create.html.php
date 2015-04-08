@@ -28,7 +28,7 @@
       <tr>
         <th><?php echo $lang->task->content;?></th>
         <td colspan='4'><?php echo html::textarea('content', $task->content, "rows='7' class='form-control'");?></td><td></td>
-      </tr>   
+      </tr>
       <tr>
         <th><?php echo $lang->task->dateRange;?></th>
         <td width = '300px'>

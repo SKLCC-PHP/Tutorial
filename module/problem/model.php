@@ -20,7 +20,7 @@ class problemModel extends model
 
             $this->dao->insert(TABLE_QUESTION)
                 ->data($data)
-                //->autoCheck()
+                ->autoCheck()
                 ->exec();
 
             $problemID = $this->dao->lastInsertID();

@@ -12,5 +12,5 @@ $config->problem->editor->viewgroup = array('id' => 'comment', 'tools' => 'simpl
 
 $config->problem->create = new stdclass();
 $config->problem->create->requiredFields = 
-	'title, teachers';
+	'title, teachers, content';
 ?>

@@ -29,7 +29,7 @@
       </tr>
       <tr>
         <td></td>
-        <td class='text-center' colspan='3'><?php echo html::submitButton() . html::backButton();?></td>
+        <td class='text-center' colspan='3'><?php echo html::submitButton() . html::linkButton($lang->goback, $this->inlink('viewconclusion'));?></td>
       </tr>
     </table>
   </form>

@@ -75,7 +75,7 @@ class conclusion extends control
      * @access public
      * @return void
      */
-    public function create($conclusionID = 0)
+    public function create($recreate = 0)
     {
         $conclusion = new stdClass();
         $conclusion->creatorID      = '';
@@ -84,20 +84,22 @@ class conclusion extends control
         $conclusion->createtime = '';
         $conclusion->updatetime = '';
 
-        if($conclusionID > 0)
-        {
-            $conclusion = $this->conclusion->getByID($conclusionID);
-        }
-
         if(!empty($_POST))
         {
+            $conclusion = fixer::input('post')
+                            ->remove('labels')->get();
+            if (!(trim($conclusion->title) && trim($conclusion->content))) {
+                echo js::alert($this->lang->conclusion->noImportantInformation);      
+                $this->session->set('createConclusion', $conclusion);
+                die(js::locate($this->createLink('conclusion', 'create', "recreate=1"), 'parent'));
+            }
             $this->conclusion->create();
             $this->action->create('conclusion', $conclusionID, 'created');
             echo js::alert($this->lang->conclusion->createsucceed);
             die(js::locate($this->createLink('conclusion', 'viewConclusion'), 'parent'));
         }
         
-        $this->view->conclusion             = $conclusion;
+        $this->view->conclusion = $recreate ? $this->session->createConclusion : null;
         $this->display();
     }
 

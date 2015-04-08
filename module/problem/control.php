@@ -61,7 +61,8 @@ class problem extends control
         if(!empty($_POST))
         {   
             $problem = fixer::input('post')->get();
-            if (!(implode('', $problem->teachers) && $problem->title))
+            $problem->teachers = implode(',', $problem->teachers);
+            if (!( $problem->teachers && $problem->title && $problem->content))
             {
                 echo js::alert($this->lang->problem->noImportantInformation);
                 $this->session->set('createProblem', $problem);

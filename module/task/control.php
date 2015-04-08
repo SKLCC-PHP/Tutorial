@@ -69,7 +69,8 @@ class task extends control
     public function create($recreate = 0) { 
         if(!empty($_POST)){
             $task = fixer::input('post')->get();
-            if (!($task->assignedTo && $task->title && $task->deadline)) {
+            $task->acp_ID = implode(',', $task->assignedTo);
+            if (!($task->acp_ID && $task->title && $task->deadline && $task->content)) {
                 echo js::alert($this->lang->task->noImportantInformation);      
                 $this->session->set('createTask', $task);
                 die(js::locate($this->createLink('task', 'create', "recreate=1"), 'parent'));

@@ -54,9 +54,6 @@
       <?php if ($viewtype == 'all'):?>
         <th class='w-40px'> <?php echo $lang->problem->isRead;?></th>
       <?php endif;?>
-<!--       <?php if ($this->session->userinfo->roleid == 'student')://@Green?> 
-        <th class='w-40px'> <?php echo $lang->actions;?></th>
-      <?php endif;?> -->
       </tr>
     </thead>
     <tbody>
@@ -85,32 +82,17 @@
       <?php if ($viewtype == 'all'):?>
         <td><?php echo $lang->problem->readStatusList[($problem->readtime != null) && ($problem->readtime != '0000-00-00 00:00:00')];?></td>
       <?php endif;?>
-     <!--  <?php if ($problem->asgID == $this->session->user->account)://@Green?> 
-        <td>
-          <?php 
-            if ($problem->completetime == null)
-            {
-              if ($viewtype == 'all')
-              {
-                common::printIcon('problem', 'batchdelete', "problemID=$problem->id", '', 'list', 'remove', 'hiddenwin');
-              }
-              else
-              {
-                common::printIcon('problem', 'edit', "problemID=$problem->id", '', 'list');
-              common::printIcon('problem', 'delete', "problemID=$problem->id", '', 'list', '', 'hiddenwin');
-              if (($problem->readtime != null) && ($problem->readtime != '0000-00-00 00:00:00'))
-                common::printIcon('problem', 'complete', "problemID=$problem->id", '', 'list', 'ok', 'hiddenwin');                  
-              }
-            }      
-          ?>
-        </td>
-      <?php endif;?> -->
       </tr>
     <?php endforeach;?>
     </tbody>
     <tfoot>
         <tr>
-        <?php $columns = $this->cookie->windowWidth > $this->config->wideSize ? 6 : 5;?>
+        <?php 
+        if($viewtype == 'unRead') 
+          $columns = 5;
+        else
+          $columns = 6;
+      ?>
           <td colspan='<?php echo $columns;?>'>
             <?php $pager->show();?>
           </td>

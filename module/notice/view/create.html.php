@@ -32,7 +32,7 @@
       </tr>
       <tr>
         <th><?php echo $lang->notice->content;?></th>
-        <td colspan='2'><?php echo html::textarea('content', $notice->content, "rows='22' class='form-control' required='required' onsumbit='checkTextarea()'");?></td><td></td>
+        <td colspan='2'><?php echo html::textarea('content', $notice->content, "rows='22' class='form-control' onsumbit='checkTextarea()'");?></td><td></td>
       </tr>   
       <tr>
         <th><?php echo $lang->files;?></th>
@@ -40,19 +40,9 @@
       </tr>
       <tr>
         <td></td>
-        <td colspan='3'><?php echo html::submitButton() . html::backButton();?></td>
+        <td colspan='3'><?php echo html::submitButton() . html::linkButton($lang->goback, $this->inlink('viewnotice'));?></td>
       </tr>
     </table>
   </form>
 </div>
-<script type="text/javascript">
-  function checkTextarea()
-  {
-    var textarea = document.getElementsByid('content');
-    if(textarea == '')
-    {
-      alert();
-    }
-  }
-</script>
 <?php include '../../common/view/footer.html.php';?>

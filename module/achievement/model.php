@@ -16,7 +16,7 @@ class achievementModel extends model
             ->striptags('title')
             ->setForce('creatorID',  $this->session->user->account)
             ->add('createtime', helper::now())
-            ->remove('files,labels,member')
+            ->remove('files,labels,members')
             ->get();
         
         $achievement->othername = '';

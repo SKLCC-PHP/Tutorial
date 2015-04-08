@@ -22,6 +22,7 @@ $lang->notice->createtime = '创建时间';
 $lang->notice->department = '发布单位';
 $lang->notice->search = '搜索通知';
 $this->lang->notice->confirmDelete = '确定要删除这条通知吗？';
+$lang->notice->noImportantInformation           = "必填项没有填写完整";
 
 $lang->notice->createsucceed           = "通知发布成功！";
 $lang->notice->deletesucceed           = "通知删除成功！";

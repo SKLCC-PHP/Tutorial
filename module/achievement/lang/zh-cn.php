@@ -28,6 +28,8 @@ $lang->achievement->delete 			= "删除";
 $lang->achievement->edit        	= "修改";
 $lang->achievement->view      		= "查看";
 $lang->achievement->confirmDelete	= "您确定删除该成果吗？";
+$lang->achievement->noImportantInformation = "必填项没有填写完整";
+
 
 $lang->achievement->checkList[1] = '通过';
 $lang->achievement->checkList[-1] = '未通过';

@@ -122,5 +122,5 @@ function setStories(moduleID, projectID)
 $(document).ready(function()
 {
     setPreview();
-    $("#story, #mailto").chosen(defaultChosenOptions);
+    $("#story, #members").chosen(defaultChosenOptions);
 });

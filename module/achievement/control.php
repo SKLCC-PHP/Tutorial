@@ -32,7 +32,7 @@ class achievement extends control
         $pager = pager::init($recTotal, $recPerPage, $pageID);
 
         $this->session->set('achievementOrderBy', $orderBy);
-        /*根据权限设置任务列表*/
+        /*根据权限设置成果列表*/
         $achievements          = $this->achievement->getUserAchievements('', $orderBy, $pager, $paramtitle, $paramtype, $paramtea, $paramstu);
         $userpairs      = $this->user->getPairs('noletter');
 

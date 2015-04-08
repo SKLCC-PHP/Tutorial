@@ -73,11 +73,19 @@ class project extends control
         $this->display();
     }
 
-    public function create()
+    public function create($recreate = 0)
     {
         $cur_account = $this->session->user->account;
         if (!empty($_POST))
         { 
+            $project = fixer::input('post')->get();
+            $project->members = implode(',', $project->members);
+            if (!( $project->teacher && $project->title && $project->content && $project->deadline))
+            {
+                echo js::alert($this->lang->project->noImportantInformation);
+                $this->session->set('createProject', $project);
+                die(js::locate($this->createLink('project', 'create', "recreate=1"), 'parent'));
+            }
             $projectID = $this->project->create();
             $this->action->create('project', $projectID, 'created');
             echo js::alert($this->lang->project->createsucceed);                    
@@ -94,6 +102,7 @@ class project extends control
             $this->view->teachers[$value->account] .= (strstr($value->team, 'P')) ? '(毕业设计)' : '';
         }
 
+        $this->view->project =  $recreate ? $this->session->createProject : null;
         $this->view->memberLists = $this->common->getTeamByStudent($cur_account);
         
         $this->display();

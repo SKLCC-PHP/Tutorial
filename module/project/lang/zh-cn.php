@@ -57,6 +57,7 @@ $lang->project->createsucceed           = "新项目创建成功！";
 $lang->project->editsucceed           = "项目修改成功！";
 $lang->project->deletesucceed           = "项目删除成功！";
 $lang->project->finishsucceed           = "项目完成了！";
+$lang->project->noImportantInformation = "必填项没有填写完整";
 
 
 $lang->project->mail = new stdclass();
