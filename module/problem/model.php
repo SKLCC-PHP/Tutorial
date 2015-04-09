@@ -34,7 +34,7 @@ class problemModel extends model
             $this->loadModel('action')->create('problem', $problemID, 'created');
 
             $subject = $this->lang->problem->mail->subject;
-            $body = sprintf($this->lang->problem->mail->body, $this->app->user->realname, common::getSysURL().helper::createLink('problem', 'view', "problemID=".$taskID));
+            $body = sprintf($this->lang->problem->mail->body, $this->app->user->realname, common::getSysURL().helper::createLink('problem', 'view', "problemID=".$problemID));
             $this->loadModel('mail')->send($teacher, $subject, $body, '', true);
         }
     }
