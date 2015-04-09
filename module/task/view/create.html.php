@@ -15,18 +15,20 @@
         <th><?php echo $lang->task->title;?></th>
         <td colspan='2'>
           <div class='input-group'>
-            <?php echo html::input('title', $task->title, "class='form-control' required='required'");?>
+            <?php echo html::input('title', $task->title, "class='form-control' required='required' onblur='checkTitle()'");?>
           </div>
         </td>
+        <td colspan="2" width="700px"></td>
       </tr>
       <tr>
         <th width="100px"><?php echo $lang->task->assignedTo;?></th>
         <td  colspan='2'><div class="required required-wrapper"></div><?php echo html::select('assignedTo[]', $members, $task->acp_ID, "class='form-control chosen' multiple");?></td><td></td>
+        <td width="700px"></td>
       </tr> 
       <tr>
         <th><?php echo $lang->task->content;?></th>
-        <td colspan='2'><?php echo html::textarea('content', $task->content, "rows='7' class='form-control'");?></td><td></td>
-      </tr>   
+        <td colspan='4'><?php echo html::textarea('content', $task->content, "rows='7' class='form-control'");?></td><td></td>
+      </tr>
       <tr>
         <th><?php echo $lang->task->dateRange;?></th>
         <td width = '300px'>
@@ -50,7 +52,7 @@
       </tr>
       <tr>
         <th><?php echo $lang->files;?></th>
-        <td colspan='2'><?php echo $this->fetch('file', 'buildform');?></td>
+        <td colspan='4'><?php echo $this->fetch('file', 'buildform');?></td>
       </tr>
       <tr>
         <th><?php echo $lang->acl;?></th>

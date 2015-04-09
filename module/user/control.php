@@ -571,8 +571,8 @@ class user extends control
 		/* Passed account and password by post or get. */
 		if(!empty($_POST))
 		{
-			// if(strtolower($this->post->captcha) != $this->session->captcha)@Green delete the captcha 2015
-			// 	die(js::error($this->lang->user->wrong_captcha));
+			if(strtolower($this->post->captcha) != $this->session->captcha)//@Green use the captcha 2015
+				die(js::error($this->lang->user->wrong_captcha));
 			if($this->post->hidden && $this->post->hidden === 'forget')
 			{
 				$this->forgetPassword($_POST);

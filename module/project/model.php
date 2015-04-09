@@ -12,7 +12,7 @@ class projectModel extends model
     	$cha_proj['creator_ID'] = $this->session->user->account;
     	$cha_proj['name'] = $project->name;
     	$cha_proj['description'] = $project->description;
-    	$cha_proj['other_account'] = implode('|', $project->mailto);
+    	$cha_proj['other_account'] = implode('|', $project->members);
     	$cha_proj['starttime'] = $project->starttime;
     	$cha_proj['updatetime'] = date('Y-m-d H:i:s');
     	$cha_proj['tea_ID'] = $project->teacher;

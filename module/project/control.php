@@ -73,11 +73,19 @@ class project extends control
         $this->display();
     }
 
-    public function create()
+    public function create($recreate = 0)
     {
         $cur_account = $this->session->user->account;
         if (!empty($_POST))
         { 
+            $project = fixer::input('post')->get();
+            $project->members = implode(',', $project->members);
+            if (!( $project->teacher && $project->title && $project->content && $project->deadline))
+            {
+                echo js::alert($this->lang->project->noImportantInformation);
+                $this->session->set('createProject', $project);
+                die(js::locate($this->createLink('project', 'create', "recreate=1"), 'parent'));
+            }
             $projectID = $this->project->create();
             $this->action->create('project', $projectID, 'created');
             echo js::alert($this->lang->project->createsucceed);                    
@@ -85,7 +93,7 @@ class project extends control
         }
 
         $teachers = $this->tutor->getTutorByStudent($cur_account);
-        $this->view->teachers = array('' => '');
+        $this->view->teachers = array();
 
         foreach ($teachers as $key => $value) 
         {
@@ -94,7 +102,8 @@ class project extends control
             $this->view->teachers[$value->account] .= (strstr($value->team, 'P')) ? '(毕业设计)' : '';
         }
 
-        $this->view->menberLists = $this->common->getTeamByStudent($cur_account);
+        $this->view->project =  $recreate ? $this->session->createProject : null;
+        $this->view->memberLists = $this->common->getTeamByStudent($cur_account);
         
         $this->display();
     }
@@ -141,7 +150,7 @@ class project extends control
         $teachers = $this->tutor->getTutorByStudent($cur_account);
         if ($teachers)
         {
-            $this->view->teachers = array('' => '');
+            $this->view->teachers = array();
 
             foreach ($teachers as $key => $value) 
             {
@@ -173,6 +182,7 @@ class project extends control
         {
             $this->project->delete($projectID);
             $this->action->create('project', $projectID, 'deleted');
+            echo js::alert($this->lang->project->deletesucceed);
             die(js::locate($this->createLink('project', 'viewProject'), 'parent'));
         }
     }
@@ -190,6 +200,7 @@ class project extends control
         {
             $this->project->finish($projectID);
             $this->action->create('project', $projectID, 'finished');
+            echo js::alert($this->lang->project->finishsucceed);
             die(js::locate($this->createLink('project', 'viewProject'), 'parent'));
         }
     }

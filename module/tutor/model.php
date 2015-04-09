@@ -15,7 +15,7 @@ class tutorModel extends model
                     ->where('t1.stu_ID')->eq($user)
                     ->andWhere('t1.deleted')->eq(0)
                     ->fetchAll();
-        return $teacher;
+        return array_filter($teacher);
     }
 
     /**

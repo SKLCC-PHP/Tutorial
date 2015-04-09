@@ -32,7 +32,7 @@ class achievement extends control
         $pager = pager::init($recTotal, $recPerPage, $pageID);
 
         $this->session->set('achievementOrderBy', $orderBy);
-        /*根据权限设置任务列表*/
+        /*根据权限设置成果列表*/
         $achievements          = $this->achievement->getUserAchievements('', $orderBy, $pager, $paramtitle, $paramtype, $paramtea, $paramstu);
         $userpairs      = $this->user->getPairs('noletter');
 
@@ -72,11 +72,12 @@ class achievement extends control
         {   
             $this->achievement->create();
             $this->action->create('achievement', $achievementID, 'created');
+            echo js::alert($this->lang->achievement->createsucceed);
             die(js::locate($this->createLink('achievement', 'viewAchievement'), 'parent'));
         }
        
         $teachers = $this->tutor->getTutorByStudent();
-        $this->view->teachers = array(''=>'');
+        $this->view->teachers = array('' => '');
         foreach ($teachers as $key => $teacher) 
         {
             if (strstr($teacher->team, 'G')) 
@@ -117,6 +118,7 @@ class achievement extends control
                 $fileAction = '';
                 if(!empty($files)) $fileAction = $this->lang->addFiles . join(',', $files) . "\n" ;
             }
+            echo js::alert($this->lang->achievement->editsucceed);
             die(js::locate($this->createLink('achievement', 'view', "achievementID=$achievementID"), 'parent'));
         }
 
@@ -158,6 +160,7 @@ class achievement extends control
         {
             $this->achievement->delete($achievementID);       
             $this->action->create('achievement', $achievementID, 'deleted');
+            echo js::alert($this->lang->achievement->deletesucceed);
             die(js::locate($this->createLink('achievement', 'viewAchievement'), 'parent'));     
         }
     }
@@ -196,6 +199,7 @@ class achievement extends control
             $this->achievement->saveChecked($achievementID);
             $this->task->makeComment($achievementID,'A');
             $this->action->create('achievement', $achievementID, 'reviewed');
+            echo js::alert($this->lang->achievement->checksucceed);
             die(js::closeModal('parent.parent', 'this'));
         }
         $this->view->achievement = $this->achievement->getById($achievementID);

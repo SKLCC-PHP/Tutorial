@@ -66,10 +66,10 @@ js::set('confirmDelete', $lang->task->confirmDelete);
   ?>  
     <th class='w-30px'> <?php echo $lang->task->is_submitted;?></th>
     <th class='w-30px'> <?php echo $lang->task->is_assessed;?></th>
-  <?php endif;
-    if ((($curRole == 'teacher')||($curRole == 'student')) && ($viewtype != 'done')):?>
-    <th class='w-30px'> <?php echo $lang->actions;?></th>
   <?php endif;?>
+<!--   <?php  if ((($curRole == 'teacher')||($curRole == 'student')) && ($viewtype != 'done'))://@Green?>
+    <th class='w-30px'> <?php echo $lang->actions;?></th>
+  <?php endif;?> -->
   </tr>
   </thead>
   <tbody>
@@ -115,8 +115,8 @@ js::set('confirmDelete', $lang->task->confirmDelete);
     ?>  
       <td><?php echo $lang->task->submitList[($task->submittime != null)];?></td>
       <td><?php echo $lang->task->assessList[$task->assesstime != null];?></td>
-    <?php endif;
-    if ((($curRole == 'teacher')||($curRole == 'student')) && ($viewtype != 'done')):?>
+    <?php endif;?>
+<!--     <?php if ((($curRole == 'teacher')||($curRole == 'student')) && ($viewtype != 'done')):?>
       <td class='text-center'>
         <?php         
           if ($task->completetime == null or $task->completetime == '0000-00-00 00:00:00')
@@ -150,7 +150,7 @@ js::set('confirmDelete', $lang->task->confirmDelete);
           }                    
         ?>
       </td>
-    <?php endif;?>
+    <?php endif;//@Green?> -->
     </tr>
     <?php endforeach;?>
   </tbody>

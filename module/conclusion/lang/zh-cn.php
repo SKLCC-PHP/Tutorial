@@ -18,3 +18,8 @@ $lang->conclusion->delete 			= "删除";
 $lang->conclusion->edit        		= "修改";
 $lang->conclusion->view      		= "查看";
 $lang->conclusion->confirmDelete	= "您确定删除该文章吗？";
+$lang->conclusion->noImportantInformation           = "必填信息没有填写完整！";
+
+$lang->conclusion->createsucceed           = "学习小结新增成功！";
+$lang->conclusion->editsucceed           = "学习小结修改成功！";
+$lang->conclusion->deletesucceed           = "学习小结删除成功！";

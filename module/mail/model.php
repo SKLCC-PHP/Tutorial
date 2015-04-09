@@ -241,7 +241,7 @@ class mailModel extends model
 	 */
 	public function send($toList, $subject, $body = '', $ccList = '', $includeMe = false)
 	{
-		if(!$this->config->mail->turnon) return;
+		if(!$this->config->mail->turnon) return 0;//@Green turn on the mail at 2015-03-25
 
 		ob_start();
 		$toList  = $toList ? explode(',', str_replace(' ', '', $toList)) : array();

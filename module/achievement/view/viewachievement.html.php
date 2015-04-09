@@ -53,9 +53,9 @@
     <?php endif;?>
       <th class='w-hour'> <?php echo $lang->achievement->create_time;?></th>
       <th class='w-hour'> <?php common::printOrderLink('checked', $orderBy, $vars, $lang->achievement->ischecked);?></th>
-    <?php if ($this->session->userinfo->roleid != 'teacher'):?>  
+<!--     <?php if ($this->session->userinfo->roleid != 'teacher'):?>  
       <th class='w-20px'> <?php echo $lang->actions;?></th>
-    <?php endif;?>
+    <?php endif;?> -->
     </tr>
     </thead>   
     <tbody>
@@ -72,7 +72,7 @@
     <?php endif;?>
       <td><?php echo $achievement->createtime;?></td>
       <td><?php echo $lang->achievement->checkedList[$achievement->checked];?></td>
-    <?php if ($this->session->userinfo->roleid != 'teacher'):?> 
+<!--     <?php if ($this->session->userinfo->roleid != 'teacher'):?> 
       <td class='text-center'>
         <?php
         if($achievement->checked != 1)
@@ -81,7 +81,7 @@
         common::printIcon('achievement', 'check', "achievementID=$achievement->id", '', 'list', '', '', 'iframe', true, "data-width='900'");
         ?>
       </td>
-    <?php endif;?>
+    <?php endif;?> -->
     </tr>
     <?php endforeach;?>
     </tbody>
@@ -94,11 +94,11 @@
           }
           elseif($this->session->userinfo->roleid == 'student')
           {
-            $columns = 7;
+            $columns = 6;
           }
           else
           {
-            $columns = 8;
+            $columns = 7;
           }
         ;?>
           <td colspan='<?php echo $columns;?>'>
