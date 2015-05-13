@@ -45,6 +45,10 @@ $lang->problem->viewGroup           = "查看组问题";
 $lang->problem->confirmDelete		= "您确定删除该问题吗？";
 $lang->problem->confirmComplete     = "您确定问题结束？";
 $lang->problem->noImportantInformation           = "必填项没有填写完整";
+$lang->problem->createsucceed           = "提问成功！";
+$lang->problem->editsucceed           = "问题修改成功！";
+$lang->problem->deletesucceed           = "问题删除成功！";
+$lang->problem->completesucceed           = "提问已经解答好了！";
 
 $lang->problem->solveStatusList[0]  = "未解决";
 $lang->problem->solveStatusList[1]  = "已解决";

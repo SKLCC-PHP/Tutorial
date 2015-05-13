@@ -20,7 +20,7 @@ class problemModel extends model
 
             $this->dao->insert(TABLE_QUESTION)
                 ->data($data)
-                //->autoCheck()
+                ->autoCheck()
                 ->exec();
 
             $problemID = $this->dao->lastInsertID();
@@ -34,7 +34,7 @@ class problemModel extends model
             $this->loadModel('action')->create('problem', $problemID, 'created');
 
             $subject = $this->lang->problem->mail->subject;
-            $body = sprintf($this->lang->problem->mail->body, $this->app->user->realname, common::getSysURL().helper::createLink('problem', 'view', "problemID=".$taskID));
+            $body = sprintf($this->lang->problem->mail->body, $this->app->user->realname, common::getSysURL().helper::createLink('problem', 'view', "problemID=".$problemID));
             $this->loadModel('mail')->send($teacher, $subject, $body, '', true);
         }
     }
@@ -426,7 +426,7 @@ class problemModel extends model
         case 'complete':
             if ($problem->asgID == $cur_account)
             {
-                if ($problem->completetime != null)
+                if ($problem->completetime == null && $problem->solvetime)
                     return 1;
             }
             return 0;

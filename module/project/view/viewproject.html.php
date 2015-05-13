@@ -48,9 +48,9 @@
           <th class = 'w-50px'><?php echo $lang->project->status;?></th>
           <th class = 'w-60px'><?php common::printOrderLink('starttime', $orderBy, $vars, $lang->project->begin);?></th>
           <th class = 'w-60px'><?php common::printOrderLink('deadline', $orderBy, $vars, $lang->project->deadline);?></th>        
-        <?php if ($this->session->userinfo->roleid == 'student'):?>  
+<!--         <?php if ($this->session->userinfo->roleid == 'student'):?>  
           <th class='w-50px'><?php echo $lang->actions;?></th>
-        <?php endif;?>
+        <?php endif;?> -->
         </tr>
       </thead>
       <tbody>
@@ -66,7 +66,7 @@
           <td><?php echo $lang->project->statusList[$project->status];?></td>
           <td><?php echo substr($project->starttime, 0, 10);?></td>
           <td><?php echo substr($project->deadline, 0, 10);?></td> 
-        <?php if ($this->session->userinfo->roleid == 'student'):?>    
+<!--         <?php if ($this->session->userinfo->roleid == 'student'):?>    
           <td>
             <?php 
             if (($project->priv) && ($project->finishtime == null))
@@ -82,14 +82,13 @@
             }           
             ?>
           </td>
-        <?php endif;?>
+        <?php endif;?> -->
         </tr>
       <?php endforeach; ?>
       </tbody>
       <tfoot>
         <tr>
-        <?php $columns = $this->session->userinfo->roleid == 'student'? 9: 8;?>
-          <td colspan='<?php echo $columns;?>'>
+          <td colspan='8'>
             <?php $pager->show();?>
           </td>
         </tr>

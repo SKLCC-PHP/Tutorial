@@ -53,6 +53,12 @@ $lang->task->can_not_edit		= "只有任务还没开始的时候才能修改！";
 $lang->task->unsubmit			= "学生还未提交过，无法批阅！";
 $lang->task->noImportantInformation           = "必填信息没有填写完整！";
 $lang->task->nosubmit           = "提交不能为空";
+$lang->task->createsucceed           = "任务指派成功！";
+$lang->task->editsucceed           = "任务修改成功！";
+$lang->task->assesssucceed           = "任务批阅完成！";
+$lang->task->deletesucceed           = "任务删除成功！";
+$lang->task->finishsucceed           = "任务完成了！";
+$lang->task->submitsucceed           = "提交成功！";
 
 $lang->task->assessList['unassessed'] 		= '未批阅';
 $lang->task->assessList['assessed'] 		= '已批阅';

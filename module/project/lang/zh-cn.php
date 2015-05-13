@@ -15,7 +15,7 @@ $lang->project->ID = '项目编号';
 $lang->project->teacher = '指导老师';
 $lang->project->noteacher = '无指导老师';
 $lang->project->name   = '项目名称';
-$lang->project->menber = '项目成员';
+$lang->project->member = '项目成员';
 $lang->project->nomember = '无小组成员';
 $lang->project->dateRange = '起止日期';
 $lang->project->deadline = '截止日期';
@@ -52,9 +52,13 @@ $lang->project->timeInfo = '时间信息';
 
 $lang->project->confirmDelete = '你确认删除该项目吗？';
 $lang->project->confirmFinish = '确定该项目已完成？';
-$lang->project->createsucceed = '添加成功';
-$lang->project->editsucceed = '修改成功';
 $lang->project->noTeacher = '指导老师不能为空';
+$lang->project->createsucceed           = "新项目创建成功！";
+$lang->project->editsucceed           = "项目修改成功！";
+$lang->project->deletesucceed           = "项目删除成功！";
+$lang->project->finishsucceed           = "项目完成了！";
+$lang->project->noImportantInformation = "必填项没有填写完整";
+
 
 $lang->project->mail = new stdclass();
 
