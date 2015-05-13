@@ -23,7 +23,7 @@ include '../../common/view/header.lite.html.php';
 						<th><?php echo $lang->user->captcha;?></th>
 						<td><input class='form-control' type='text' name='captcha' id = 'captcha'/></td>
 						<td width="100px">
-							<img id="captcha_img" border="0px" src="<?php echo $this->createLink('user', 'captcha');?>?r=<?php echo rand();?>" 
+							<img id="captcha_img" border="0px" src="<?php echo $this->createLink('user', 'captcha');?>?r=<?php echo rand();?>"
 							width="100px" height="30px" onclick="document.getElementById('captcha_img').src='<?php echo $this->createLink('user', 'captcha');?>?r='+Math.random()">
 						</td>
 					</tr>
@@ -37,7 +37,7 @@ include '../../common/view/header.lite.html.php';
 					<tr>
 						<th></th>
 						<td>
-							<?php 
+							<?php
 								echo html::submitButton($lang->login);
 							?>
 						</td>
@@ -52,7 +52,7 @@ include '../../common/view/header.lite.html.php';
 						<th><?php echo $lang->user->account;?></th>
 						<td><input class='form-control' type='text' name='account' id='account' /></td>
 					</tr>
-					
+
 					<tr>
 						<th><?php echo $lang->user->email;?></th>
 						<td><input class='form-control' type='text' name='email' id = 'email' /></td>
@@ -62,7 +62,7 @@ include '../../common/view/header.lite.html.php';
 						<td >
 							<?php echo "输入用户邮箱，获取验证码，然后点击", '</br>';?>
 							<a href="javascript:resetPassword();">重置密码</a>
-						</td>	
+						</td>
 					</tr>
 					<tr>
 						<th></th>
@@ -82,7 +82,7 @@ include '../../common/view/header.lite.html.php';
 						<th><?php echo $lang->user->account;?></th>
 						<td><input class='form-control' type='text' name='account' id='account' /></td>
 					</tr>
-					
+
 					<tr>
 						<th><?php echo $lang->user->verification_code;?></th>
 						<td><input class='form-control' type='text' name='verification_code' id = 'verification_code' /></td>
@@ -100,7 +100,7 @@ include '../../common/view/header.lite.html.php';
 						<td >
 							<?php echo "请查看您的邮箱，输入验证码，重置密码", '</br>';?>
 							<a href="javascript:backLogin();">返回登陆</a>
-						</td>	
+						</td>
 					</tr>
 					<tr>
 						<th></th>
@@ -115,13 +115,12 @@ include '../../common/view/header.lite.html.php';
 		</div>
 
 		<div class="panel-foot">
-			
-
-		</div>  
+			<tr>demo&emsp;用户名：admin&nbsp;&nbsp;&nbsp;&nbsp;密码：123456</tr>
+		</div>
 
 		</div>
 		<div id="poweredby">
-			
+
 		</div>
 </div>
 <?php include '../../common/view/footer.lite.html.php';?>
@@ -131,7 +130,7 @@ include '../../common/view/header.lite.html.php';
 		document.getElementById("form_login").style.display = 'none';
 		document.getElementById("form_reset").style.display = 'none';
 		document.getElementById("form_forget").style.display = 'block';
-		
+
 	}
 	function backLogin()
 	{
