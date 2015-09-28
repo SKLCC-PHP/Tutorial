@@ -340,7 +340,7 @@ class task extends control
                 break;
             }
         }
-        
+
         $this->view->group = $group;
         $this->view->groupIndex = $groupIndex;
         $this->view->tasks = $tasks;

@@ -127,7 +127,8 @@ class resources extends control
 
         $files = $this->resources->getFilesByACL(3, $orderBy, $pager, $paramtitle, $paramaddedBy);
         $userpairs = $this->user->getPairs('noletter');
-
+        $pager->recTotal = count($files);
+        
         $this->view->files = $files;
         $this->view->userpairs = $userpairs;
         $this->view->pager = $pager;

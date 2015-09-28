@@ -637,6 +637,7 @@ class commonModel extends model
 			$queryCondition = explode('WHERE', $sql);
 			$queryCondition = explode('ORDER', $queryCondition[1]);
 			$queryCondition = str_replace('t1.', '', $queryCondition[0]);
+			$queryCondition = str_replace('t2.', '', $queryCondition[0]);//add by Green 2015-09-28
 		}
 		else
 		{

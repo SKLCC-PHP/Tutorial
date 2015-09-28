@@ -80,7 +80,7 @@ class project extends control
         { 
             $project = fixer::input('post')->get();
             $project->members = implode(',', $project->members);
-            if (!( $project->teacher && $project->title && $project->content && $project->deadline))
+            if (!( $project->teacher && $project->name && $project->description && $project->deadline))
             {
                 echo js::alert($this->lang->project->noImportantInformation);
                 $this->session->set('createProject', $project);

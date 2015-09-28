@@ -16,10 +16,7 @@
 					<!-- <th class='w-90px' rowspan="3"><?php echo $lang->user->avatar;?></th> -->
 				</tr>
 				<tr>
-					<?php if($user->roleid == 'counselor'):?>
-					<th><?php echo $lang->user->manager_grade;?></th>
-					<td><?php echo html::checkbox('grade', array_slice($years, 0, 4, true), $user->grade);?></td>
-					<?php elseif($user->roleid == 'teacher'):?>
+					<?php if($user->roleid == 'teacher'):?>
 					<th><?php echo $lang->user->title;?></th>
 					<td><?php echo html::input('title', $user->title,"class='form-control'");?></td>
 					<th><?php echo $lang->user->department;?></th>

@@ -1,7 +1,0 @@
-20141216 22:38:58: 
-  SELECT * FROM `oa_company` ORDER BY `id`  LIMIT 1 
-  SELECT * FROM `oa_config` WHERE owner IN ('system','') ORDER BY `id` 
-
-20141216 22:38:58: user-login-L29hL3d3dy8=
-  SELECT * FROM `oa_config` WHERE owner IN ('system','') ORDER BY `id` 
-

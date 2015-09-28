@@ -799,7 +799,7 @@ class taskModel extends model
 			return $this->checkTeacherPriv($task, $method);
 			break;
 		case 'counselor':
-			return $this->checkCouncelorPriv($task, $method);
+			return $this->checkCounselorPriv($task, $method);
 			break;
 		case 'manager':
 			return $this->checkManagerPriv($task, $method);
@@ -899,7 +899,7 @@ class taskModel extends model
     	}
     }
 
-    public function checkCouncelorPriv($task, $method)
+    public function checkCounselorPriv($task, $method)
     {
     	if ($method == 'view')
     	{

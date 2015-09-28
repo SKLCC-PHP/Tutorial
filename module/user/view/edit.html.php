@@ -31,51 +31,51 @@
 			<?php if($user->roleid == 'student'):?>
 			<th><?php echo $lang->user->grade;?></th>
 			<td><?php echo html::select('grade', $years, date('Y'),"class='form-control'");?></td>
-			<?php elseif($user->roleid == 'counselor'): ?>
+			<?php elseif($user->roleid == 'counselor' && $this->session->user->roleid != 'counselor'): ?>
 			<th><?php echo $lang->user->manager_grade;?></th>
 			<td><?php echo html::checkbox('grade', array_slice($years, 0, 4, true), $user->grade);?></td>
 			<?php endif;?>
 		</tr>
 		<tr>
-			<th><?php echo $lang->user->collegeName;?></th>
 			<?php if($this->session->user->roleid == 'admin' || $this->session->user->roleid == 'manager') :?>
-				<td><?php echo html::select('college_id', $collegeList, $user->college_id, "class='form-control' required='required'");?></td>
+			<th><?php echo $lang->user->collegeName;?></th>
+			<td><?php echo html::select('college_id', $collegeList, $user->college_id, "class='form-control' required='required'");?></td>
 			<?php endif;?>
 		</tr>
 		<?php if($user->roleid == 'student'):?>
-		<tr>
-			<th><?php echo $lang->user->specialty;?></th>
-			<td><?php echo html::input('specialty', $user->specialty,"class='form-control'");?></td>
-		</tr>
-		<tr>
-			<th><?php echo $lang->user->class;?></th>
-			<td><?php echo html::input('administrativeclass', $user->administrativeclass,"class='form-control'");?></td>
-		</tr>
-		<tr>
-			<th><?php echo $lang->user->education_now;?></th>
-			<td><?php echo html::select('education', array('本科生'=>'本科生', '研究生'=>'研究生'), '本科生', "class='form-control' required='required'");?></td>
-		</tr>
-		<tr>
-			<th><?php echo $lang->user->dormitory;?></th>
-			<td><?php echo html::input('dormitory', $user->dormitory,"class='form-control'");?></td>
-		</tr>
-		<?php elseif($user->roleid == 'teacher'):?>
-		<tr>
-			<th><?php echo $lang->user->research;?></th>
-			<td><?php echo html::input('research', $user->research, "class = 'form-control'");?></td>
-		</tr>
-		<tr>
-			<th><?php echo $lang->user->title;?></th>
-			<td><?php echo html::input('title', $user->title,"class='form-control'");?></td>
-		</tr>
-		<tr>
-			<th><?php echo $lang->user->office;?></th>
-			<td><?php echo html::input('dormitory', $user->dormitory,"class='form-control'");?></td>
-		</tr>
-		<tr>
-			<th><?php echo $lang->user->department;?></th>
-			<td><?php echo html::input('department', $user->department,"class='form-control'");?></td>
-		</tr>
+			<tr>
+				<th><?php echo $lang->user->specialty;?></th>
+				<td><?php echo html::input('specialty', $user->specialty,"class='form-control'");?></td>
+			</tr>
+			<tr>
+				<th><?php echo $lang->user->class;?></th>
+				<td><?php echo html::input('administrativeclass', $user->administrativeclass,"class='form-control'");?></td>
+			</tr>
+			<tr>
+				<th><?php echo $lang->user->education_now;?></th>
+				<td><?php echo html::select('education', array('本科生'=>'本科生', '研究生'=>'研究生'), '本科生', "class='form-control' required='required'");?></td>
+			</tr>
+			<tr>
+				<th><?php echo $lang->user->dormitory;?></th>
+				<td><?php echo html::input('dormitory', $user->dormitory,"class='form-control'");?></td>
+			</tr>
+			<?php elseif($user->roleid == 'teacher'):?>
+			<tr>
+				<th><?php echo $lang->user->research;?></th>
+				<td><?php echo html::input('research', $user->research, "class = 'form-control'");?></td>
+			</tr>
+			<tr>
+				<th><?php echo $lang->user->title;?></th>
+				<td><?php echo html::input('title', $user->title,"class='form-control'");?></td>
+			</tr>
+			<tr>
+				<th><?php echo $lang->user->office;?></th>
+				<td><?php echo html::input('dormitory', $user->dormitory,"class='form-control'");?></td>
+			</tr>
+			<tr>
+				<th><?php echo $lang->user->department;?></th>
+				<td><?php echo html::input('department', $user->department,"class='form-control'");?></td>
+			</tr>
 		<?php endif;?>
 		<tr>
 			<td colspan='5' class='text-center'><?php echo html::submitButton('修改信息') . html::backButton();?></td>
