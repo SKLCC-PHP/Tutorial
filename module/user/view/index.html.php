@@ -32,9 +32,10 @@ js::set('confirmDelete', $lang->user->confirmDelete);
 <div class='main'>
 	<form action='<?php echo $this->createLink('user', 'batchEdit'/*@Green*/)?>' method='post' id='userListForm'>
 		<table class='table table-condensed table-hover table-striped tablesorter' id='userList'>
+			<?php //$vars = "viewtype=$viewtype&orderBy=%s&recTotal=$recTotal&recPerPage=$recPerPage&pageID=$pageID&paramtitle=$searchtitle&paramstu=$searchstu&paramtea=$searchtea"; ?>
+			<?php $vars = "param=$param&orderBy=%s&recTotal={$pager->recTotal}&recPerPage={$pager->recPerPage}&pageID={$pager->pageID}&paramaccount=$searchaccount&paramrealname=$searchrealname&paramcollege=$searchcollege&paramrole=$searchrole";?>
 			<thead>
 				<tr class='colhead'>
-				<?php $vars = "param=$param&orderBy=%s&recTotal={$pager->recTotal}&recPerPage={$pager->recPerPage}";?>
 				<th><?php common::printOrderLink('account', $orderBy, $vars, $lang->user->account);?></th>
 				<th width="140px"><?php common::printorderlink('realname', $orderBy, $vars, $lang->user->realname);?></th>
 				<?php if($this->session->user->roleid == 'admin'):?>
