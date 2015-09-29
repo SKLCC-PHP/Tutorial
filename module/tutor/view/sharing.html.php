@@ -37,7 +37,7 @@
 <div class='main'>
   <form method='post' id='sharingForm'>
     <table class='table table-condensed table-hover table-striped tablesorter' align="center" id='filetable'>
-    <?php $vars = "orderBy=%s&recTotal=$recTotal&recPerPage=$recPerPage&pageID=$pageID"; ?>
+    <?php $vars = "orderBy=%s&recTotal=$recTotal&recPerPage=$recPerPage&pageID=$pageID&paramtitle=$searchtitle&paramcreator=$searchcreator"; ?>
       <thead>
       <tr class='text-center'>
         <th class='w-60px text-left nobr'> <?php echo $lang->resources->title;?></th>

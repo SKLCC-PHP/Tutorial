@@ -39,7 +39,7 @@
 <br/>
 <form method='post' id='myachievementForm'>
   <table class='table table-condensed table-hover table-striped tablesorter table-fixed' align="center" id='achievementtable'>
-  <?php $vars = "orderBy=%s&recTotal=$recTotal&recPerPage=$recPerPage&pageID=$pageID"; ?>
+  <?php $vars = "orderBy=%s&recTotal=$recTotal&recPerPage=$recPerPage&pageID=$pageID&paramtitle=$searchtitle&paramtype=$searchtype&paramstu=$searchstu"; ?>
     <thead>
     <tr class='text-center'>
       <th width="10px" class='text-left'> <?php common::printOrderLink('id', $orderBy, $vars, $lang->idAB);?></th>

@@ -35,7 +35,7 @@
 <br/>
 <div class='main'>
   <table class='table table-condensed table-hover table-striped tablesorter' id='projectList'>
-    <?php $vars = "orderBy=%s&recTotal=$recTotal&recPerPage=$recPerPage&pageID=$pageID"; ?>
+    <?php $vars = "orderBy=%s&recTotal=$recTotal&recPerPage=$recPerPage&pageID=$pageID&paramname=$searchname&paramstu=$searchstu"; ?>
       <thead>
         <tr class = 'text-center'>
           <th class = 'w-30px'><?php common::printOrderLink('id', $orderBy, $vars, $lang->idAB);?></th>

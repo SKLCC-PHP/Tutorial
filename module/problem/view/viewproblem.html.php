@@ -30,7 +30,7 @@
   </form>
   <br/>
   <table class='table table-condensed table-hover table-striped tablesorter' align="center" id='problemtable'>
-    <?php $vars = "viewtype=$viewtype&orderBy=%s&recTotal=$recTotal&recPerPage=$recPerPage&pageID=$pageID"; ?>
+    <?php $vars = "viewtype=$viewtype&orderBy=%s&recTotal=$recTotal&recPerPage=$recPerPage&pageID=$pageID&paramtitle=$searchtitle&paramstu=$searchstu"; ?>
     <thead>
       <tr class='text-center'>
         <th width="10px" class='text-left'> <?php common::printOrderLink('id',$orderBy, $vars, $lang->idAB);?></th>

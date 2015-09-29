@@ -27,7 +27,7 @@ js::set('confirmDelete', $lang->conclusion->confirmDelete);
 <br/>
 <form method='post' id='myconclusionForm'>
   <table class='table table-condensed table-hover table-striped tablesorter' align="center" id='conclusiontable'>
-  <?php $vars = "orderBy=%s&recTotal=$recTotal&recPerPage=$recPerPage&pageID=$pageID"; ?>
+  <?php $vars = "orderBy=%s&recTotal=$recTotal&recPerPage=$recPerPage&pageID=$pageID&paramtitle=$searchtitle&paramstu=&searchstu"; ?>
     <thead>
     <tr class='text-center'>
       <th class='w-20px'><?php common::printOrderLink('id',$orderBy, $vars, $lang->idAB);?></th>
