@@ -341,20 +341,21 @@ class common extends control
         if(isonlybody()) return false;
         echo html::a($backLink, '<i class="icon-goback icon-level-up icon-large icon-rotate-270"></i>', '', "class='btn' title={$lang->goback}");
 
-        if(isset($preAndNext->pre) and $preAndNext->pre) 
-        {
-            $id = (isset($_SESSION['testcaseOnlyCondition']) and !$_SESSION['testcaseOnlyCondition'] and $app->getModuleName() == 'testcase' and isset($preAndNext->pre->case)) ? 'case' : 'id';
-            $title = isset($preAndNext->pre->title) ? $preAndNext->pre->title : $preAndNext->pre->name;
-            $title = '#' . $preAndNext->pre->$id . ' ' . $title;
-            echo html::a(inLink($type, "ID={$preAndNext->pre->$id}"), '<i class="icon-pre icon-chevron-left"></i>', '', "id='pre' class='btn' title='{$title}'");
-        }
-        if(isset($preAndNext->next) and $preAndNext->next) 
-        {
-            $id = (isset($_SESSION['testcaseOnlyCondition']) and !$_SESSION['testcaseOnlyCondition'] and $app->getModuleName() == 'testcase' and isset($preAndNext->next->case)) ? 'case' : 'id';
-            $title = isset($preAndNext->next->title) ? $preAndNext->next->title : $preAndNext->next->name;
-            $title = '#' . $preAndNext->next->$id . ' ' . $title;
-            echo html::a(inLink($type, "ID={$preAndNext->next->$id}"), '<i class="icon-pre icon-chevron-right"></i>', '', "id='next' class='btn' title='$title'");
-        }
+        //change by Green at 2015-09-30
+        // if(isset($preAndNext->pre) and $preAndNext->pre) 
+        // {
+        //     $id = (isset($_SESSION['testcaseOnlyCondition']) and !$_SESSION['testcaseOnlyCondition'] and $app->getModuleName() == 'testcase' and isset($preAndNext->pre->case)) ? 'case' : 'id';
+        //     $title = isset($preAndNext->pre->title) ? $preAndNext->pre->title : $preAndNext->pre->name;
+        //     $title = '#' . $preAndNext->pre->$id . ' ' . $title;
+        //     echo html::a(inLink($type, "ID={$preAndNext->pre->$id}"), '<i class="icon-pre icon-chevron-left"></i>', '', "id='pre' class='btn' title='{$title}'");
+        // }
+        // if(isset($preAndNext->next) and $preAndNext->next) 
+        // {
+        //     $id = (isset($_SESSION['testcaseOnlyCondition']) and !$_SESSION['testcaseOnlyCondition'] and $app->getModuleName() == 'testcase' and isset($preAndNext->next->case)) ? 'case' : 'id';
+        //     $title = isset($preAndNext->next->title) ? $preAndNext->next->title : $preAndNext->next->name;
+        //     $title = '#' . $preAndNext->next->$id . ' ' . $title;
+        //     echo html::a(inLink($type, "ID={$preAndNext->next->$id}"), '<i class="icon-pre icon-chevron-right"></i>', '', "id='next' class='btn' title='$title'");
+        // }
     }
     
     /**
@@ -368,11 +369,12 @@ class common extends control
 
         echo html::a($backLink, '<i class="icon-goback icon-level-up icon-large icon-rotate-270"></i>', '', "class='btn' title={$lang->goback}");
 
-        if(isset($preAndNext->pre) and $preAndNext->pre) 
-            echo html::a(inLink('viewGroup', "ID=$preAndNext->pre&group=$group&groupIndex=$preAndNext->pre"), '<i class="icon-pre icon-chevron-left"></i>', '', "id='pre' class='btn'");
+        //change by Green at 2015-09-30
+        // if(isset($preAndNext->pre) and $preAndNext->pre) 
+        //     echo html::a(inLink('viewGroup', "ID=$preAndNext->pre&group=$group&groupIndex=$preAndNext->pre"), '<i class="icon-pre icon-chevron-left"></i>', '', "id='pre' class='btn'");
 
-        if(isset($preAndNext->next) and $preAndNext->next) 
-            echo html::a(inLink('viewGroup', "ID=$preAndNext->next&group=$group&groupIndex=$preAndNext->next"), '<i class="icon-pre icon-chevron-right"></i>', '', "id='next' class='btn'");
+        // if(isset($preAndNext->next) and $preAndNext->next) 
+        //     echo html::a(inLink('viewGroup', "ID=$preAndNext->next&group=$group&groupIndex=$preAndNext->next"), '<i class="icon-pre icon-chevron-right"></i>', '', "id='next' class='btn'");
     }
     
     /**
