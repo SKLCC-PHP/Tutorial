@@ -282,11 +282,11 @@ class noticeModel extends model
     {
         echo html::a($backLink, '<i class="icon-goback icon-level-up icon-large icon-rotate-270"></i>', '', "class='btn' title={$lang->goback}");
 
-        if(isset($preAndNext->pre) and $preAndNext->pre) 
-            echo html::a(inLink('view', "noticeID=$preAndNext->pre&orderBy=$orderBy"), '<i class="icon-pre icon-chevron-left"></i>', '', "id='pre' class='btn'");
+    //     if(isset($preAndNext->pre) and $preAndNext->pre) 
+    //         echo html::a(inLink('view', "noticeID=$preAndNext->pre&orderBy=$orderBy"), '<i class="icon-pre icon-chevron-left"></i>', '', "id='pre' class='btn'");
 
-        if(isset($preAndNext->next) and $preAndNext->next) 
-            echo html::a(inLink('view', "noticeID=$preAndNext->next&orderBy=$orderBy"), '<i class="icon-pre icon-chevron-right"></i>', '', "id='next' class='btn'");
+    //     if(isset($preAndNext->next) and $preAndNext->next) 
+    //         echo html::a(inLink('view', "noticeID=$preAndNext->next&orderBy=$orderBy"), '<i class="icon-pre icon-chevron-right"></i>', '', "id='next' class='btn'");
     }
 
     /**
