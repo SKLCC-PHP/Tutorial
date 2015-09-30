@@ -947,14 +947,14 @@ class taskModel extends model
         	case 'teacher':{
                 switch ($type)
                 {
-                	case 'all': return 6;
+                	case 'all': return 4;
                 	case 'undone': return 7;
                 	case 'done': return 6;
                 	case 'unassessed': return 7;
                 	case 'assessed': return 6;
                 }
         	}
-        	default: return 6;
+        	default: return 5;
         }
     }
 }

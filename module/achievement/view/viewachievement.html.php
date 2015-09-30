@@ -88,11 +88,8 @@
     <tfoot>
       <tr>
         <?php 
-          if ($this->session->userinfo->roleid == 'teacher')
-          {
-            $columns = 6;
-          }
-          elseif($this->session->userinfo->roleid == 'student')
+          $cur_role = $this->session->user->roleid;
+          if ($cur_role == 'teacher' || $cur_role == 'student')
           {
             $columns = 6;
           }
