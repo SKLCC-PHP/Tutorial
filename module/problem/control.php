@@ -40,6 +40,7 @@ class problem extends control
         $this->view->searchtea          = $paramtea;
         $this->view->searchstu          = $paramstu;
         $this->view->pager              = $pager;
+        $this->view->columns            = $this->problem->getProblemColumns($viewtype);
         $this->view->recTotal           = $pager->recTotal;
         $this->view->recPerPage         = $pager->recPerPage;
         $this->view->pageID             = $pager->pageID;

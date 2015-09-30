@@ -54,7 +54,7 @@
     </tbody> 
     <tfoot>
       <tr>
-      <?php $columns = 7;?>
+      <?php $columns = 6;?>
         <td colspan='<?php echo $columns;?>'>
           <?php $pager->show();?>
         </td>

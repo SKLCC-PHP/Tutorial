@@ -87,8 +87,19 @@
       <?php endforeach; ?>
       </tbody>
       <tfoot>
+        <?php 
+          $cur_role = $this->session->user->roleid;
+          if ($cur_role == 'teacher')
+          {
+            $columns = 7;
+          }
+          else
+          {
+            $columns = 8;
+          }
+        ;?>
         <tr>
-          <td colspan='8'>
+          <td colspan='<?php echo $columns;?>'>
             <?php $pager->show();?>
           </td>
         </tr>

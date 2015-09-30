@@ -87,12 +87,6 @@
     </tbody>
     <tfoot>
         <tr>
-        <?php 
-        if($viewtype == 'unRead') 
-          $columns = 5;
-        else
-          $columns = 6;
-      ?>
           <td colspan='<?php echo $columns;?>'>
             <?php $pager->show();?>
           </td>

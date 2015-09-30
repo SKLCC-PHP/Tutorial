@@ -481,4 +481,35 @@ class problemModel extends model
         else
             return 0;
     }
+
+    /**
+    * author:Green
+    * date:2015-09-30
+    */
+    public function getProblemColumns($type = 'all')
+    {   
+        $cur_role = $this->session->user->roleid;
+
+        switch ($cur_role)
+        {
+            case 'student':{
+                switch ($type)
+                {
+                    case 'all': return 6;
+                    case 'unRead': return 5;
+                    case 'hasRead': return 6;
+                }
+            }
+            case 'teacher':{
+                switch ($type)
+                {
+                    case 'all': return 6;
+                    case 'unRead': return 5;
+                    case 'hasRead': return 5;
+                }
+            }
+            default: return 7;
+        }
+    }
 }    
+

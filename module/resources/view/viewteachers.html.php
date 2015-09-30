@@ -62,8 +62,7 @@
     </tbody>
     <tfoot>
       <tr>
-        <?php $columns = $this->cookie->windowWidth > $this->config->wideSize ? 14 : 12;?>
-        <td colspan='<?php echo $columns;?>'>
+        <td colspan='5'>
           <?php $pager->show();?>
         </td>
       </tr>
