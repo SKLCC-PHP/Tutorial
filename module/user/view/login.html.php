@@ -24,7 +24,7 @@ include '../../common/view/header.lite.html.php';
 						<td><input class='form-control' type='text' name='captcha' id = 'captcha'/></td>
 						<td width="100px">
 							<img id="captcha_img" border="0px" src="<?php echo $this->createLink('user', 'captcha');?>?r=<?php echo rand();?>"
-							width="100px" height="30px" onclick="document.getElementById('captcha_img').src='<?php echo $this->createLink('user', 'captcha');?>?r='+Math.random()">
+							width="100px" height="30px">
 						</td>
 					</tr>
 					<tr>
@@ -115,7 +115,7 @@ include '../../common/view/header.lite.html.php';
 		</div>
 
 		<div class="panel-foot">
-			<tr>demo&emsp;用户名：admin&nbsp;&nbsp;&nbsp;&nbsp;密码：123456</tr>
+			<tr>推荐使用Chrome、Firefox或IE 9以上的浏览器</tr>
 		</div>
 
 		</div>
@@ -144,4 +144,8 @@ include '../../common/view/header.lite.html.php';
 		document.getElementById("form_login").style.display = 'none';
 		document.getElementById("form_reset").style.display = 'block';
 	}
+
+	$('#captcha_img').click(function(){
+		$('#captcha_img').attr('src','<?php echo $this->createLink('user', 'captcha');?>?r='+Math.random());
+    });
 </script>
