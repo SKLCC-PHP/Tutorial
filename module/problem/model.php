@@ -20,7 +20,7 @@ class problemModel extends model
 
             $this->dao->insert(TABLE_QUESTION)
                 ->data($data)
-                //->autoCheck()
+                ->autoCheck()
                 ->exec();
 
             $problemID = $this->dao->lastInsertID();
@@ -34,7 +34,7 @@ class problemModel extends model
             $this->loadModel('action')->create('problem', $problemID, 'created');
 
             $subject = $this->lang->problem->mail->subject;
-            $body = sprintf($this->lang->problem->mail->body, $this->app->user->realname, common::getSysURL().helper::createLink('problem', 'view', "problemID=".$taskID));
+            $body = sprintf($this->lang->problem->mail->body, $this->app->user->realname, common::getSysURL().helper::createLink('problem', 'view', "problemID=".$problemID));
             $this->loadModel('mail')->send($teacher, $subject, $body, '', true);
         }
     }
@@ -130,7 +130,7 @@ class problemModel extends model
         if (($cur_role != 'teacher')&&($cur_role != 'student'))
         {
             $grade = $this->session->user->grade;
-            $problems = $this->dao->select('t1.asgID, count(t1.acpID) as acpNum, t1.acpID, t1.title, t1.createtime, t1.ACL, t1.id, t1.solvetime')
+            $problems = $this->dao->select('t1.asgID, count(t1.acpID) as acpNum, t1.acpID, t1.title, t1.createtime, t1.ACL, t1.id, t1.solvetime, t1.readtime')
                 ->from (TABLE_QUESTION)->alias(t1)
                 ->leftJoin(TABLE_USER)->alias(t2)
                 ->on('t1.asgID=t2.account')
@@ -151,7 +151,7 @@ class problemModel extends model
         
         if ($viewtype == 'all')
         {
-            $problems = $this->dao->select('asgID, count(acpID) as acpNum, acpID, title, createtime, ACL, id, solvetime')
+            $problems = $this->dao->select('asgID, count(acpID) as acpNum, acpID, title, createtime, ACL, id, solvetime, readtime')
                 ->from(TABLE_QUESTION)
                 ->where($field)->eq($account)
                 ->andWhere('deleted')->eq(0)
@@ -166,7 +166,7 @@ class problemModel extends model
             return $problems = $this->loadModel('statistics')->setPage($problems, $pager);
         }
 
-        if ($viewtype == 'isRead')
+        if ($viewtype == 'hasRead')
         {
             $problems = $this->dao->select('*')
                 ->from(TABLE_QUESTION)
@@ -381,7 +381,7 @@ class problemModel extends model
             return $this->checkTeacherPriv($problem, $method);
             break;
         case 'counselor':
-            return $this->checkCouncelorPriv($problem, $method);
+            return $this->checkCounselorPriv($problem, $method);
             break;
         case 'manager':
             return $this->checkManagerPriv($problem, $method);
@@ -426,7 +426,7 @@ class problemModel extends model
         case 'complete':
             if ($problem->asgID == $cur_account)
             {
-                if ($problem->completetime != null)
+                if ($problem->completetime == null && $problem->solvetime)
                     return 1;
             }
             return 0;
@@ -446,6 +446,7 @@ class problemModel extends model
             $collegeid = $this->dao->select('college_id')->from(TABLE_USER)->where('account')->eq($problem->asgID)->andWhere('deleted')->eq(0)->fetch()->college_id;
             if ($collegeid != $this->session->user->college_id) return 0;
             if ($problem->ACL == 3) return 1;
+            if ($this->loadModel('project')->checkRelation($cur_account, $problem->asgID)) return 1;
             return 0;
         }
         else
@@ -466,7 +467,7 @@ class problemModel extends model
             return 0;
     }
 
-    private function checkCouncelorPriv($problem, $method)
+    private function checkCounselorPriv($problem, $method)
     {
         if ($method == 'view')
         {
@@ -480,4 +481,35 @@ class problemModel extends model
         else
             return 0;
     }
+
+    /**
+    * author:Green
+    * date:2015-09-30
+    */
+    public function getProblemColumns($type = 'all')
+    {   
+        $cur_role = $this->session->user->roleid;
+
+        switch ($cur_role)
+        {
+            case 'student':{
+                switch ($type)
+                {
+                    case 'all': return 6;
+                    case 'unRead': return 5;
+                    case 'hasRead': return 6;
+                }
+            }
+            case 'teacher':{
+                switch ($type)
+                {
+                    case 'all': return 6;
+                    case 'unRead': return 5;
+                    case 'hasRead': return 5;
+                }
+            }
+            default: return 7;
+        }
+    }
 }    
+

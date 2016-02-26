@@ -28,7 +28,7 @@
 <br/>
 <div class='main'>
   <table class='table table-hover table-striped tablesorter table-fixed table-condensed' align = 'center' id='undergraduateList'>
-    <?php $vars="orderBy=%s&recTotal=$recTotal&recPerPage=$recPerPage&pageID=$pageID";?>  
+    <?php $vars="orderBy=%s&recTotal=$recTotal&recPerPage=$recPerPage&pageID=$pageID&paramaccount=$searchaccount&paramname=$searchname";?>  
       <thead>
         <tr class='text-center '>
           <th class = 'w-100px'><?php common::printOrderLink('account', $orderBy, $vars, $lang->student->account);?></th>

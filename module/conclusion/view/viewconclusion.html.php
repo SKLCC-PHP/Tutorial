@@ -27,7 +27,7 @@ js::set('confirmDelete', $lang->conclusion->confirmDelete);
 <br/>
 <form method='post' id='myconclusionForm'>
   <table class='table table-condensed table-hover table-striped tablesorter' align="center" id='conclusiontable'>
-  <?php $vars = "orderBy=%s&recTotal=$recTotal&recPerPage=$recPerPage&pageID=$pageID"; ?>
+  <?php $vars = "orderBy=%s&recTotal=$recTotal&recPerPage=$recPerPage&pageID=$pageID&paramtitle=$searchtitle&paramstu=&searchstu"; ?>
     <thead>
     <tr class='text-center'>
       <th class='w-20px'><?php common::printOrderLink('id',$orderBy, $vars, $lang->idAB);?></th>
@@ -36,9 +36,9 @@ js::set('confirmDelete', $lang->conclusion->confirmDelete);
       <th class='w-hour'> <?php common::printOrderLink('createtime', $orderBy, $vars, $lang->conclusion->create_time);?></th>
       <th class='w-hour'> <?php echo $lang->conclusion->update_time;?></th>
       <th class='w-hour'> <?php echo $lang->conclusion->viewtime;?></th>
-    <?php if ($this->session->userinfo->roleid == 'student'):?>
+<!--     <?php if ($this->session->userinfo->roleid == 'student'):?>
       <th class='w-20px'> <?php echo $lang->actions;?></th>
-    <?php endif;?>
+    <?php endif;?> -->
     </tr>
     </thead>   
     <tbody>
@@ -50,21 +50,20 @@ js::set('confirmDelete', $lang->conclusion->confirmDelete);
       <td><?php echo $conclusion->createtime;?></td>
       <td><?php echo $conclusion->updatetime;?></td>
       <td><?php echo $conclusion->viewtime;?></td>
-    <?php if ($this->session->userinfo->roleid == 'student'):?>
+<!--     <?php if ($this->session->userinfo->roleid == 'student'):?>
       <td class='text-center'>
         <?php
           common::printIcon('conclusion', 'edit', "conclusionID=$conclusion->id", '', 'list', 'pencil');
           common::printIcon('conclusion', 'delete', "conclusionID=$conclusion->id", '', 'list', '', 'hiddenwin');
         ?>
       </td>
-    <?php endif;?>
+    <?php endif;?> -->
     </tr>
     <?php endforeach;?>
     </tbody>
     <tfoot>
         <tr>
-        <?php $columns = $this->cookie->windowWidth > $this->config->wideSize ? 14 : 12;?>
-          <td colspan='<?php echo $columns;?>'>
+          <td colspan='6'>
             <?php $pager->show();?>
           </td>
         </tr>

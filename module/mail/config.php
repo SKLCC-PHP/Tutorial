@@ -5,7 +5,7 @@
 $config->mail = new stdclass();
 $config->mail->smtp = new stdclass();
 
-$config->mail->turnon = on;
+$config->mail->turnon = false;				// true or false
 $config->mail->fromAddress = '';            // The from address.
 $config->mail->fromName    = 'zentao';      // The from name.
 $config->mail->mta         = 'smtp';        // The send mail type.

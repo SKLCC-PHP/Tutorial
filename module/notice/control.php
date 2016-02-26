@@ -134,7 +134,7 @@ class notice extends control
 	 * @access public
 	 * @return void
 	 */
-	public function create()
+	public function create($recreate = 0)
 	{
 		$notice = new stdClass();
         $notice->title       = '';
@@ -144,12 +144,21 @@ class notice extends control
  
         if(!empty($_POST))
         {
+        	$notice = fixer::input('post')->get();
+            if (!($notice->title && $notice->content))
+            {
+                echo js::alert($this->lang->notice->noImportantInformation);
+                $this->session->set('createNotice', $notice);
+                die(js::locate($this->createLink('notice', 'create', "recreate=1"), 'parent'));
+            }
+
             $this->notice->create();
             $this->action->create('notice', $noticeID, 'created');
+            echo js::alert($this->lang->notice->createsucceed);
            	die(js::locate($this->createLink('notice', 'viewNotice'), 'parent'));
         }
 
-        $this->view->notice  = $notice;
+        $this->view->notice  = $recreate ? $this->session->createNotice: null;
         $this->display();
 	}
 
@@ -256,7 +265,7 @@ class notice extends control
                 }
                 $this->send($response);
             }
-
+            echo js::alert($this->lang->notice->deletesucceed);
             die(js::locate($this->createLink('notice', 'viewNotice'), 'parent'));
         }
 	}

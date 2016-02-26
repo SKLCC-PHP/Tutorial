@@ -27,7 +27,7 @@
 <br/>
 <div id = 'main'>
   <table class='table table-condensed table-hover table-striped tablesorter' align = 'center' id='graduateList'>
-    <?php $vars="orderBy=%s&recTotal=$recTotal&recPerPage=$recPerPage&pageID=$pageID";?>
+    <?php $vars="orderBy=%s&recTotal=$recTotal&recPerPage=$recPerPage&pageID=$pageID&paramaccount=$searchaccount&paramname=$searchname";?>
     <thead>
       <tr class='text-center'>
         <th class = 'w-100px'><?php common::printOrderLink('account', $orderBy, $vars, $lang->student->account);?></th>
@@ -54,7 +54,7 @@
     </tbody> 
     <tfoot>
       <tr>
-      <?php $columns = 7;?>
+      <?php $columns = 6;?>
         <td colspan='<?php echo $columns;?>'>
           <?php $pager->show();?>
         </td>

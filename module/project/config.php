@@ -11,5 +11,5 @@ $config->project->editor->view   = array('id' => 'comment', 'tools' => 'simpleTo
 
 $config->project->create = new stdclass();
 $config->project->create->requiredFields = 
-	'name, start_time, tea_ID, deadline';
+	'name, start_time, tea_ID, deadline, description';
 ?>

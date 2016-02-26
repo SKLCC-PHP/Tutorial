@@ -799,7 +799,7 @@ class taskModel extends model
 			return $this->checkTeacherPriv($task, $method);
 			break;
 		case 'counselor':
-			return $this->checkCouncelorPriv($task, $method);
+			return $this->checkCounselorPriv($task, $method);
 			break;
 		case 'manager':
 			return $this->checkManagerPriv($task, $method);
@@ -899,7 +899,7 @@ class taskModel extends model
     	}
     }
 
-    public function checkCouncelorPriv($task, $method)
+    public function checkCounselorPriv($task, $method)
     {
     	if ($method == 'view')
     	{
@@ -939,22 +939,22 @@ class taskModel extends model
         	case 'student':{
         		switch ($type)
         		{
-        			case 'all': return 9;
-        			case 'undone': return 8;
+        			case 'all': return 8;
+        			case 'undone': return 7;
         			case 'done': return 7;
         		}
         	}
         	case 'teacher':{
                 switch ($type)
                 {
-                	case 'all': return 7;
-                	case 'undone': return 8;
+                	case 'all': return 4;
+                	case 'undone': return 7;
                 	case 'done': return 6;
-                	case 'unassessed': return 8;
-                	case 'assessed': return 7;
+                	case 'unassessed': return 7;
+                	case 'assessed': return 6;
                 }
         	}
-        	default: return 7;
+        	default: return 5;
         }
     }
 }

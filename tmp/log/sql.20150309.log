@@ -1,4 +1,0 @@
-20150309 23:46:18: my
-  SELECT * FROM `oa_company` ORDER BY `id`  LIMIT 1 
-  SELECT * FROM `oa_config` WHERE owner IN ('system','') ORDER BY `id` 
-

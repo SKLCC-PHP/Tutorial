@@ -195,7 +195,7 @@ class userModel extends model
 			->remove('grade, group, college, password1, password2')
 			->get();
 		$user->roleid = $this->post->group;
-		if($this->post->grade)
+		if(is_array($this->post->grade))
 		{
 			foreach ($this->post->grade as $year)
 			{
@@ -203,6 +203,8 @@ class userModel extends model
 
 			}
 			$user->grade = substr($user->grade, 0, strlen($user->grade)-1);
+		}else{
+			$user->grade = $this->post->grade;
 		}
 		
 		if($this->session->userinfo->roleid != 'admin')
@@ -315,14 +317,17 @@ class userModel extends model
 			$user->roleid = $this->post->groups;
 		}
 
-		if($this->post->grade)
+		if(is_array($this->post->grade))
 		{
 			foreach ($this->post->grade as $year) 
 			{
 				$user->grade = $user->grade.$year.",";
 			}
 			$user->grade = substr($user->grade, 0, strlen($user->grade)-1);
+		}else{
+			$user->grade = $this->post->grade;
 		}
+		
 		$user->updatetime = helper::now();
 		$this->dao->update(TABLE_USER)->data($user)
 			->autoCheck()

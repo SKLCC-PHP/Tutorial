@@ -24,7 +24,7 @@
         <td style="width:200px;">
           <table class='table  table-form table-borderless' id='memberBox'>
             <tr>
-              <td><?php echo html::input('member[]', '', "class='form-control'");?></td>
+              <td><?php echo html::input('members[]', $achievement->members, "class='form-control'");?></td>
               <td><a href='javascript:void();' onclick='addMember()' class='btn btn-block'><i class='icon-plus'></i></a></td>
               <td><a href='javascript:void();' onclick='deleteMember()' class='btn btn-block'><i class='icon-remove'></i></a></td> 
             </tr>
@@ -33,7 +33,7 @@
       </tr>
       <tr>
         <th><?php echo $lang->achievement->tea_ID;?></th>
-        <td><div style="width:120px;"><?php echo html::select('teaID', $teachers, '', "class='form-control chosen' required='required'");?></div></td><td></td>
+        <td><div style="width:120px;"><?php echo html::select('teaID', $teachers, $achievement->teaID, "class='form-control chosen' required='required'");?></div></td><td></td>
       </tr>
       <tr>
         <th><?php echo $lang->achievement->description;?></th>
@@ -49,7 +49,7 @@
       </tr>
       <tr>
         <td></td>
-        <td colspan='3'  class='text-center'><?php echo html::submitButton() . html::backButton();?></td>
+        <td colspan='3'  class='text-center'><?php echo html::submitButton() . html::linkButton($lang->goback, $this->inlink('viewachievement'));?></td>
       </tr>
     </table>
   </form>

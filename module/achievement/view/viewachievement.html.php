@@ -39,7 +39,7 @@
 <br/>
 <form method='post' id='myachievementForm'>
   <table class='table table-condensed table-hover table-striped tablesorter table-fixed' align="center" id='achievementtable'>
-  <?php $vars = "orderBy=%s&recTotal=$recTotal&recPerPage=$recPerPage&pageID=$pageID"; ?>
+  <?php $vars = "orderBy=%s&recTotal=$recTotal&recPerPage=$recPerPage&pageID=$pageID&paramtitle=$searchtitle&paramtype=$searchtype&paramstu=$searchstu"; ?>
     <thead>
     <tr class='text-center'>
       <th width="10px" class='text-left'> <?php common::printOrderLink('id', $orderBy, $vars, $lang->idAB);?></th>
@@ -53,9 +53,9 @@
     <?php endif;?>
       <th class='w-hour'> <?php echo $lang->achievement->create_time;?></th>
       <th class='w-hour'> <?php common::printOrderLink('checked', $orderBy, $vars, $lang->achievement->ischecked);?></th>
-    <?php if ($this->session->userinfo->roleid != 'teacher'):?>  
+<!--     <?php if ($this->session->userinfo->roleid != 'teacher'):?>  
       <th class='w-20px'> <?php echo $lang->actions;?></th>
-    <?php endif;?>
+    <?php endif;?> -->
     </tr>
     </thead>   
     <tbody>
@@ -72,7 +72,7 @@
     <?php endif;?>
       <td><?php echo $achievement->createtime;?></td>
       <td><?php echo $lang->achievement->checkedList[$achievement->checked];?></td>
-    <?php if ($this->session->userinfo->roleid != 'teacher'):?> 
+<!--     <?php if ($this->session->userinfo->roleid != 'teacher'):?> 
       <td class='text-center'>
         <?php
         if($achievement->checked != 1)
@@ -81,24 +81,21 @@
         common::printIcon('achievement', 'check', "achievementID=$achievement->id", '', 'list', '', '', 'iframe', true, "data-width='900'");
         ?>
       </td>
-    <?php endif;?>
+    <?php endif;?> -->
     </tr>
     <?php endforeach;?>
     </tbody>
     <tfoot>
       <tr>
         <?php 
-          if ($this->session->userinfo->roleid == 'teacher')
+          $cur_role = $this->session->user->roleid;
+          if ($cur_role == 'teacher' || $cur_role == 'student')
           {
             $columns = 6;
           }
-          elseif($this->session->userinfo->roleid == 'student')
-          {
-            $columns = 7;
-          }
           else
           {
-            $columns = 8;
+            $columns = 7;
           }
         ;?>
           <td colspan='<?php echo $columns;?>'>

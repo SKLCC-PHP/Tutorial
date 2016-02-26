@@ -8,7 +8,7 @@ $config->task->start    = new stdclass();
 $config->task->finish   = new stdclass();
 $config->task->activate = new stdclass();
 
-$config->task->create->requiredFields      = 'title,create_time,assignedTo';
+$config->task->create->requiredFields      = 'title,create_time,assignedTo,content';
 $config->task->edit->requiredFields        = 'title,begintime,deadline,days';
 
 $config->task->batchEdit = new stdclass();

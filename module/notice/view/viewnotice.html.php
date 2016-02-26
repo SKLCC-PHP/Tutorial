@@ -47,7 +47,7 @@
 
 <form method='post' id='mynoticeForm'>
   <table class='table table-condensed table-hover table-striped tablesorter table-fixed' align="center" id='noticetable'>
-  <?php $vars = "orderBy=%s&recTotal=$recTotal&recPerPage=$recPerPage&pageID=$pageID"; ?>
+  <?php $vars = "orderBy=%s&recTotal=$recTotal&recPerPage=$recPerPage&pageID=$pageID&paramtitle=$searchtitle&paramcreator=$searchcreator"; ?>
     <thead>
     <tr class='text-center'>
       <th width="30px" class='text-left'> <?php common::printOrderLink('id', $orderBy, $vars, $lang->idAB);?></th>

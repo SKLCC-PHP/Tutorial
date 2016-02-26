@@ -16,7 +16,7 @@ class achievementModel extends model
             ->striptags('title')
             ->setForce('creatorID',  $this->session->user->account)
             ->add('createtime', helper::now())
-            ->remove('files,labels,member')
+            ->remove('files,labels,members')
             ->get();
         
         $achievement->othername = '';
@@ -159,16 +159,18 @@ class achievementModel extends model
         
         if ($cur_role == 'admin')
         {
-            return $this->dao->select('*')
-                    ->from(TABLE_ACHIEVEMENT)
-                    ->where('deleted')->eq(0)
-                    ->andWhere('title')->like('%' . $paramtitle . '%')
-                    ->andWhere('type')->in($paramtype)
-                    ->andWhere('creatorID')->in($paramstu)
-                    ->andWhere('teaID')->in($paramtea)
-                    ->orderBy($orderBy)
-                    ->page($pager)
-                    ->fetchAll();
+            $achievements = $this->dao->select('*')
+                            ->from(TABLE_ACHIEVEMENT)
+                            ->where('deleted')->eq(0)
+                            ->andWhere('title')->like('%' . $paramtitle . '%')
+                            ->andWhere('type')->in($paramtype)
+                            ->andWhere('creatorID')->in($paramstu)
+                            ->andWhere('teaID')->in($paramtea)
+                            ->orderBy($orderBy)
+                            ->page($pager)
+                            ->fetchAll();
+            $this->loadModel('common')->saveQueryCondition($this->dao->get(), 'achievement');
+            return $achievements;
         }
 
         if (($cur_role != 'student')&&($cur_role != 'teacher'))
@@ -251,13 +253,27 @@ class achievementModel extends model
                 ->fetchAll();
     }
 
-    public function checkPriv($achievement, $method){
+    public function checkPriv($achievement, $method)
+    {
         $cur_role = $this->session->user->roleid;
-        if (strstr('student|teacher|manager|counselor',$cur_role)){
-            $function = 'check' . $cur_role . 'Priv';
-            return $this->$function($achievement, $method);
-        }else
-            return 1;   
+        if($achievement->checked) return 1;
+        
+        switch ($cur_role)
+        {
+        case 'student':
+            return $this->checkStudentPriv($achievement, $method);
+            break;
+        case 'teacher':
+            return $this->checkTeacherPriv($achievement, $method);
+            break;
+        case 'counselor':
+            return $this->checkCounselorPriv($achievement, $method);
+            break;
+        case 'manager':
+            return $this->checkManagerPriv($achievement, $method);
+            break;
+        default: return 1;
+        }           
     }
 
     private function checkStudentPriv($achievement, $method){
@@ -279,15 +295,15 @@ class achievementModel extends model
     }
 
     private function checkTeacherPriv($achievement, $method){
-        $cur_account = $this->session->user->roleid;
-        if (($method == 'view') && ($achievement->creatorID == $cur_account)) return 1;
+        $cur_account = $this->session->user->account;
+        if (($method == 'view') && ($achievement->teaID == $cur_account)) return 1;
         else return 0;
     }
 
     private function checkManagerPriv($achievement, $method){
         if (strstr('view|check', $method)){
             $collegeid = $this->dao->select('college_id')->from(TABLE_USER)->where('account')->eq($achievement->creatorID)->andWhere('deleted')->eq(0)->fetch()->college_id;
-            if ($this->session->user->collegeid == $collegeid) return 1;
+            if ($this->session->user->college_id == $collegeid) return 1;
             else return 0;
         }else{
             return 0;
@@ -297,7 +313,8 @@ class achievementModel extends model
     private function checkCounselorPriv($achievement, $method){
         if (strstr('view|check', $method)){
             $collegeid = $this->dao->select('college_id')->from(TABLE_USER)->where('account')->eq($achievement->creatorID)->andWhere('deleted')->eq(0)->fetch()->college_id;
-            if ($this->session->user->collegeid == $collegeid) return 1;
+            $grade = $this->dao->select('grade')->from(TABLE_USER)->where('account')->eq($achievement->creatorID)->andWhere('deleted')->eq(0)->fetch()->grade;
+            if ($this->session->user->college_id == $collegeid && strstr($this->session->user->grade, $grade)) return 1;
             else return 0;
         }else{
             return 0;

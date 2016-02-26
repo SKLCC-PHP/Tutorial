@@ -33,4 +33,4 @@ $lang->workspace->problemMenu = new stdclass();
 
 $lang->workspace->problemMenu->all	    = '所有问题';
 $lang->workspace->problemMenu->unRead	= '未读';
-$lang->workspace->problemMenu->isRead	= '已读';
+$lang->workspace->problemMenu->hasRead	= '已读';
